@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/translate@1/translate.min.js"></script>
+    <script src="cache.js" defer></script>
+    <script src="dist/bundle.js" defer></script>
+    <title>Document</title>
+    <style>
+      form {
+        display: grid;
+        grid-template-columns: 500px 300px;
+        gap: 20px;
+        padding: 50px;
+        width: max-content;
+      }
+      #submit {
+        grid-column: span 2;
+        margin: auto;
+      }
+
+      #translateContainer,
+      #chatGptContainer {
+        grid-column: span 2;
+      }
+
+      .deeplApiKeyElement,
+      .chatGptApiKeyElement {
+        margin-left: 30px;
+      }
+
+      .required {
+        color: red;
+      }
+
+      .help {
+        font-size: 80%;
+        color: #555;
+        grid-column: span 2;
+        margin-top: -10px;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <div id="translateContainer">
+        <input type="checkbox" id="translate" value="true" />
+        <label for="translate"
+          >Translate English Descriptions into German with Deepl</label
+        >
+      </div>
+      <label for="deeplApiKey" class="deeplApiKeyElement"
+        ><span class="required">*</span>Deepl API Key</label
+      >
+      <input type="text" id="deeplApiKey" class="deeplApiKeyElement" />
+      <div id="chatGptContainer">
+        <input type="checkbox" id="chatgpt" value="true" />
+        <label for="chatgpt"
+          >Generate data about the conflict level of each game with
+          ChatGPT</label
+        >
+      </div>
+
+      <label for="chatGptApiKey" class="chatGptApiKeyElement"
+        ><span class="required">*</span>OpenAI API Key</label
+      >
+      <input type="text" id="chatGptApiKey" class="chatGptApiKeyElement" />
+      <label for="chatGptModel" class="chatGptApiKeyElement">Model</label>
+      <select id="chatGptModel" class="chatGptApiKeyElement">
+        <option value="gpt-3.5-turbo">gpt-3.5-turbo</option>
+        <option value="gpt-4-turbo">gpt-4-turbo</option>
+        <option value="gpt-4o">gpt-4o</option>
+      </select>
+      <label for="nameCollection"
+        ><span class="required">*</span>Name of the BGG collection / user</label
+      >
+      <input type="text" id="nameCollection" required />
+      <label for="minRating"
+        >Minimum GeekRating each game must have to be included</label
+      >
+      <input type="number" id="minRating" min="0" max="10" />
+      <label for="maxPlayerCount"
+        ><span class="required">*</span>Maximum number of players for which it
+        will be indicated, whether the game is recommended for that many
+        players</label
+      >
+      <input type="number" id="maxPlayerCount" value="7" min="1" max="50" />
+      <p class="help">
+        If the value is 7, then the CSV file will tell you for each game,
+        whether it is recommended for 1, 2, 3, 4, 5, 6 and/or 7 players
+        (according to BGG). Recommendations for 8 or more players will not be
+        mentioned.
+      </p>
+      <button type="button" id="submit">Submit</button>
+    </form>
+    <script>
+      document.querySelector("#translate").addEventListener("change", () => {
+        document.querySelectorAll(".deeplApiKeyElement").forEach((node) => {
+          node.style.display = document.querySelector("#translate").checked
+            ? "block"
+            : "none";
+        });
+      });
+
+      document.querySelector("#chatgpt").addEventListener("change", () => {
+        document.querySelectorAll(".chatGptApiKeyElement").forEach((node) => {
+          node.style.display = document.querySelector("#chatgpt").checked
+            ? "block"
+            : "none";
+        });
+      });
+      // Initialize visibility based on the current state of the checkboxes
+      document.querySelector("#translate").dispatchEvent(new Event("change"));
+      document.querySelector("#chatgpt").dispatchEvent(new Event("change"));
+    </script>
+  </body>
+</html>
