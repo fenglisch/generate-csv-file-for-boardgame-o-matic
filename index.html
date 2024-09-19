@@ -22,7 +22,8 @@
       }
 
       #translateContainer,
-      #chatGptContainer {
+      #chatGptContainer,
+      #inventoryLocationContainer {
         grid-column: span 2;
       }
 
@@ -46,6 +47,20 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+      }
+
+      #container-textarea-inventory-location {
+        max-width: 800px;
+        padding: 0 30px;
+        text-align: center;
+      }
+
+      #container-textarea-inventory-location p {
+        text-align: left;
+      }
+
+      #submit-manual-xml-inventory-location {
+        margin: 40px;
       }
     </style>
   </head>
@@ -79,6 +94,12 @@
         <option value="gpt-4-turbo">gpt-4-turbo</option>
         <option value="gpt-4o">gpt-4o</option>
       </select>
+      <div id="inventoryLocationContainer">
+        <input type="checkbox" id="inventory-location" />
+        <label for="inventory-location"
+          >Include inventory location for filtering</label
+        >
+      </div>
       <label for="nameCollection"
         ><span class="required">*</span>Name of the BGG collection / user</label
       >

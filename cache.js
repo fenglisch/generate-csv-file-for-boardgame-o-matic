@@ -7603,4 +7603,950 @@ const cache = {
     descriptionShortEn: "",
     conflict: 0,
   },
+  id161936: {
+    name: "Pandemic Legacy: Season 1",
+    descriptionLongEn:
+      "Pandemic Legacy is a co-operative campaign game, with an overarching story-arc played through 12-24 sessions, depending on how well your group does at the game. At the beginning, the game starts very similar to basic Pandemic, in which your team of disease-fighting specialists races against the clock to travel around the world, treating disease hotspots while researching cures for each of four plagues before they get out of hand.&#10;&#10;During a player's turn, they have four actions available, with which they may travel around in the world in various ways (sometimes needing to discard a card), build structures like research stations, treat diseases (removing one cube from the board; if all cubes of a color have been removed, the disease has been eradicated), trade cards with other players, or find a cure for a disease (requiring five cards of the same color to be discarded while at a research station).",
+    descriptionLongDe:
+      "Pandemic Legacy ist ein kooperatives Kampagnenspiel mit einem übergreifenden Handlungsstrang, der in 12-24 Sitzungen gespielt wird, je nachdem, wie gut Ihre Gruppe das Spiel beherrscht. Zu Beginn beginnt das Spiel sehr ähnlich wie das Grundspiel Pandemie, in dem Ihr Team von Seuchenspezialisten gegen die Zeit um die Welt reist, um Seuchenherde zu behandeln und gleichzeitig Heilmittel für jede der vier Seuchen zu erforschen, bevor sie außer Kontrolle geraten.Während des Zuges eines Spielers stehen ihm vier Aktionen zur Verfügung, mit denen er auf verschiedene Weise in der Welt herumreisen kann (manchmal muss er eine Karte abwerfen), Strukturen wie Forschungsstationen bauen, Krankheiten behandeln (einen Würfel vom Spielbrett entfernen; wenn alle Würfel einer Farbe entfernt wurden, ist die Krankheit ausgerottet), Karten mit anderen Spielern tauschen oder ein Heilmittel für eine Krankheit finden (dazu müssen fünf Karten derselben Farbe abgelegt werden, während man sich in einer Forschungsstation befindet).",
+    descriptionShortEn:
+      "Mutating diseases are spreading around the world - can your team save humanity?",
+    descriptionShortDe:
+      "Mutierende Krankheiten verbreiten sich auf der ganzen Welt - kann Ihr Team die Menschheit retten?",
+    conflict: 1,
+  },
+  id174430: {
+    name: "Gloomhaven",
+    descriptionLongEn:
+      "Gloomhaven  is a game of Euro-inspired tactical combat in a persistent world of shifting motives. Players will take on the role of a wandering adventurer with their own special set of skills and their own reasons for traveling to this dark corner of the world. Players must work together out of necessity to clear out menacing dungeons and forgotten ruins.",
+    descriptionLongDe:
+      "Gloomhaven ist ein Spiel mit europäisch inspirierten taktischen Kämpfen in einer persistenten Welt mit wechselnden Motiven. Die Spieler schlüpfen in die Rolle eines wandernden Abenteurers mit eigenen speziellen Fähigkeiten und eigenen Gründen für die Reise in diese dunkle Ecke der Welt. Die Spieler müssen notgedrungen zusammenarbeiten, um bedrohliche Verliese und vergessene Ruinen auszuräumen.",
+    descriptionShortEn:
+      "Vanquish monsters with strategic cardplay. Fulfill your quest to leave your legacy!",
+    descriptionShortDe:
+      "Bezwinge Monster mit strategischem Kartenspiel. Erfülle deine Aufgabe, um dein Vermächtnis zu hinterlassen!",
+    conflict: 1,
+  },
+  id12333: {
+    name: "Twilight Struggle",
+    descriptionLongEn:
+      "Twilight Struggle is a two-player strategy board game that simulates the Cold War era. Players assume the roles of the United States or Soviet Union and compete for global influence by playing cards that represent historical events, leaders, and technologies. The game is known for its intricate gameplay, historical accuracy, and tense atmosphere.",
+    descriptionLongDe:
+      "Twilight Struggle ist ein Strategie-Brettspiel, das die Zeit des Kalten Krieges simuliert. Die Spieler schlüpfen in die Rollen der Vereinigten Staaten oder der Sowjetunion und konkurrieren um den globalen Einfluss, indem sie Karten ausspielen, die historische Ereignisse, Führer und Technologien darstellen. Das Spiel ist bekannt für sein komplexes Gameplay, seine historische Genauigkeit und seine spannungsgeladene Atmosphäre.",
+    descriptionShortEn:
+      "Relive the Cold War and rewrite history in an epic clash between the USA and USSR.",
+    descriptionShortDe:
+      "Erleben Sie den Kalten Krieg und schreiben Sie die Geschichte in einem epischen Kampf zwischen den USA und der UdSSR neu.",
+    conflict: -1,
+  },
+  id182028: {
+    name: "Through the Ages: A New Story of Civilization",
+    descriptionLongEn:
+      "Through the Ages: A New Story of Civilization is the new edition of Through the Ages: A Story of Civilization, with many changes small and large to the game's cards over its three ages and extensive changes to how military works.&#10;&#10;Through the Ages is a civilization building game. Each player attempts to build the best civilization through careful resource management, discovering new technologies, electing the right leaders, building wonders and maintaining a strong military.",
+    descriptionLongDe:
+      "Durch die Zeitalter: A New Story of Civilization ist die neue Ausgabe von Through the Ages: A Story of Civilization, mit vielen kleinen und großen Änderungen an den Spielkarten über die drei Zeitalter hinweg und umfangreichen Änderungen an der Funktionsweise des Militärs.&#10;&#10;Through the Ages ist ein Spiel zum Aufbau von Zivilisationen. Jeder Spieler versucht, die beste Zivilisation aufzubauen, indem er seine Ressourcen sorgfältig verwaltet, neue Technologien entdeckt, die richtigen Führer wählt, Wunder baut und ein starkes Militär unterhält.",
+    descriptionShortEn:
+      "Rewrite history as you build up your civilization in this epic card drafting game!",
+    descriptionShortDe:
+      "Schreibe die Geschichte neu, während du deine Zivilisation in diesem epischen Kartenspiel aufbaust!",
+    conflict: 0,
+  },
+  id266507: {
+    name: "Clank! Legacy: Acquisitions Incorporated",
+    descriptionLongEn:
+      "Clank! Legacy: Acquisitions Incorporated extends the deck-building fun of Clank! with legacy-style gameplay! Found your own franchise of the legendary adventuring company Acquisitions Incorporated, and shepherd your fledgling treasure-hunters to immortal corporate glory over the course of multiple games.",
+    descriptionLongDe:
+      "Clank! Legacy: Acquisitions Incorporated erweitert den Deck-Building-Spaß von Clank! um ein Spiel im Stil von Legacy! Gründen Sie Ihr eigenes Franchise des legendären Abenteurerunternehmens Acquisitions Incorporated und führen Sie Ihre jungen Schatzsucher im Laufe mehrerer Spiele zu unsterblichem Unternehmensruhm.",
+    descriptionShortEn:
+      "&quot;Go forth, be bold, and ACQUIRE!&quot; in this campaign version of &quot;Clank!&quot;",
+    descriptionShortDe:
+      "In dieser Kampagnenversion von &quot;Clank!&quot;Geh hinaus, sei kühn, und ERWERBE!&quot;;",
+    conflict: 0,
+  },
+  id341169: {
+    name: "Great Western Trail: Second Edition",
+    descriptionLongEn:
+      "America in the 19th century: You are a rancher and repeatedly herd your cattle from Texas to Kansas City, where you send them off by train. This earns you money and victory points. Needless to say, each time you arrive in Kansas City, you want to have your most valuable cattle in tow. However, the &quot;Great Western Trail&quot; not only requires that you keep your herd in good shape, but also that you wisely use the various buildings along the trail.",
+    descriptionLongDe:
+      "Amerika im 19. Jahrhundert: Sie sind Viehzüchter und treiben Ihre Rinder immer wieder von Texas nach Kansas City, wo Sie sie mit dem Zug wegschicken. Das bringt Ihnen Geld und Siegpunkte ein. Natürlich wollen Sie jedes Mal, wenn Sie in Kansas City ankommen, Ihre wertvollsten Rinder im Schlepptau haben. Der &quot;Great Western Trail&quot; erfordert jedoch nicht nur, dass Sie Ihre Herde in guter Verfassung halten, sondern auch, dass Sie die verschiedenen Gebäude entlang des Weges klug nutzen.",
+    descriptionShortEn:
+      "Wrangle your herd of cows across the Midwest prairie and deliver it to Kansas City.",
+    descriptionShortDe:
+      "Treiben Sie Ihre Kuhherde durch die Prärie des Mittleren Westens und bringen Sie sie nach Kansas City.",
+    conflict: 1,
+  },
+  id295770: {
+    name: "Frosthaven",
+    descriptionLongEn:
+      "Frosthaven is the story of a small outpost far to the north of the capital city of White Oak, an outpost barely surviving the harsh weather as well as invasions from forces both known and unknown. There, a group of mercenaries at the end of their rope will help bring back this settlement from the edge of destruction. Not only will they have to deal with the harsh elements, but there are other, far more dangerous threats out in the unforgiving cold as well.",
+    descriptionLongDe:
+      "Frosthaven ist die Geschichte eines kleinen Außenpostens weit im Norden der Hauptstadt White Oak, der nur knapp dem rauen Wetter und den Angriffen bekannter und unbekannter Mächte standhält. Eine Gruppe von Söldnern, die am Ende ihrer Kräfte sind, hilft dabei, diese Siedlung vor dem Untergang zu bewahren. Dabei müssen sie nicht nur mit den rauen Elementen fertig werden, sondern auch mit anderen, weitaus gefährlicheren Bedrohungen in der unbarmherzigen Kälte.",
+    descriptionShortEn:
+      "Adventure in the frozen north and build up your outpost throughout an epic campaign.",
+    descriptionShortDe:
+      "Erlebe Abenteuer im eisigen Norden und baue deinen Außenposten in einer epischen Kampagne auf.",
+    conflict: 1,
+  },
+  id96848: {
+    name: "Mage Knight Board Game",
+    descriptionLongEn:
+      "The Mage Knight board game puts you in control of one of four powerful Mage Knights as you explore (and conquer) a corner of the Mage Knight universe under the control of the Atlantean Empire. Build your army, fill your deck with powerful spells and actions, explore caves and dungeons, and eventually conquer powerful cities controlled by this once-great faction!  In competitive scenarios, opposing players may be powerful allies, but only one will be able to claim the land as their own.  In cooperative scenarios, the players win or lose as a group.  Solo rules are also included.&#10;&#10;Combining elements of RPGs, deck-building, and traditional board games the Mage Knight board game captures the rich history of the Mage Knight universe in a self-contained gaming experience.",
+    descriptionLongDe:
+      "Im Brettspiel Mage Knight übernimmst du die Kontrolle über einen von vier mächtigen Magierrittern und erkundest (und eroberst) eine Ecke des Mage Knight-Universums unter der Kontrolle des atlantischen Reiches. Bauen Sie Ihre Armee auf, füllen Sie Ihr Deck mit mächtigen Zaubersprüchen und Aktionen, erforschen Sie Höhlen und Verliese und erobern Sie schließlich mächtige Städte, die von dieser einst großartigen Fraktion kontrolliert werden!  In kompetitiven Szenarien können die gegnerischen Spieler mächtige Verbündete sein, aber nur einer wird das Land als sein eigenes beanspruchen können.  In kooperativen Szenarien gewinnen oder verlieren die Spieler als Gruppe.  Soloregeln sind ebenfalls enthalten.&#10;&#10;Das Mage Knight-Brettspiel kombiniert Elemente von Rollenspielen, Deckbuilding und traditionellen Brettspielen und fängt die reiche Geschichte des Mage Knight-Universums in einem in sich geschlossenen Spielerlebnis ein.",
+    descriptionShortEn:
+      "Build your hero’s spells, abilities, and artifacts as you explore & conquer cities.",
+    descriptionShortDe:
+      "Entwickle die Zaubersprüche, Fähigkeiten und Artefakte deines Helden, während du Städte erkundest und eroberst.",
+    conflict: 1,
+  },
+  id183394: {
+    name: "Viticulture Essential Edition",
+    descriptionLongEn:
+      "In Viticulture, the players find themselves in the roles of people in rustic, pre-modern Tuscany who have inherited meager vineyards. They have a few plots of land, an old crushpad, a tiny cellar, and three workers. They each have a dream of being the first to call their winery a true success.&#10;&#10;The players are in the position of determining how they want to allocate their workers throughout the year.",
+    descriptionLongDe:
+      "In Viticulture schlüpfen die Spieler in die Rolle von Menschen in der rustikalen, vormodernen Toskana, die karge Weinberge geerbt haben. Sie haben ein paar Parzellen, eine alte Kelter, einen winzigen Keller und drei Arbeiter. Jeder von ihnen träumt davon, der erste zu sein, der sein Weingut einen echten Erfolg nennen kann.&#10;&#10;Die Spieler sind in der Lage zu entscheiden, wie sie ihre Arbeiter während des Jahres einsetzen wollen.",
+    descriptionShortEn:
+      "Create the most prosperous winery in Italy from the Tuscan vineyard you've inherited.",
+    descriptionShortDe:
+      "Errichten Sie aus dem geerbten toskanischen Weinberg das wohlhabendste Weingut Italiens.",
+    conflict: 1,
+  },
+  id521: {
+    name: "Crokinole",
+    descriptionLongEn:
+      "Crokinole is a traditional dexterity game.&#10;&#10;Crokinole is played on a circular wooden board, with wooden circular disks as playing pieces.&#10;&#10;Players take turns shooting disks across the circular wooden board by flicking the disks with their fingers.  Players try to land their disks in scoring regions on the board, with the highest scoring area the recessed hole in the very center of the board.  Each round, each player/side alternately shoots a set number of disks (usually 12 or 8), shooting one disk each turn.",
+    descriptionLongDe:
+      "Crokinole ist ein traditionelles Geschicklichkeitsspiel. &#10;&#10;Crokinole wird auf einem runden Holzbrett mit runden Holzscheiben als Spielfiguren gespielt. &#10;&#10;Die Spieler schießen abwechselnd Scheiben über das runde Holzbrett, indem sie die Scheiben mit ihren Fingern schnippen.  Die Spieler versuchen, ihre Scheiben in die Wertungsbereiche auf dem Brett zu bringen, wobei der höchste Wertungsbereich das vertiefte Loch in der Mitte des Brettes ist.  In jeder Runde schießt jeder Spieler/jede Seite abwechselnd eine bestimmte Anzahl von Scheiben (in der Regel 12 oder 8), wobei er/sie in jeder Runde eine Scheibe schießt.",
+    descriptionShortEn:
+      "Flick discs and make trick shots in this traditional Canadian dexterity game!",
+    descriptionShortDe:
+      "In diesem traditionellen kanadischen Geschicklichkeitsspiel werden Scheiben geschnippt und Trickschüsse ausgeführt!",
+    conflict: 1,
+  },
+  id185343: {
+    name: "Anachrony",
+    descriptionLongEn:
+      "It is the late 26th century. Earth is recovering from a catastrophic explosion that exterminated the majority of the population centuries ago and made most of the surface uninhabitable due to unearthly weather conditions. The surviving humans organized along four radically different ideologies, called Paths, to rebuild the world as they see fit: Harmony, Dominance, Progress, and Salvation.",
+    descriptionLongDe:
+      "Wir schreiben das späte 26. Jahrhundert. Die Erde erholt sich von einer katastrophalen Explosion, die vor Jahrhunderten den Großteil der Bevölkerung auslöschte und den größten Teil der Oberfläche durch unheimliche Wetterbedingungen unbewohnbar machte. Die überlebenden Menschen haben sich in vier radikal unterschiedlichen Ideologien, den so genannten Pfaden, organisiert, um die Welt nach ihren Vorstellungen neu zu gestalten: Harmonie, Dominanz, Fortschritt und Erlösung.",
+    descriptionShortEn:
+      "Use Exosuits & time travel to ensure your vision for the future after the cataclysm.",
+    descriptionShortDe:
+      "Nutzen Sie Exosuits und Zeitreisen, um Ihre Vision für die Zukunft nach dem Kataklysmus zu sichern.",
+    conflict: 0,
+  },
+  id314040: {
+    name: "Pandemic Legacy: Season 0",
+    descriptionLongEn:
+      "1962 &mdash; The Cold War continues as a new threat looms on the horizon, a deadly new Soviet bioweapon, something called &quot;Project MEDUSA&quot;. You and your fellow medical graduates have been recruited by the CIA for the critical mission of investigating and preventing its development. Travel the world using carefully constructed aliases to move swiftly between Allied, Neutral, and Soviet cities.",
+    descriptionLongDe:
+      "1962 &mdash; Der Kalte Krieg geht weiter, als eine neue Bedrohung am Horizont auftaucht, eine tödliche neue sowjetische Biowaffe, genannt &quot;Projekt MEDUSA&quot;. Sie und Ihre Kommilitonen mit Medizinabschluss wurden von der CIA rekrutiert, um die Entwicklung dieser Waffe zu untersuchen und zu verhindern. Sie reisen durch die Welt und benutzen sorgfältig konstruierte Decknamen, um sich schnell zwischen alliierten, neutralen und sowjetischen Städten zu bewegen.",
+    descriptionShortEn:
+      "Work together during the Cold War to prevent a Soviet bio-threat.",
+    descriptionShortDe:
+      "Arbeiten Sie während des Kalten Krieges zusammen, um eine sowjetische Bio-Bedrohung zu verhindern.",
+    conflict: 1,
+  },
+  id255984: {
+    name: "Sleeping Gods",
+    descriptionLongEn:
+      "&quot;Are the stars unfamiliar here?&quot; she asked, and the sky grew suddenly dark, the star's patterns alien and exotic. &quot;This is the Wandering Sea. The gods have brought you here, and you must wake them if you wish to return home.&quot;&#10;&#10;In Sleeping Gods, you and up to 3 friends become Captain Sofi Odessa and her crew, lost in a strange world in 1929 on your steamship, the Manticore.",
+    descriptionLongDe:
+      "&quot;Sind die Sterne hier fremd?&quot; fragte sie, und der Himmel wurde plötzlich dunkel, die Muster der Sterne fremd und exotisch. &quot;Dies ist das wandernde Meer. Die Götter haben dich hierher gebracht, und du musst sie aufwecken, wenn du nach Hause zurückkehren willst. &quot;&#10;&#10;In Sleeping Gods schlüpfen du und bis zu 3 Freunde in die Rolle von Kapitänin Sofi Odessa und ihrer Mannschaft, die sich im Jahr 1929 auf ihrem Dampfschiff, der Manticore, in einer fremden Welt verirrt haben.",
+    descriptionShortEn:
+      "Voyages of the steamship &quot;Manticore&quot; and her crew on the Wandering Sea.",
+    descriptionShortDe:
+      "Reisen des Dampfschiffs &quot;Manticore&quot; und seiner Besatzung auf dem wandernden Meer.",
+    conflict: 1,
+  },
+  id221107: {
+    name: "Pandemic Legacy: Season 2",
+    descriptionLongEn:
+      "Description from the publisher:&#10;&#10;The world almost ended 71 years ago...&#10;&#10;The plague came out of nowhere and ravaged the world. Most died within a week. Nothing could stop it.",
+    descriptionLongDe:
+      "Beschreibung des Verlags:&#10;&#10;Vor 71 Jahren wäre die Welt fast untergegangen... &#10;&#10;Die Pest kam aus dem Nichts und verwüstete die Welt. Die meisten starben innerhalb einer Woche. Nichts konnte sie aufhalten.",
+    descriptionShortEn:
+      "The world is a mystery after a devastating pandemic—where will your team go?",
+    descriptionShortDe:
+      "Die Welt ist nach einer verheerenden Pandemie ein Rätsel - wohin wird Ihr Team gehen?",
+    conflict: 1,
+  },
+  id231733: {
+    name: "Obsession",
+    descriptionLongEn:
+      "You are the head of a respected but troubled family estate in mid-19th century Victorian England. After several lean decades, family fortunes are looking up! Your goal is to improve your estate so as to be in better standing with the truly influential families in Derbyshire.&#10;&#10;Obsession is a game of 16 to 20 turns in which players build a deck of Victorian gentry (British social upper class), renovate their estate by acquiring building tiles from a centralized builders' market, and manipulate an extensive service staff of butlers, housekeepers, underbutlers, maids, valets, and footmen utilizing a novel worker placement mechanic.",
+    descriptionLongDe:
+      "Sie sind das Oberhaupt eines angesehenen, aber angeschlagenen Familienbesitzes im viktorianischen England Mitte des 19. Jahrhunderts. Nach mehreren mageren Jahrzehnten geht es mit dem Familienvermögen wieder aufwärts! Ihr Ziel ist es, Ihr Anwesen so zu verbessern, dass Sie bei den wirklich einflussreichen Familien in Derbyshire besser dastehen.&#10;&#10;Obsession ist ein Spiel mit 16 bis 20 Runden, in dem die Spieler ein Deck der viktorianischen Gentry (britische gesellschaftliche Oberschicht) aufbauen, ihr Anwesen renovieren, indem sie Gebäudeplättchen von einem zentralen Baumarkt erwerben, und ein umfangreiches Servicepersonal aus Butlern, Haushältern, Unterbutlern, Dienstmädchen, Dienern und Lakaien mit Hilfe einer neuartigen Mechanik für die Platzierung von Arbeitern manipulieren.",
+    descriptionShortEn:
+      "Renovate an estate, manage servants, and pursue romance in Victorian England.",
+    descriptionShortDe:
+      "Renovieren Sie ein Anwesen, verwalten Sie Bedienstete und gehen Sie einer Romanze im viktorianischen England nach.",
+    conflict: 0,
+  },
+  id276025: {
+    name: "Maracaibo",
+    descriptionLongEn:
+      "Maracaibo, a strategy game for 1-4 players by Alexander Pfister, is set in the Caribbean during the 17th century. The players try to increase their influence in three nations in four rounds with a play time of 40 minutes per player.&#10;&#10;The players sail on a round course through the Caribbean, e.g., you have city tiles where you are able to perform various&nbsp;actions or deliver goods to.",
+    descriptionLongDe:
+      "Maracaibo, ein Strategiespiel für 1-4 Spieler von Alexander Pfister, spielt in der Karibik im 17. Jahrhundert. Die Spieler versuchen in vier Runden mit einer Spielzeit von 40 Minuten pro Spieler ihren Einfluss in drei Nationen zu vergrößern.&#10;&#10;Die Spieler segeln auf einem Rundkurs durch die Karibik, z.B. haben Sie Stadtplättchen, in denen Sie verschiedene&nbsp;Aktionen durchführen oder Waren liefern können.",
+    descriptionShortEn:
+      "Seafarers journey to obtain wealth and fame in the 17th century Caribbean.",
+    descriptionShortDe:
+      "Seefahrer auf der Suche nach Reichtum und Ruhm in der Karibik des 17. Jahrhunderts.",
+    conflict: 0,
+  },
+  id2651: {
+    name: "Power Grid",
+    descriptionLongEn:
+      "Power Grid is the updated release of the Friedemann Friese crayon game Funkenschlag. It removes the crayon aspect from network building in the original edition, while retaining the fluctuating commodities market like Crude: The Oil Game and an auction round intensity reminiscent of The Princes of Florence.&#10;&#10;The objective of Power Grid is to supply the most cities with power when someone's network gains a predetermined size.  In this new edition, players mark pre-existing routes between cities for connection, and then bid against each other to purchase the power plants that they use to power their cities.",
+    descriptionLongDe:
+      "Power Grid ist die aktualisierte Version des Friedemann Friese Buntstiftspiels Funkenschlag. Es entfernt den Buntstift-Aspekt aus dem Netzwerkaufbau der Originalausgabe, während der schwankende Rohstoffmarkt wie bei Crude: The Oil Game und die Intensität der Auktionsrunden, die an Die Prinzen von Florenz erinnern, beibehalten wurden.&#10;&#10;Das Ziel von Power Grid ist es, die meisten Städte mit Strom zu versorgen, wenn das Netzwerk eines Spielers eine bestimmte Größe erreicht.  In dieser neuen Ausgabe markieren die Spieler bereits bestehende Routen zwischen Städten, um sie miteinander zu verbinden, und bieten dann gegeneinander, um die Kraftwerke zu kaufen, mit denen sie ihre Städte versorgen.",
+    descriptionShortEn:
+      "Bid, network, and manage resources in a race to supply the most cities with power.",
+    descriptionShortDe:
+      "Bieten, vernetzen und verwalten Sie Ressourcen in einem Wettlauf um die Versorgung der meisten Städte mit Energie.",
+    conflict: 1,
+  },
+  id35677: {
+    name: "Le Havre",
+    descriptionLongEn:
+      "In Le Havre, a player's turn consists of two parts: First, distribute newly supplied goods onto the offer spaces; then take an action. As an action, players may choose either to take all goods of one type from an offer space or to use one of the available buildings. Building actions allow players to upgrade goods, sell them or use them to build their own buildings and ships.",
+    descriptionLongDe:
+      "In Le Havre besteht der Zug eines Spielers aus zwei Teilen: Zuerst verteilt er die neu gelieferten Waren auf die Angebotsfelder und führt dann eine Aktion durch. Als Aktion können die Spieler entweder alle Waren eines Typs von einem Angebotsfeld nehmen oder eines der verfügbaren Gebäude nutzen. Gebäudeaktionen erlauben es den Spielern, Waren aufzuwerten, zu verkaufen oder sie zum Bau eigener Gebäude und Schiffe zu verwenden.",
+    descriptionShortEn:
+      "Establish a supply chain by collecting resources, building industries, and shipping.",
+    descriptionShortDe:
+      "Bauen Sie eine Lieferkette auf, indem Sie Ressourcen sammeln, Industrien aufbauen und versenden.",
+    conflict: 0,
+  },
+  id266810: {
+    name: "Paladins of the West Kingdom",
+    descriptionLongEn:
+      "Paladins of the West Kingdom is set at a turbulent time of West Francia's story, circa 900 AD. Despite recent efforts to develop the city, outlying townships are still under threat from outsiders. Saracens scout the borders, while Vikings plunder wealth and livestock. Even the Byzantines from the east have shown their darker side.",
+    descriptionLongDe:
+      "Paladins of the West Kingdom spielt in einer turbulenten Zeit der Geschichte Westfrankreichs, um 900 nach Christus. Trotz der jüngsten Bemühungen, die Stadt zu entwickeln, sind die abgelegenen Dörfer immer noch von Außenstehenden bedroht. Sarazenen kundschaften die Grenzen aus, während Wikinger Reichtum und Viehbestand plündern. Selbst die Byzantiner aus dem Osten haben sich von ihrer dunklen Seite gezeigt.",
+    descriptionShortEn:
+      "Invaders are coming from everywhere.  Keep the faith and defend your homeland.",
+    descriptionShortDe:
+      "Die Invasoren kommen von überall her.  Bleibt im Glauben und verteidigt eure Heimat.",
+    conflict: 0,
+  },
+  id125153: {
+    name: "The Gallerist",
+    descriptionLongEn:
+      "This age of art and capitalism has created a need for a new occupation - The Gallerist.&#10;&#10;Combining the elements of an Art dealer, museum curator, and Artists&rsquo; manager, you are about to take on that job! You will promote and nurture Artists; buy, display, and sell their Art; and build and exert your international reputation.",
+    descriptionLongDe:
+      "Das Zeitalter der Kunst und des Kapitalismus hat einen Bedarf für einen neuen Beruf geschaffen - den des Galeristen&#10;&#10;Indem Sie die Elemente eines Kunsthändlers, Museumskurators und Künstlermanagers kombinieren, sind Sie dabei, diesen Job zu übernehmen! Sie werden Künstler fördern und betreuen, ihre Kunst kaufen, ausstellen und verkaufen und Ihren internationalen Ruf aufbauen und ausüben.",
+    descriptionShortEn:
+      "Amass a fortune, and stake your reputation by operating a lucrative art gallery.",
+    descriptionShortDe:
+      "Erwerben Sie ein Vermögen und setzen Sie Ihren Ruf aufs Spiel, indem Sie eine lukrative Kunstgalerie betreiben.",
+    conflict: 0,
+  },
+  id164153: {
+    name: "Star Wars: Imperial Assault",
+    descriptionLongEn:
+      "Star Wars: Imperial Assault is a strategy board game of tactical combat and missions for two to five players, offering two distinct games of battle and adventure in the Star Wars universe!&#10;&#10;Imperial Assault puts you in the midst of the Galactic Civil War between the Rebel Alliance and the Galactic Empire after the destruction of the Death Star over Yavin 4. In this game, you and your friends can participate in two separate games.",
+    descriptionLongDe:
+      "Star Wars: Imperial Assault ist ein Strategie-Brettspiel mit taktischen Kämpfen und Missionen für zwei bis fünf Spieler, das zwei unterschiedliche Spiele mit Kämpfen und Abenteuern im Star Wars-Universum bietet!&#10;&#10;Imperial Assault versetzt Sie mitten in den Galaktischen Bürgerkrieg zwischen der Rebellenallianz und dem Galaktischen Imperium nach der Zerstörung des Todessterns auf Yavin 4. In diesem Spiel können Sie und Ihre Freunde an zwei separaten Spielen teilnehmen.",
+    descriptionShortEn:
+      "Play as Rebel or Imperial forces to fulfill mission objectives.",
+    descriptionShortDe:
+      "Spielen Sie als rebellische oder imperiale Streitkräfte, um Missionsziele zu erfüllen.",
+    conflict: -1,
+  },
+  id251661: {
+    name: "Oathsworn: Into the Deepwood",
+    descriptionLongEn:
+      "Oathsworn is a Twisting Tales Game for 1-4 players where play is focused on narrative choices and rich miniature combat encounters. The game is set in the Deepwood where a Free company (the Oathsworn) fights for humanity's survival against unnatural horrors and the Deepwood itself.&#10;&#10;Each gaming session sees the players participate in a multi path game book where the story unfolds to an inevitable encounter.",
+    descriptionLongDe:
+      "Oathsworn ist ein Twisting Tales Game für 1-4 Spieler, bei dem sich das Spiel auf erzählerische Entscheidungen und reichhaltige Miniaturkampfbegegnungen konzentriert. Das Spiel ist im Deepwood angesiedelt, wo eine Freie Kompanie (die Oathsworn) um das Überleben der Menschheit gegen unnatürliche Schrecken und den Deepwood selbst kämpft.&#10;&#10;In jeder Spielsitzung nehmen die Spieler an einem Spielbuch mit mehreren Pfaden teil, in dem sich die Geschichte zu einer unausweichlichen Begegnung entwickelt.",
+    descriptionShortEn:
+      "Fight for humanity's survival against unnatural horrors and the Deepwood itself.",
+    descriptionShortDe:
+      "Kämpfen Sie um das Überleben der Menschheit gegen unnatürliche Schrecken und den Deepwood selbst.",
+    conflict: 1,
+  },
+  id55690: {
+    name: "Kingdom Death: Monster",
+    descriptionLongEn:
+      "Kingdom Death: Monster is a fully cooperative tabletop hobby game experience.  Set in a unique nightmarish world devoid of most natural resources, you control a settlement at the dawn of its existence. Fight monsters, craft weapons and gear, and develop your settlement to ensure your survival from generation to generation.&#10;&#10;Campaign System&#10;Embark alone or with up to 3 friends (5 with game variant) on a 5-30-lantern-year campaign, with each year consisting of a cycle of hunt, showdown, and settlement phases.",
+    descriptionLongDe:
+      "Kingdom Death: Monster ist ein vollständig kooperatives Tabletop-Hobbyspiel-Erlebnis.  In einer einzigartigen, alptraumhaften Welt, in der es kaum natürliche Ressourcen gibt, steuern Sie eine Siedlung in den Anfängen ihrer Existenz. Kämpfe gegen Monster, stelle Waffen und Ausrüstung her und baue deine Siedlung aus, um dein Überleben von Generation zu Generation zu sichern.&#10;&#10;Kampagnensystem&#10;Begib dich allein oder mit bis zu 3 Freunden (5 mit der Spielvariante) auf eine 5-30-Laternen-Jahres-Kampagne, wobei jedes Jahr aus einem Zyklus von Jagd-, Showdown- und Siedlungsphasen besteht.",
+    descriptionShortEn:
+      "Try to survive in a nightmarish world that lies under eternal darkness.",
+    descriptionShortDe:
+      "Versuchen Sie, in einer alptraumhaften Welt zu überleben, die in ewiger Dunkelheit liegt.",
+    conflict: 1,
+  },
+  id321608: {
+    name: "Hegemony: Lead Your Class to Victory",
+    descriptionLongEn:
+      "Extended edition includes Crisis &amp; Control expansion.&#10;&#10;&#10;The Nation is in disarray and a war is waging between the classes. The working class faces a dismantled welfare system, the capitalists are losing their hard-earned profits, the middle class is gradually fading and the state is sinking into a deep deficit.",
+    descriptionLongDe:
+      "Die erweiterte Ausgabe enthält die Erweiterung Crisis & Control. &#10;&#10;&#10;&#10;Die Nation ist in Aufruhr und es herrscht ein Krieg zwischen den Klassen. Die Arbeiterklasse sieht sich mit einem demontierten Sozialsystem konfrontiert, die Kapitalisten verlieren ihre hart verdienten Gewinne, die Mittelschicht schwindet allmählich und der Staat versinkt in einem tiefen Defizit.",
+    descriptionShortEn:
+      "Simulate a whole contemporary nation in this asymmetric, politico-economic euro-game.",
+    descriptionShortDe:
+      "Simulieren Sie eine ganze zeitgenössische Nation in diesem asymmetrischen, politisch-ökonomischen Euro-Spiel.",
+    conflict: -1,
+  },
+  id200680: {
+    name: "Agricola (Revised Edition)",
+    descriptionLongEn:
+      "Updated and streamlined for a new generation of players, Agricola, the award-winning and highly acclaimed game by Uwe Rosenberg, features a revised rulebook and gameplay, along with wood pieces and components for up to four players.&#10;&#10;The 17th century was not an easy time to be a farmer.  A game for 1-4 players ages 12 and up; play time is 30 minutes per player. Amazing replay value.",
+    descriptionLongDe:
+      "Agricola, das preisgekrönte und hochgelobte Spiel von Uwe Rosenberg, wurde für eine neue Generation von Spielern aktualisiert und gestrafft und bietet ein überarbeitetes Regelwerk und Gameplay sowie Holzteile und Komponenten für bis zu vier Spieler.&#10;&#10;Das 17.  Ein Spiel für 1-4 Spieler ab 12 Jahren; die Spielzeit beträgt 30 Minuten pro Spieler. Erstaunlicher Wiederspielwert.",
+    descriptionShortEn:
+      "Help your farm to prosper in this updated, streamlined edition of the acclaimed game.",
+    descriptionShortDe:
+      "Helfen Sie Ihrer Farm, in dieser aktualisierten, optimierten Ausgabe des gefeierten Spiels zu gedeihen.",
+    conflict: 0,
+  },
+  id157354: {
+    name: "Five Tribes: The Djinns of Naqala",
+    descriptionLongEn:
+      "Crossing into the Land of 1001 Nights, your caravan arrives at the fabled Sultanate of Naqala. The old sultan just died and control of Naqala is up for grabs! The oracles foretold of strangers who would maneuver the Five Tribes to gain influence over the legendary city-state. Will you fulfill the prophecy?",
+    descriptionLongDe:
+      "Auf der Durchreise ins Land von 1001 Nacht erreicht Ihre Karawane das sagenumwobene Sultanat von Naqala. Der alte Sultan ist gerade gestorben und die Kontrolle über Naqala steht zur Disposition! Die Orakel sagten Fremde voraus, die die Fünf Stämme manipulieren würden, um Einfluss auf den legendären Stadtstaat zu gewinnen. Werden Sie die Prophezeiung erfüllen?",
+    descriptionShortEn:
+      "Move assassins, elders & builders through Naqala to claim oases & control djinns.",
+    descriptionShortDe:
+      "Bewege Meuchelmörder, Älteste und Baumeister durch Naqala, um Oasen zu erobern und Dschinns zu kontrollieren.",
+    conflict: 1,
+  },
+  id72125: {
+    name: "Eclipse: New Dawn for the Galaxy",
+    descriptionLongEn:
+      "The galaxy has been a peaceful place for many years. After the ruthless Terran&ndash;Hegemony War (30.027&ndash;33.364), much effort has been employed by all major spacefaring species to prevent the terrifying events from repeating themselves. The Galactic Council was formed to enforce precious peace, and it has taken many courageous efforts to prevent the escalation of malicious acts.",
+    descriptionLongDe:
+      "Die Galaxis ist seit vielen Jahren ein friedlicher Ort. Nach dem unbarmherzigen Terranischen&ndash;Hegemoniekrieg (30.027&ndash;33.364) haben alle großen raumfahrenden Spezies große Anstrengungen unternommen, um zu verhindern, dass sich die schrecklichen Ereignisse wiederholen. Der Galaktische Rat wurde gegründet, um den kostbaren Frieden durchzusetzen, und es bedurfte vieler mutiger Anstrengungen, um eine Eskalation der bösartigen Handlungen zu verhindern.",
+    descriptionShortEn:
+      "Build an interstellar civilization by exploration, research, conquest, and diplomacy.",
+    descriptionShortDe:
+      "Bauen Sie eine interstellare Zivilisation durch Erkundung, Forschung, Eroberung und Diplomatie auf.",
+    conflict: -1,
+  },
+  id110327: {
+    name: "Lords of Waterdeep",
+    descriptionLongEn:
+      "Game description from the publisher:&#10;&#10;Waterdeep, the City of Splendors &ndash; the most resplendent jewel in the Forgotten Realms, and a den of political intrigue and shady back-alley dealings. In this game, the players are powerful lords vying for control of this great city. Its treasures and resources are ripe for the taking, and that which cannot be gained through trickery and negotiation must be taken by force!",
+    descriptionLongDe:
+      "Spielbeschreibung des Herausgebers: &#10;&#10;Waterdeep, die Stadt der Pracht &ndash; das prächtigste Juwel der Vergessenen Reiche und ein Hort politischer Intrigen und zwielichtiger Hinterzimmergeschäfte. In diesem Spiel sind die Spieler mächtige Lords, die um die Kontrolle über diese großartige Stadt kämpfen. Ihre Schätze und Ressourcen sind reif für die Übernahme, und was nicht durch Tricks und Verhandlungen gewonnen werden kann, muss mit Gewalt genommen werden!",
+    descriptionShortEn:
+      "Deploy agents and hire adventurers to expand your control over the city of Waterdeep.",
+    descriptionShortDe:
+      "Setzen Sie Agenten ein und heuern Sie Abenteurer an, um Ihre Kontrolle über die Stadt Waterdeep zu erweitern.",
+    conflict: 0,
+  },
+  id62219: {
+    name: "Dominant Species",
+    descriptionLongEn:
+      "90,000 B.C. &mdash; A great ice age is fast approaching. Another titanic struggle for global supremacy has unwittingly commenced between the varying animal species. &#10;Dominant Species is a game that abstractly recreates a tiny portion of ancient history: the ponderous encroachment of an ice age and what that entails for the living creatures trying to adapt to the slowly-changing earth. &#10;Each player will assume the role of one of six major animal classes&mdash;mammal, reptile, bird, amphibian, arachnid, or insect. Each begins the game more or less in a state of natural balance in relation to one another.",
+    descriptionLongDe:
+      "90.000 v. Chr. &mdash; Eine große Eiszeit steht kurz bevor. Ein weiterer titanischer Kampf um die globale Vorherrschaft hat unwissentlich zwischen den verschiedenen Tierarten begonnen. &#10;Dominant Species ist ein Spiel, das auf abstrakte Weise einen winzigen Teil der antiken Geschichte nachstellt: das schwerfällige Vordringen einer Eiszeit und was dies für die Lebewesen bedeutet, die versuchen, sich an die sich langsam verändernde Erde anzupassen. &#10;Jeder Spieler übernimmt die Rolle einer der sechs großen Tierklassen&mdash;Säugetier, Reptil, Vogel, Amphibie, Spinnentier oder Insekt. Jede beginnt das Spiel mehr oder weniger in einem Zustand des natürlichen Gleichgewichts zueinander.",
+    descriptionShortEn:
+      "With an ice age approaching, which animals will best propagate, migrate, and adapt?",
+    descriptionShortDe:
+      "Welche Tiere können sich angesichts der nahenden Eiszeit am besten fortpflanzen, wandern und anpassen?",
+    conflict: -1,
+  },
+  id171623: {
+    name: "The Voyages of Marco Polo",
+    descriptionLongEn:
+      "In 1271, 17-year-old Marco Polo started on a journey to China with his father and older brother. After a long and grueling journey that led through Jerusalem and Mesopotamia and over the &quot;Silk Road&quot;, they reached the court of Kublai Khan in 1275.&#10;&#10;In The Voyages of Marco Polo, players recreate this journey, with each player having a different character from history with a special power in the game.",
+    descriptionLongDe:
+      "Im Jahr 1271 brach der 17-jährige Marco Polo mit seinem Vater und seinem älteren Bruder zu einer Reise nach China auf. Nach einer langen und zermürbenden Reise, die durch Jerusalem, Mesopotamien und über die Seidenstraße führte, erreichten sie 1275 den Hof von Kublai Khan. In The Voyages of Marco Polo spielen die Spieler diese Reise nach, wobei jeder Spieler einen anderen Charakter aus der Geschichte mit einer besonderen Fähigkeit im Spiel hat.",
+    descriptionShortEn:
+      "Using unique abilities, fulfill contracts and reach your goals along the Silk Road.",
+    descriptionShortDe:
+      "Erfüllen Sie mit einzigartigen Fähigkeiten Verträge und erreichen Sie Ihre Ziele entlang der Seidenstraße.",
+    conflict: 0,
+  },
+  id279537: {
+    name: "The Search for Planet X",
+    descriptionLongEn:
+      "At the edge of our solar system, a dark planet may lurk. In 2015, astronomers estimated a large distant planet could explain the unique orbits of dwarf planets and other objects. Since then, astronomers have been scanning the sky, hoping to find this planet.&#10;&#10;In The Search for Planet X, players take on the role of astronomers who use observations and logical deductions to search for this hypothetical planet.",
+    descriptionLongDe:
+      "Am Rande unseres Sonnensystems könnte ein dunkler Planet lauern. Im Jahr 2015 schätzten Astronomen, dass ein großer, weit entfernter Planet die einzigartigen Umlaufbahnen von Zwergplaneten und anderen Objekten erklären könnte. Seitdem durchforsten Astronomen den Himmel in der Hoffnung, diesen Planeten zu finden.&#10;&#10;In The Search for Planet X schlüpfen die Spieler in die Rolle von Astronomen, die anhand von Beobachtungen und logischen Schlussfolgerungen nach diesem hypothetischen Planeten suchen.",
+    descriptionShortEn:
+      "Plan, scan, and theorize to find a new planet at the edge of our solar system.",
+    descriptionShortDe:
+      "Planen, scannen und theoretisieren Sie, um einen neuen Planeten am Rande unseres Sonnensystems zu finden.",
+    conflict: 1,
+  },
+  id256916: {
+    name: "Concordia Venus",
+    descriptionLongEn:
+      "Concordia Venus is a standalone reimplementation of Concordia with some added features.&#10;&#10;Concordia Venus is a peaceful strategy game of economic development in Roman times for 2-6 players aged 13 and up. Instead of looking to the luck of dice or cards, players must rely on their strategic abilities.",
+    descriptionLongDe:
+      "Concordia Venus ist eine eigenständige Neuimplementierung von Concordia mit einigen zusätzlichen Funktionen.&#10;&#10;Concordia Venus ist ein friedliches Strategiespiel zur wirtschaftlichen Entwicklung in der Römerzeit für 2-6 Spieler ab 13 Jahren. Anstatt auf Würfel- oder Kartenglück zu setzen, müssen sich die Spieler auf ihre strategischen Fähigkeiten verlassen.",
+    descriptionShortEn:
+      "Traders compete to build the greatest empire in the Roman Mediterranean.",
+    descriptionShortDe:
+      "Händler konkurrieren um den Aufbau des größten Imperiums im römischen Mittelmeerraum.",
+    conflict: 1,
+  },
+  id163068: {
+    name: "Trickerion: Legends of Illusion",
+    descriptionLongEn:
+      "Trickerion is a competitive Euro-style strategy game set in a fictional world inspired by the late 19th century urban life and culture, spiced with a pinch of supernatural.&#10;&#10;Players take on the roles of rival stage illusionists, each with their own strengths and characteristics. They are striving for fortune and fame in a competition hosted by a legendary magician, looking for a successor worthy of the mighty Trickerion Stone, which is fabled to grant supernatural power to its owner.",
+    descriptionLongDe:
+      "Trickerion ist ein wettbewerbsorientiertes Strategiespiel im europäischen Stil, das in einer fiktiven Welt angesiedelt ist, die vom städtischen Leben und der Kultur des späten 19. Jahrhunderts inspiriert und mit einer Prise Übernatürlichem gewürzt ist. Die Spieler schlüpfen in die Rollen rivalisierender Bühnenillusionisten, jeder mit seinen eigenen Stärken und Eigenschaften. Sie streben nach Reichtum und Ruhm in einem Wettbewerb, der von einem legendären Magier ausgerichtet wird, der einen Nachfolger sucht, der des mächtigen Steins von Trickerion würdig ist, von dem es heißt, dass er seinem Besitzer übernatürliche Kräfte verleiht.",
+    descriptionShortEn:
+      "Magicians perform dazzling tricks for money and fame in a Victorian steampunk world.",
+    descriptionShortDe:
+      "In einer viktorianischen Steampunk-Welt führen Magier verblüffende Tricks für Geld und Ruhm auf.",
+    conflict: 0,
+  },
+  id122515: {
+    name: "Keyflower",
+    descriptionLongEn:
+      "Keyflower is a game for two to six players played over four rounds. Each round represents a season: spring, summer, autumn, and finally winter. Each player starts the game with a &quot;home&quot; tile and an initial team of eight workers, each of which is colored red, yellow, or blue. Workers of matching colors are used by the players to bid for tiles to add to their villages.",
+    descriptionLongDe:
+      "Keyflower ist ein Spiel für zwei bis sechs Spieler, das über vier Runden gespielt wird. Jede Runde steht für eine Jahreszeit: Frühling, Sommer, Herbst und schließlich Winter. Jeder Spieler beginnt das Spiel mit einem Heimatplättchen und einem anfänglichen Team von acht Arbeitern, von denen jeder rot, gelb oder blau gefärbt ist. Arbeiter der gleichen Farbe werden von den Spielern eingesetzt, um auf Plättchen zu bieten, die sie zu ihren Dörfern hinzufügen.",
+    descriptionShortEn:
+      "Compete in a unique auction system to build the most prosperous village.",
+    descriptionShortDe:
+      "Wetteifern Sie in einem einzigartigen Auktionssystem um den Aufbau des wohlhabendsten Dorfes.",
+    conflict: 1,
+  },
+  id383179: {
+    name: "Age of Innovation",
+    descriptionLongEn:
+      "Age of Innovation is a standalone game set in the world of Terra Mystica.&#10;&#10;Twelve factions, each with unique characteristics, populate this world of varying terrains. Here you will compete to erect buildings and merge them into cities. Each game allows you to create new combinations of factions, homelands, and abilities so that each game isn't the same as another.",
+    descriptionLongDe:
+      "Age of Innovation ist ein eigenständiges Spiel, das in der Welt von Terra Mystica angesiedelt ist &#10;&#10;Zwölf Fraktionen, jede mit einzigartigen Eigenschaften, bevölkern diese Welt mit unterschiedlichen Terrains. Hier wetteifern Sie darum, Gebäude zu errichten und sie zu Städten zusammenzufügen. In jedem Spiel können Sie neue Kombinationen von Fraktionen, Heimatländern und Fähigkeiten erstellen, so dass kein Spiel dem anderen gleicht.",
+    descriptionShortEn:
+      "Terraform the world to expand your faction and create innovations on the way.",
+    descriptionShortDe:
+      "Terraforme die Welt, um deine Fraktion zu erweitern und erschaffe auf dem Weg dorthin Innovationen.",
+    conflict: 0,
+  },
+  id170042: {
+    name: "Raiders of the North Sea",
+    descriptionLongEn:
+      "Raiders of the North Sea is set in the central years of the Viking Age. As Viking warriors, players seek to impress the Chieftain by raiding unsuspecting settlements. To do so, players need to assemble a crew, collect provisions, and journey north to plunder gold, iron and livestock. Glory can be found in battle, even at the hands of the Valkyrie, so gather your warriors because it's raiding season!",
+    descriptionLongDe:
+      "Raiders of the North Sea spielt in den mittleren Jahren der Wikingerzeit. Als Wikingerkrieger versuchen die Spieler, den Häuptling zu beeindrucken, indem sie ahnungslose Siedlungen überfallen. Dazu müssen die Spieler eine Mannschaft zusammenstellen, Vorräte sammeln und nach Norden reisen, um Gold, Eisen und Vieh zu plündern. Ruhm kann in der Schlacht errungen werden, sogar durch die Hand der Walküre, also versammelt eure Krieger, denn es ist Raubzugssaison!",
+    descriptionShortEn:
+      "Gather your Viking crew in order to plunder seas and lands for glory!",
+    descriptionShortDe:
+      "Versammle deine Wikingermannschaft, um Meere und Länder zu plündern und Ruhm zu erlangen!",
+    conflict: 1,
+  },
+  id332772: {
+    name: "Revive",
+    descriptionLongEn:
+      "Revive civilization, 5000 years after everything was destroyed. Lead your tribe and explore the frozen earth. Harness its resources. Recruit surface survivors to your cause.",
+    descriptionLongDe:
+      "Beleben Sie die Zivilisation wieder, 5000 Jahre nachdem alles zerstört wurde. Führe deinen Stamm an und erkunde die gefrorene Erde. Machen Sie sich ihre Ressourcen zunutze. Rekrutiere Überlebende von der Oberfläche für deine Sache.",
+    descriptionShortEn:
+      "Revive civilization, 5000 years after the fall of humankind.",
+    descriptionShortDe:
+      "Wiederbelebung der Zivilisation, 5000 Jahre nach dem Untergang der Menschheit.",
+    conflict: 1,
+  },
+  id18602: {
+    name: "Caylus",
+    descriptionLongEn:
+      "Once upon a time ...&#10;1289. To strengthen the borders of the Kingdom of France, King Philip the Fair decided to have a new castle built. For the time being, Caylus is but a humble village, but soon, workers and craftsmen will be flocking by the cartload, attracted by the great prospects.",
+    descriptionLongDe:
+      "Es war einmal ...&#10;1289. Um die Grenzen des Königreichs Frankreich zu stärken, beschließt König Philipp der Schöne, eine neue Burg errichten zu lassen. Vorerst ist Caylus nur ein bescheidenes Dorf, doch schon bald strömen Arbeiter und Handwerker in Scharen herbei, angezogen von den großartigen Aussichten.",
+    descriptionShortEn:
+      "Entrepreneurs pay workers & bribe an official to build a Château & gain royal favor.",
+    descriptionShortDe:
+      "Unternehmer bezahlen Arbeiter und bestechen einen Beamten, um ein Schloss zu bauen und die Gunst des Königs zu erlangen.",
+    conflict: 0,
+  },
+  id203993: {
+    name: "Lorenzo il Magnifico",
+    descriptionLongEn:
+      "Lorenzo de' Medici, also known as &quot;Lorenzo il Magnifico&quot; (Lorenzo the Magnificent), was one of the most powerful and enthusiastic patrons of the Italian Renaissance.&#10;&#10;In Lorenzo il Magnifico, each player takes the role of the head of a noble family in a city during the Italian Renaissance to gain more prestige and fame &mdash; that is, victory points (VP) &mdash; than anyone else. To do so, you send your family members to different areas of town, where they can obtain many achievements.",
+    descriptionLongDe:
+      "Lorenzo de' Medici, auch bekannt als &quot;Lorenzo il Magnifico&quot; (Lorenzo der Prächtige), war einer der mächtigsten und enthusiastischsten Mäzene der italienischen Renaissance.&#10;&#10;In Lorenzo il Magnifico übernimmt jeder Spieler die Rolle des Oberhaupts einer Adelsfamilie in einer Stadt der italienischen Renaissance, um mehr Prestige und Ruhm &mdash; d.h. Siegpunkte (VP) &mdash; zu erlangen als alle anderen. Um dies zu erreichen, schickt man seine Familienmitglieder in verschiedene Stadtteile, in denen sie zahlreiche Erfolge erzielen können.",
+    descriptionShortEn:
+      "Avoid excommunication and lead your family to power during the Italian Renaissance.",
+    descriptionShortDe:
+      "Vermeiden Sie die Exkommunikation und führen Sie Ihre Familie zur Macht in der italienischen Renaissance.",
+    conflict: 0,
+  },
+  id73439: {
+    name: "Troyes",
+    descriptionLongEn:
+      "In Troyes (pronounced &quot;twah&quot;), players recreate four centuries of history of this famous city of the Champagne region of France. Each player manages their segment of the population (represented by a horde of dice) and their hand of cards, which represent the three primary domains of the city:  religious, military, and civil. Players can also offer cash to their opponents' populace in order to get a little moonlighting out of them &mdash; anything for more fame!",
+    descriptionLongDe:
+      "In Troyes (ausgesprochen &quot;twah&quot;) lassen die Spieler vier Jahrhunderte der Geschichte dieser berühmten Stadt in der Champagne nachspielen. Jeder Spieler verwaltet seinen Teil der Bevölkerung (dargestellt durch eine Horde von Würfeln) und seine Kartenhand, die die drei Hauptbereiche der Stadt repräsentieren: religiöse, militärische und zivile Bereiche. Die Spieler können der gegnerischen Bevölkerung auch Geld anbieten, um sie zu einer kleinen Schwarzarbeit zu bewegen &mdash; alles für mehr Ruhm!",
+    descriptionShortEn:
+      "Defend the city and rise to power by influencing the merchants, knights and clergy.",
+    descriptionShortDe:
+      "Verteidigen Sie die Stadt und steigen Sie zur Macht auf, indem Sie Einfluss auf die Kaufleute, Ritter und den Klerus nehmen.",
+    conflict: 0,
+  },
+  id366161: {
+    name: "Wingspan Asia",
+    descriptionLongEn:
+      "This third expansion to Wingspan brings new species to our habitats by exploring the vibrant, intriguing, and magnificent birds of Asia. These birds were chosen from the over 2,800 species that live in Asia.&#10;&#10;Wingspan Asia is several different things: a standalone game for 1-2 players (and the &quot;duet&quot; mode that can be used with any bird/bonus cards), a card expansion to the original Wingspan, and a 6-7 player expansion via the new &quot;flock&quot; mode (for which the player components from the core game are necessary).",
+    descriptionLongDe:
+      "Diese dritte Erweiterung von Wingspan bringt neue Arten in unsere Lebensräume, indem sie die lebendigen, faszinierenden und großartigen Vögel Asiens erforscht. Diese Vögel wurden aus den über 2.800 Arten, die in Asien leben, ausgewählt. Wingspan Asia ist mehrere Dinge: ein eigenständiges Spiel für 1-2 Spieler (und den &quot;Duett&quot; Modus, der mit allen Vogel-/Bonuskarten verwendet werden kann), eine Kartenerweiterung für das ursprüngliche Wingspan und eine Erweiterung für 6-7 Spieler über den neuen &quot;Schwarm&quot; Modus (für den die Spielerkomponenten aus dem Hauptspiel erforderlich sind).",
+    descriptionShortEn:
+      "Travel to Asia to discover new birds for your wildlife preserve.",
+    descriptionShortDe:
+      "Reisen Sie nach Asien, um neue Vögel für Ihr Naturschutzgebiet zu entdecken.",
+    conflict: 1,
+  },
+  id172386: {
+    name: "Mombasa",
+    descriptionLongEn:
+      "In Mombasa, players acquire shares of chartered companies based in Mombasa, Cape Town, Saint-Louis, and Cairo and spread their trading posts throughout the African continent in order to earn the most money.&#10;&#10;&quot;As I expected, the East African Company's network of trading posts has spread far into the West. They were even able to expand into a couple of diamond mines.",
+    descriptionLongDe:
+      "In Mombasa erwerben die Spieler Anteile an gecharterten Unternehmen mit Sitz in Mombasa, Kapstadt, Saint-Louis und Kairo und verbreiten ihre Handelsposten über den gesamten afrikanischen Kontinent, um das meiste Geld zu verdienen.&#10;&#10;&quot;Wie ich erwartet habe, hat sich das Netz der Handelsposten der Ostafrikanischen Kompanie weit in den Westen ausgebreitet. Sie konnten sogar in einige Diamantenminen expandieren.",
+    descriptionShortEn:
+      "Acquire shares of unique companies and propagate their trading posts to rake in cash.",
+    descriptionShortDe:
+      "Erwerben Sie Aktien einzigartiger Unternehmen und verbreiten Sie deren Handelsposten, um Geld zu verdienen.",
+    conflict: 0,
+  },
+  id271055: {
+    name: "Dwellings of Eldervale",
+    descriptionLongEn:
+      "Dwellings of Eldervale is an epic worker placement game set in a once lost magical world. Giant elemental monsters roam while dragons, wizards and warriors battle for dominance over 8 elemental realms. Players control unique factions seeking to adventure, battle, grow in power and ultimately dwell Eldervale, shaping it to their vision.",
+    descriptionLongDe:
+      "Dwellings of Eldervale ist ein episches Worker-Placement-Spiel, das in einer einst verlorenen magischen Welt spielt. Riesige Elementarmonster streifen umher, während Drachen, Zauberer und Krieger um die Vorherrschaft über 8 Elementarreiche kämpfen. Die Spieler kontrollieren einzigartige Fraktionen, die versuchen, Abenteuer zu erleben, zu kämpfen, an Macht zu gewinnen und schließlich in Eldervale zu wohnen und es nach ihren Vorstellungen zu gestalten.",
+    descriptionShortEn:
+      "Battle for control of a new fantasy realm in this worker placement game.",
+    descriptionShortDe:
+      "Kämpfe in diesem Worker-Placement-Spiel um die Kontrolle über ein neues Fantasy-Reich.",
+    conflict: 1,
+  },
+  id12493: {
+    name: "Twilight Imperium: Third Edition",
+    descriptionLongEn:
+      "Twilight Imperium Third Edition is an epic empire-building game of interstellar conflict, trade, and struggle for power. Players take the roles of ancient galactic civilizations, each seeking to seize the imperial throne via warfare, diplomacy, and technological progression. With geomorphic board tiles, exquisite plastic miniatures, hundreds of cards, and introducing a rich set of strategic dimensions that allows each player to refocus their game-plan, the original designer (Christian T.",
+    descriptionLongDe:
+      "Twilight Imperium Third Edition ist ein episches Spiel zum Aufbau eines Imperiums, in dem es um interstellare Konflikte, Handel und den Kampf um die Macht geht. Die Spieler schlüpfen in die Rollen uralter galaktischer Zivilisationen, von denen jede versucht, den imperialen Thron durch Kriegsführung, Diplomatie und technologischen Fortschritt zu erobern. Mit geomorphischen Spielbrettplättchen, exquisiten Plastikminiaturen, Hunderten von Karten und der Einführung eines reichhaltigen Satzes strategischer Dimensionen, die es jedem Spieler erlauben, seinen Spielplan neu auszurichten, hat der ursprüngliche Designer (Christian T.",
+    descriptionShortEn:
+      "Epic empire-building game of interstellar conflict, trade, and struggle for power.",
+    descriptionShortDe:
+      "Episches Spiel zum Aufbau eines Imperiums mit interstellaren Konflikten, Handel und Kampf um die Macht.",
+    conflict: -1,
+  },
+  id365717: {
+    name: "Clank!: Catacombs",
+    descriptionLongEn:
+      "The catacombs of the skeletal dragon Umbrok Vessna are mysterious and dangerous. Portals transport you all around the dungeon depths. Wayshrines offer vast riches to intrepid explorers. Prisoners are counting on you to free them.",
+    descriptionLongDe:
+      "Die Katakomben des Skelettdrachen Umbrok Vessna sind geheimnisvoll und gefährlich. Portale führen dich durch die Tiefen des Verlieses. Wegschreine bieten unerschrockenen Entdeckern große Reichtümer. Die Gefangenen zählen darauf, dass du sie befreist.",
+    descriptionShortEn:
+      "Deck-building adventure meets tile-laying in the newest incarnation of Clank!",
+    descriptionShortDe:
+      "Das Deckbau-Abenteuer trifft in der neuesten Version von Clank auf das Verlegen von Kacheln!",
+    conflict: 0,
+  },
+  id217372: {
+    name: "The Quest for El Dorado",
+    descriptionLongEn:
+      "In The Quest for El Dorado, players take the roles of expedition leaders who have embarked on a search for the legendary land of gold in the dense jungles of South America. Each player assembles and equips their own team, hiring various helpers from the scout to the scientist to the aborigine. All of them have one goal in mind: Reaching the golden border first and winning all of the riches for themselves.",
+    descriptionLongDe:
+      "In The Quest for El Dorado schlüpfen die Spieler in die Rollen von Expeditionsleitern, die sich auf die Suche nach dem legendären Land des Goldes im dichten Dschungel Südamerikas begeben haben. Jeder Spieler stellt sein eigenes Team zusammen, rüstet es aus und heuert verschiedene Helfer an, vom Kundschafter über den Wissenschaftler bis hin zum Ureinwohner. Sie alle haben nur ein Ziel vor Augen: Die goldene Grenze als Erster zu erreichen und alle Reichtümer für sich zu gewinnen.",
+    descriptionShortEn:
+      "Race through a dense South American jungle in pursuit of the legendary city of gold.",
+    descriptionShortDe:
+      "Rase durch einen dichten südamerikanischen Dschungel auf der Suche nach der legendären Stadt aus Gold.",
+    conflict: 1,
+  },
+  id102680: {
+    name: "Trajan",
+    descriptionLongEn:
+      "Set in ancient Rome, Trajan is a development game in which players try to increase their influence and power in various areas of Roman life such as political influence, trading, military dominion and other important parts of Roman culture.&#10;&#10;The central mechanism of the game uses a system similar to that in Mancala or pit-and-pebbles games. In Trajan, a player has six possible actions: building, trading, taking tiles from the forum, using the military, influencing the Senate, and placing Trajan tiles on his tableau.",
+    descriptionLongDe:
+      "Trajan spielt im antiken Rom und ist ein Entwicklungsspiel, bei dem die Spieler versuchen, ihren Einfluss und ihre Macht in verschiedenen Bereichen des römischen Lebens zu vergrößern, wie z. B. politischer Einfluss, Handel, militärische Herrschaft und andere wichtige Bereiche der römischen Kultur.&#10;&#10;Der zentrale Mechanismus des Spiels verwendet ein System, das dem von Mancala oder Pit-and-Pebbles-Spielen ähnelt. Bei Trajan hat ein Spieler sechs mögliche Aktionen: Bauen, Handel treiben, Plättchen vom Forum nehmen, das Militär einsetzen, den Senat beeinflussen und Trajan-Plättchen auf sein Tableau legen.",
+    descriptionShortEn:
+      "Manage and rule all aspects of Ancient Rome with a clever action selection mancala.",
+    descriptionShortDe:
+      "Verwalte und regiere alle Aspekte des antiken Roms mit einer cleveren Aktionsauswahl mancala.",
+    conflict: 0,
+  },
+  id277659: {
+    name: "Final Girl",
+    descriptionLongEn:
+      "Playing on a famous horror movie trope, Final Girl is a solitaire-only game that puts the player in the shoes of a female protagonist who must kill the slasher if she wants to survive.&#10;&#10;The Core Box, when combined with one of our Feature Film Boxes, has everything you need to play the game. Each Feature Film Box features a unique Killer and and iconic Location, and the more Feature Films you have, the more killer/location combinations you can experience!",
+    descriptionLongDe:
+      "Final Girl ist ein Solitärspiel, das auf einem berühmten Horrorfilm basiert und den Spieler in die Rolle einer weiblichen Protagonistin versetzt, die den Slasher töten muss, wenn sie überleben will.&#10;&#10;Die Core Box enthält in Kombination mit einer unserer Feature Film Boxen alles, was du zum Spielen brauchst. Jede Spielfilmbox enthält einen einzigartigen Killer und einen ikonischen Schauplatz, und je mehr Spielfilme du hast, desto mehr Killer/Ort-Kombinationen kannst du erleben!",
+    descriptionShortEn:
+      "You alone must survive and defeat the horror movie killer.",
+    descriptionShortDe:
+      "Du allein musst überleben und den Horrorfilmkiller besiegen.",
+    conflict: -1,
+  },
+  id4098: {
+    name: "Age of Steam",
+    descriptionLongEn:
+      "Steam-belching iron horses roar across the wild plains! Age of Steam relives the era when pioneering U.S. railroads built the tracks that transformed America's economy. The cut-throat action is centered on the industrial powerhouses of the growing nation: Pittsburgh, Cincinnati, Chicago, and beyond.",
+    descriptionLongDe:
+      "Dampfende, eiserne Pferde röhren über die wilde Prärie! Age of Steam lässt die Ära wieder aufleben, als die Pioniere der US-Eisenbahn die Gleise bauten, die Amerikas Wirtschaft veränderten. Die halsbrecherische Action konzentriert sich auf die industriellen Kraftzentren der wachsenden Nation: Pittsburgh, Cincinnati, Chicago und darüber hinaus.",
+    descriptionShortEn:
+      "Outperform your railroad rivals with shares, auctions, track-building, and deliveries",
+    descriptionShortDe:
+      "Übertrumpfen Sie Ihre Eisenbahnkonkurrenten mit Aktien, Auktionen, Gleisbau und Lieferungen",
+    conflict: 0,
+  },
+  id43015: {
+    name: "Hansa Teutonica",
+    descriptionLongEn:
+      "The players act as traders trying to get victory points for building a network of offices, controlling cities, collecting bonus markers, or when other traders use the cities they control. After controlling a line between two cities with your pawns, you can decide to build an office (and maybe also establish control and/or get a bonus marker) or to get a skill improvement from some of the cities.&#10;&#10;Players have to improve their traders' &quot;skills&quot; for the following effects: getting more VP from offices in their network, getting more available action points, increasing the number of available pawns, and getting the right to place pawns and get more special pawns.",
+    descriptionLongDe:
+      "Die Spieler agieren als Händler, die versuchen, Siegpunkte für den Aufbau eines Netzwerks von Kontoren, die Kontrolle von Städten, das Sammeln von Bonusmarkern oder für die Nutzung der von ihnen kontrollierten Städte durch andere Händler zu erhalten. Nachdem man mit seinen Bauern eine Linie zwischen zwei Städten kontrolliert hat, kann man sich entscheiden, ein Kontor zu bauen (und vielleicht auch die Kontrolle zu übernehmen und/oder einen Bonusmarker zu erhalten) oder eine Verbesserung der Fertigkeiten einiger Städte zu erhalten.&#10;&#10;Die Spieler müssen die &quot;Fertigkeiten&quot; ihrer Händler verbessern, um folgende Effekte zu erzielen: mehr Siegpunkte von den Kontoren in ihrem Netzwerk zu erhalten, mehr verfügbare Aktionspunkte zu erhalten, die Anzahl der verfügbaren Bauern zu erhöhen und das Recht zu erhalten, Bauern zu platzieren und mehr spezielle Bauern zu erhalten.",
+    descriptionShortEn:
+      "Build networks of merchants along the roads and market towns of the Hanseatic League.",
+    descriptionShortDe:
+      "Aufbau von Händlernetzen entlang der Straßen und Marktstädte der Hanse.",
+    conflict: 1,
+  },
+  id12: {
+    name: "Ra",
+    descriptionLongEn:
+      "Ra is an auction and set-collection game with an Ancient Egyptian theme.  Each turn players are able to purchase lots of tiles with their bidding tiles (suns).  Once a player has used up his or her suns, the other players continue until they do likewise, which may set up a situation with a single uncontested player bidding on tiles before the end of the round occurs.  Tension builds because the round may end before all players have had a chance to win their three lots for the epoch.  The various tiles either give immediate points, prevent negative points for not having certain types at the end of the round (epoch), or give points after the final round.  The game lasts for three &quot;epochs&quot; (rounds).  The game offers a short learning curve, and experienced players find it both fast-moving and a quick play.&#10;&#10;From the Box:&#10;The game spans 1500 years of Egyptian history in less than an hour!&#10;The players seek to expand their power and fame and there are many ways to accomplish this: Influencing Pharaohs, Building monuments, Farming on the Nile, Paying homage to the Gods, Advancing the technology and culture of the people.",
+    descriptionLongDe:
+      "Ra ist ein Auktions- und Sammelspiel mit einem altägyptischen Thema.  In jeder Runde können die Spieler mit ihren Bietplättchen (Sonnen) eine Vielzahl von Plättchen erwerben.  Sobald ein Spieler seine Sonnen aufgebraucht hat, machen die anderen Spieler weiter, bis sie das Gleiche tun, was zu einer Situation führen kann, in der ein einziger Spieler unangefochten auf Plättchen bietet, bevor das Ende der Runde eintritt.  Dies kann zu einer Situation führen, in der ein einziger Spieler unangefochten auf ein Plättchen bietet, bevor die Runde zu Ende ist.  Die verschiedenen Plättchen geben entweder sofort Punkte, verhindern Negativpunkte, wenn man am Ende der Runde (Epoche) bestimmte Arten nicht besitzt, oder geben Punkte nach der letzten Runde.  Das Spiel geht über drei Epochen (Runden).  Das Spiel bietet eine kurze Lernkurve, und erfahrene Spieler finden es sowohl schnell als auch schnell spielbar.&#10;&#10;Aus der Schachtel:&#10;Das Spiel umspannt 1500 Jahre ägyptischer Geschichte in weniger als einer Stunde!&#10;Die Spieler versuchen, ihre Macht und ihren Ruhm zu vergrößern, und es gibt viele Möglichkeiten, dies zu erreichen: Beeinflussung der Pharaonen, Bau von Monumenten, Ackerbau am Nil, Huldigung der Götter, Weiterentwicklung der Technologie und Kultur des Volkes.",
+    descriptionShortEn:
+      "Bid to acquire the most valuable sets of Egyptian artifacts and resources.",
+    descriptionShortDe:
+      "Bieten Sie, um die wertvollsten ägyptischen Artefakte und Ressourcen zu erwerben.",
+    conflict: 1,
+  },
+  id175640: {
+    name: "Vinhos: Deluxe Edition",
+    descriptionLongEn:
+      "Vinhos (the Portuguese word for &quot;wines&quot;) is a trading and economic game about the business of wine making. Despite its small size, Portugal is one of the world's leading wine producers. Over six years of harvests, cultivate your vines, choose the best varieties, hire the best oenologists, take part in trade fairs, and show your opponents you are the best winemaker in the game.",
+    descriptionLongDe:
+      "Vinhos (das portugiesische Wort für &quot;Weine&quot;) ist ein Handels- und Wirtschaftsspiel über das Geschäft der Weinherstellung. Trotz seiner geringen Größe ist Portugal einer der führenden Weinproduzenten der Welt. Ernten Sie sechs Jahre lang Ihre Reben, wählen Sie die besten Sorten aus, engagieren Sie die besten Önologen, nehmen Sie an Messen teil und zeigen Sie Ihren Gegnern, dass Sie der beste Winzer im Spiel sind.",
+    descriptionShortEn: "The strategic craft of fine winemaking.",
+    descriptionShortDe: "Das strategische Handwerk der Weinbereitung.",
+    conflict: 0,
+  },
+  id233371: {
+    name: "Clank! In! Space!: A Deck-Building Adventure",
+    descriptionLongEn:
+      "The evil Lord Eradikus has all but conquered the galaxy and is now on a victory lap across the sector in his flagship, Eradikus Prime. He may rule with an iron grip, but his most prized artifacts are about to slip through his cyborg claws. You and your fellow thieves have challenged each other to sneak aboard his ship, hack your way into its command module, and steal from him.",
+    descriptionLongDe:
+      "Der böse Lord Eradikus hat die Galaxie so gut wie erobert und befindet sich nun in seinem Flaggschiff Eradikus Prime auf einer Siegesrunde durch den Sektor. Er mag mit eisernem Griff regieren, aber seine wertvollsten Artefakte sind dabei, durch seine Cyborg-Klauen zu schlüpfen. Sie und Ihre Diebeskollegen haben sich gegenseitig herausgefordert, sich an Bord seines Schiffes zu schleichen, sich in sein Kommandomodul zu hacken und ihn zu bestehlen.",
+    descriptionShortEn:
+      "Tiptoe your way through Lord Eradikus' spaceship to nab artifacts and an escape pod.",
+    descriptionShortDe:
+      "Bahne dir einen Weg durch Lord Eradikus' Raumschiff, um Artefakte und eine Rettungskapsel zu ergattern.",
+    conflict: 0,
+  },
+  id175155: {
+    name: "Forbidden Stars",
+    descriptionLongEn:
+      "The shifting Warp Storms that surround the long lost Herakon Cluster have finally abated, leaving the ancient treasures and planets within this sector open to the rest of the galaxy. Now, the great factions of the galaxy mobilize their fleets and race to establish a foothold. The reward for successful domination surpasses all other concerns, and the price for conquering this sector will be paid in lives.",
+    descriptionLongDe:
+      "Die wechselnden Warpstürme, die den lange verlorenen Herakon-Cluster umgeben, haben sich endlich gelegt und die uralten Schätze und Planeten in diesem Sektor für den Rest der Galaxis zugänglich gemacht. Jetzt mobilisieren die großen Fraktionen der Galaxis ihre Flotten und wetteifern darum, dort Fuß zu fassen. Die Belohnung für eine erfolgreiche Vorherrschaft übertrifft alle anderen Sorgen, und der Preis für die Eroberung dieses Sektors wird mit Menschenleben bezahlt werden.",
+    descriptionShortEn:
+      "Assemble your armies, devise your strategy, and wage war across the Herakon Cluster.",
+    descriptionShortDe:
+      "Stellen Sie Ihre Armeen zusammen, entwickeln Sie Ihre Strategie und führen Sie Krieg im Herakon-Cluster.",
+    conflict: -1,
+  },
+  id310100: {
+    name: "Nemesis: Lockdown",
+    descriptionLongEn:
+      "Nemesis Lockdown is the first stand alone expansion to Nemesis. During the game, players will be taken to a totally new location - a secret base on Mars, represented by a multi level board. Lockdown will retain the highly cinematic, semi-co-op experience of the original game, while introducing a lot of new, fresh mechanics.",
+    descriptionLongDe:
+      "Nemesis Lockdown ist die erste eigenständige Erweiterung zu Nemesis. Während des Spiels werden die Spieler an einen völlig neuen Ort versetzt - eine geheime Basis auf dem Mars, dargestellt durch ein mehrstufiges Spielbrett. Lockdown wird die hochgradig filmische, halb-kooperative Erfahrung des Originalspiels beibehalten, während eine Menge neuer, frischer Mechanismen eingeführt werden.",
+    descriptionShortEn:
+      "Survive an alien-infested lab on Mars but beware of other players and their agendas.",
+    descriptionShortDe:
+      "Überlebe ein von Außerirdischen verseuchtes Labor auf dem Mars, aber nimm dich vor den anderen Spielern und ihren Plänen in Acht.",
+    conflict: 1,
+  },
+  id196340: {
+    name: "Yokohama",
+    descriptionLongEn:
+      "Once Yokohama was just a fishing village, but now at the beginning of the Meiji era it's becoming a harbor open to foreign countries and one of the leading trade cities of Japan. As a result, many Japanese products such as copper and raw silk are collected in Yokohama for export to other countries. At the same time, the city is starting to incorporate foreign technology and culture, with even the streets becoming more modernized.",
+    descriptionLongDe:
+      "Einst war Yokohama nur ein Fischerdorf, doch zu Beginn der Meiji-Ära entwickelte es sich zu einem für das Ausland offenen Hafen und zu einer der führenden Handelsstädte Japans. Infolgedessen werden viele japanische Produkte wie Kupfer und Rohseide in Yokohama für den Export in andere Länder gesammelt. Gleichzeitig beginnt die Stadt, ausländische Technologie und Kultur zu übernehmen, und selbst die Straßen werden immer moderner.",
+    descriptionShortEn:
+      "Claim your fame as the dominant merchant in the Meiji period of Yokohama.",
+    descriptionShortDe:
+      "Beanspruchen Sie Ihren Ruhm als führender Händler in der Meiji-Zeit in Yokohama.",
+    conflict: 1,
+  },
+  id304783: {
+    name: "Hadrian's Wall",
+    descriptionLongEn:
+      "When visiting the North of Britannia in 122 AD, the Roman Emperor Hadrian Augustus witnessed the aftermath of war between his armies and the savage Picts. In a show of Roman might, he ordered a wall to be built that would separate the Pict tribes from the rest of England. Grand in its design, the wall stretched 80 Roman miles, from coast to coast.",
+    descriptionLongDe:
+      "Als der römische Kaiser Hadrian Augustus 122 n. Chr. den Norden Britanniens besuchte, wurde er Zeuge der Folgen des Krieges zwischen seinen Armeen und den wilden Pikten. Als Zeichen der römischen Macht ließ er eine Mauer errichten, die die Piktenstämme vom übrigen England trennen sollte. Die groß angelegte Mauer erstreckte sich über 80 römische Meilen von Küste zu Küste.",
+    descriptionShortEn:
+      "Compete as one of six Roman Generals in charge of a milecastle along Hadrian's Wall.",
+    descriptionShortDe:
+      "Treten Sie als einer von sechs römischen Generälen an, die eine Festung entlang des Hadrianswalls verwalten.",
+    conflict: 0,
+  },
+  id227935: {
+    name: "Wonderland's War",
+    descriptionLongEn:
+      "The Looking Glass has shattered, madness is being drained from the inhabitants, and war has come to Wonderland. Alice, Mad Hatter, Red Queen, Jabberwock, and Cheshire Cat must gather all that they can while playing nice at the Hatter's Tea Party before going to battle!&#10;&#10;In Wonderland's War, 2-5 players take the role as a faction leader who has been invited to the Hatter's tea party.",
+    descriptionLongDe:
+      "Der Spiegel ist zerbrochen, der Wahnsinn wird den Bewohnern entzogen, und der Krieg ist ins Wunderland gekommen. Alice, der verrückte Hutmacher, die rote Königin, der Jabberwock und die Grinsekatze müssen alles sammeln, was sie können, während sie auf der Teeparty des Hutmachers nett spielen, bevor sie in die Schlacht ziehen!&#10;&#10;In Wonderland's War übernehmen 2-5 Spieler die Rolle eines Fraktionsführers, der zur Teeparty des Hutmachers eingeladen wurde.",
+    descriptionShortEn:
+      "The looking glass has shattered and war has come to Wonderland!",
+    descriptionShortDe:
+      "Der Spiegel ist zerbrochen und der Krieg ist ins Wunderland gekommen!",
+    conflict: -1,
+  },
+  id308765: {
+    name: "Praga Caput Regni",
+    descriptionLongEn:
+      "Charles IV has been crowned King of Bohemia and ruler of the Holy Roman Empire. From his castle in Prague, he oversees construction of new fortifications: a bridge across the Vltava River, a university, and a cathedral rising within the walls of the castle itself. Prague is already among the largest cities in Europe.",
+    descriptionLongDe:
+      "Karl IV. wurde zum König von Böhmen und zum Herrscher des Heiligen Römischen Reiches gekrönt. Von seiner Prager Burg aus beaufsichtigt er den Bau neuer Befestigungsanlagen: eine Brücke über die Moldau, eine Universität und eine Kathedrale, die sich innerhalb der Burgmauern erhebt. Prag ist bereits eine der größten Städte Europas.",
+    descriptionShortEn:
+      "Wealthy citizens of medieval Prague organize building projects to gain king's favor.",
+    descriptionShortDe:
+      "Wohlhabende Bürger des mittelalterlichen Prags organisieren Bauprojekte, um die Gunst des Königs zu gewinnen.",
+    conflict: 1,
+  },
+  id127023: {
+    name: "Kemet",
+    descriptionLongEn:
+      "In Kemet, players each deploy the troops of an Egyptian tribe and use the mystical powers of the gods of ancient Egypt &ndash; along with their powerful armies &ndash; to score points in glorious battles or through invasion of rich territories. A game is typically played to 8 or 10 victory points, which may be accrued through winning attacks, controlling temples, controlling fully-developed pyramids, sacrificing to the gods, and wielding particular magical powers.&#10;&#10;The conquest for the land of Kemet takes place over two phases: Day and Night.",
+    descriptionLongDe:
+      "In Kemet stellt jeder Spieler die Truppen eines ägyptischen Stammes auf und setzt die mystischen Kräfte der Götter des alten Ägyptens &ndash; zusammen mit ihren mächtigen Armeen &ndash; ein, um in glorreichen Schlachten oder durch die Invasion reicher Territorien zu punkten. Ein Spiel wird in der Regel bis 8 oder 10 Siegpunkte gespielt, die durch siegreiche Angriffe, die Kontrolle von Tempeln, die Beherrschung voll ausgebauter Pyramiden, das Opfern an die Götter und das Ausüben besonderer magischer Kräfte erzielt werden können: Tag und Nacht.",
+    descriptionShortEn:
+      "Play as warring Egyptian Gods and build the most powerful army to dominate Egypt.",
+    descriptionShortDe:
+      "Spiele als kriegführende ägyptische Götter und stelle die mächtigste Armee auf, um Ägypten zu beherrschen.",
+    conflict: -1,
+  },
+  id189932: {
+    name: "Tyrants of the Underdark",
+    descriptionLongEn:
+      "Tyrants of the Underdark is a territory control game with a deck-building element.&#10;&#10;Each player leads a house of Drow in a section of the Underdark below the Sword Coast. The Drow house is represented by a deck of cards, with each card being a minion in that player's deck. Each minion belongs to one of five aspects of Drow society, and those aspects correspond to different strategies in the game, e.g., malice minions excel at assassinating opponents' troops, while ambition minions are best at recruiting additional minions and promoting minions to your &quot;inner circle&quot;, which is a special zone that increases their value at the end of the game.",
+    descriptionLongDe:
+      "Tyrants of the Underdark ist ein Territorialkontrollspiel mit einem Deckbau-Element. Jeder Spieler führt ein Haus der Drow in einem Abschnitt des Underdarks unterhalb der Schwertküste. Das Haus der Drow wird durch einen Kartensatz repräsentiert, wobei jede Karte einen Diener im Deck des Spielers darstellt. Jeder Lakai gehört zu einem von fünf Aspekten der Drow-Gesellschaft, und diese Aspekte entsprechen verschiedenen Strategien im Spiel, z. B. zeichnen sich Lakai der Bosheit durch die Ermordung gegnerischer Truppen aus, während Lakai des Ehrgeizes am besten darin sind, zusätzliche Lakai zu rekrutieren und Lakai in den inneren Kreis zu befördern, was eine besondere Zone ist, die ihren Wert am Ende des Spiels erhöht.",
+    descriptionShortEn:
+      "Lead a Drow house and build the best deck to establish supremacy over the Underdark.",
+    descriptionShortDe:
+      "Führe ein Drow-Haus an und baue das beste Deck, um die Vorherrschaft über das Underdark zu erlangen.",
+    conflict: 0,
+  },
+  id14996: {
+    name: "Ticket to Ride: Europe",
+    descriptionLongEn:
+      "Ticket to Ride: Europe takes you on a new train adventure across Europe. From Edinburgh to Constantinople and from Lisbon to Moscow, you'll visit great cities of turn-of-the-century Europe. Like the original Ticket to Ride, the game remains elegantly simple, can be learned in 5 minutes, and appeals to both families and experienced gamers.",
+    descriptionLongDe:
+      "Zug um Zug: Europa nimmt Sie mit auf ein neues Zugabenteuer quer durch Europa. Von Edinburgh bis Konstantinopel und von Lissabon bis Moskau besuchen Sie die großen Städte im Europa der Jahrhundertwende. Wie das ursprüngliche Zug um Zug bleibt das Spiel elegant einfach, kann in 5 Minuten erlernt werden und ist sowohl für Familien als auch für erfahrene Spieler geeignet.",
+    descriptionShortEn:
+      "Build train routes across Europe in this sequel to the hit family board game.",
+    descriptionShortDe:
+      "Baue in dieser Fortsetzung des erfolgreichen Familienbrettspiels Zugstrecken in ganz Europa.",
+    conflict: 1,
+  },
+  id233398: {
+    name: "Endeavor: Age of Sail",
+    descriptionLongEn:
+      "In Endeavor: Age of Sail, players strive to earn glory for their empires. Sailing out from Europe and the Mediterranean, players will establish shipping routes and occupy cities the world over. As they do so, players will leverage their growing industry, culture, finance, and Influence, building their engine and extending their reach into the far-flung regions of the world.",
+    descriptionLongDe:
+      "In Endeavor: Age of Sail streben die Spieler nach Ruhm für ihre Reiche. Von Europa und dem Mittelmeer aus segeln die Spieler los, um Schifffahrtsrouten einzurichten und Städte auf der ganzen Welt zu besetzen. Dabei nutzen die Spieler ihre wachsende Industrie, Kultur, Finanzen und ihren Einfluss, bauen ihren Motor auf und dehnen ihre Reichweite auf die weit entfernten Regionen der Welt aus.",
+    descriptionShortEn:
+      "Spread your glory over the vast, as of yet unexplored world in this updated classic.",
+    descriptionShortDe:
+      "Verbreiten Sie in diesem aktualisierten Klassiker Ihren Ruhm über die riesige, noch unerforschte Welt.",
+    conflict: 1,
+  },
+  id463: {
+    name: "Magic: The Gathering",
+    descriptionLongEn:
+      "&#10;&#10;&#10;    &#10;        GAME SYSTEM&#10;&#10;    &#10;    &#10;         This entry is to allow for discussion/rating of the game system as a whole. It is not for a specific product or release. Versions will appear on the individual item pages.&#10;&#10;    &#10;&#10;&#10;From the official website:  In the Magic game, you play the role of a planeswalker&mdash;a powerful wizard who fights other planeswalkers for glory, knowledge, and conquest.",
+    descriptionLongDe:
+      "&#10;&#10;&#10; &#10; GAME SYSTEM&#10;&#10; &#10; &#10; &#10; Dieser Eintrag soll eine Diskussion/Bewertung des Spielsystems als Ganzes ermöglichen. Er bezieht sich nicht auf ein bestimmtes Produkt oder eine bestimmte Version. Die Versionen erscheinen auf den Seiten der einzelnen Produkte.&#10;&#10; &#10;&#10;&#10;&#10;Von der offiziellen Website:  Im Magic-Spiel schlüpfen Sie in die Rolle eines Planeswalkers&mdash;eines mächtigen Zauberers, der gegen andere Planeswalker um Ruhm, Wissen und Eroberung kämpft.",
+    descriptionShortEn:
+      "Cast spells and summon fantasy monsters in the original collectible card game.",
+    descriptionShortDe:
+      "Sprich Zaubersprüche und beschwöre Fantasiemonster im Original-Sammelkartenspiel.",
+    conflict: 1,
+  },
+  id146652: {
+    name: "Legendary Encounters: An Alien Deck Building Game",
+    descriptionLongEn:
+      "Legendary Encounters: An Alien Deck Building Game, based on the four movies of the Alien series, is a fully cooperative game with original art. While based on the Marvel superheroes version of Legendary, the two games will be compatible but cannot be fully integrated.&#10;&#10;Legendary Encounters is a deck-building game in the same family as Legendary: A Marvel Deck Building Game, but now players must cooperate in order to survive against hordes of aliens.",
+    descriptionLongDe:
+      "Legendäre Begegnungen: An Alien Deck Building Game, basierend auf den vier Filmen der Alien-Reihe, ist ein vollständig kooperatives Spiel mit Originalkunst. Obwohl es auf der Marvel-Superhelden-Version von Legendary basiert, werden die beiden Spiele kompatibel sein, können aber nicht vollständig integriert werden.&#10;&#10;Legendary Encounters ist ein Deck-Building-Spiel in der gleichen Familie wie Legendary: A Marvel Deck Building Game, aber jetzt müssen die Spieler kooperieren, um gegen Horden von Aliens zu überleben.",
+    descriptionShortEn:
+      "In space, no one can hear you build a deck of marine & weapon cards to fight aliens.",
+    descriptionShortDe:
+      "Im Weltraum kann niemand hören, wie du ein Deck aus Marine- und Waffenkarten zusammenstellst, um gegen Außerirdische zu kämpfen.",
+    conflict: 1,
+  },
+  id283948: {
+    name: "Marco Polo II: In the Service of the Khan",
+    descriptionLongEn:
+      "The journeys of Marco Polo continue in Marco Polo II: In the Service of the Khan, an epic follow-up to The Voyages of Marco Polo. After traveling to Beijing, your travels now take you back to the West in the service of the Khan, sending you to the farthest reaches of his empire in search of wealth and fame.&#10;&#10;Marco Polo II is a standalone game based on The Voyages of Marco Polo, and you don't need the original game to play this one.",
+    descriptionLongDe:
+      "Die Reisen von Marco Polo gehen weiter in Marco Polo II: Im Dienste des Khans, dem epischen Nachfolger von The Voyages of Marco Polo. Nachdem du nach Peking gereist bist, führen dich deine Reisen nun zurück in den Westen in den Dienst des Khans, der dich auf der Suche nach Reichtum und Ruhm in die entlegensten Gebiete seines Reiches schickt.&#10;&#10;Marco Polo II ist ein eigenständiges Spiel, das auf The Voyages of Marco Polo basiert, und du brauchst das Originalspiel nicht, um dieses zu spielen.",
+    descriptionShortEn:
+      "Travel to cities along the silk road, trading silk, spice, gold & jade along the way.",
+    descriptionShortDe:
+      "Reisen Sie zu den Städten entlang der Seidenstraße und handeln Sie unterwegs mit Seide, Gewürzen, Gold und Jade.",
+    conflict: 0,
+  },
+  id296151: {
+    name: "Viscounts of the West Kingdom",
+    descriptionLongEn:
+      "Viscounts of the West Kingdom is set at a time when the King&rsquo;s reign began to decline, circa 980 AD. Choosing peace over prosperity, our once strong King began offering our enemies gold and land to lay down their axes. But peace is a tenuous affair. As poverty spread, many people lost faith in his ability to lead and sought independence from the crown.",
+    descriptionLongDe:
+      "Viscounts of the West Kingdom spielt zu einer Zeit, als die Herrschaft des Königs um 980 n. Chr. zu schwinden begann. Unser einst starker König zog den Frieden dem Wohlstand vor und bot seinen Feinden Gold und Land an, damit sie ihre Äxte niederlegen. Doch der Frieden ist eine zerbrechliche Angelegenheit. Als sich die Armut ausbreitete, verloren viele Menschen das Vertrauen in seine Führungsqualitäten und strebten nach Unabhängigkeit von der Krone.",
+    descriptionShortEn:
+      "Travel the Kingdom seeking upgrades in an attempt to bring poverty or prosperity.",
+    descriptionShortDe:
+      "Sie bereisen das Königreich und versuchen, es zu verbessern, um Armut oder Wohlstand zu bringen.",
+    conflict: 0,
+  },
+  id265188: {
+    name: "Glen More II: Chronicles",
+    descriptionLongEn:
+      "Glen More II: Chronicles is a sequel to Glen More, expanding the gameplay substantially compared to the original game.&#10;&#10;In Glen More II: Chronicles, each player represents the leader of a Scottish clan from the early medieval ages until the 19th century, a leader looking to expand their territory and wealth. The success of your clan depends on your ability to make the right decision at the right time, be it by creating a new pasture for your livestock, growing barley for whisky production, selling your goods on the various markets, or gaining control of special landmarks such as lochs and castles.",
+    descriptionLongDe:
+      "Glen More II: Chronicles ist eine Fortsetzung von Glen More und erweitert das Gameplay im Vergleich zum Originalspiel erheblich. In Glen More II: Chronicles übernimmt jeder Spieler die Rolle des Anführers eines schottischen Clans vom frühen Mittelalter bis zum 19. Jahrhundert, der sein Territorium und seinen Reichtum ausbauen will. Der Erfolg des Clans hängt von der Fähigkeit ab, zum richtigen Zeitpunkt die richtigen Entscheidungen zu treffen, sei es, indem man eine neue Weide für das Vieh anlegt, Gerste für die Whiskyproduktion anbaut, seine Waren auf den verschiedenen Märkten verkauft oder die Kontrolle über besondere Sehenswürdigkeiten wie Seen und Schlösser erlangt.",
+    descriptionShortEn:
+      "Expand your Scottish clan by trading livestock, making whisky and gaining landmarks.",
+    descriptionShortDe:
+      "Vergrößere deinen schottischen Clan, indem du mit Vieh handelst, Whisky herstellst und Wahrzeichen erlangst.",
+    conflict: 1,
+  },
+  id249259: {
+    name: "War Chest",
+    descriptionLongEn:
+      "War Chest is an all-new bag-building war game! At the start of the game, raise your banner call (drafting) several various units into your army, which you then use to capture key points on the board. To succeed in War Chest, you must successfully manage not only your armies on the battlefield, but those that are waiting to be deployed.",
+    descriptionLongDe:
+      "War Chest ist ein brandneues Kriegsspiel, bei dem es um den Aufbau von Taschen geht! Zu Beginn des Spiels heben Sie Ihre Fahne, indem Sie verschiedene Einheiten in Ihre Armee aufnehmen, die Sie dann einsetzen, um wichtige Punkte auf dem Spielbrett zu erobern. Um in War Chest erfolgreich zu sein, musst du nicht nur deine Armeen auf dem Schlachtfeld verwalten, sondern auch die, die darauf warten, aufgestellt zu werden.",
+    descriptionShortEn:
+      "Recruit, bolster and maneuver your way to controlling the hex-grid battlefield.",
+    descriptionShortDe:
+      "Rekrutieren, verstärken und manövrieren Sie sich Ihren Weg zur Kontrolle des Hex-Gitter-Schlachtfeldes.",
+    conflict: 0,
+  },
+  id82222: {
+    name: "Xia: Legends of a Drift System",
+    descriptionLongEn:
+      "Xia: Legends of a Drift System is a 3-5 player sandbox style competitive space adventure. Each player starts as a lowly but hopeful captain of a small starship.&#10;&#10;Players fly their ships about the system, completing a variety of missions, exploring new sectors and battling other ships. Navigating hazardous environments, players choose to mine, salvage, or trade valuable cargo.",
+    descriptionLongDe:
+      "Xia: Legends of a Drift System ist ein kompetitives Weltraumabenteuer im Sandkastenstil für 3-5 Spieler. Jeder Spieler beginnt als bescheidener, aber hoffnungsvoller Kapitän eines kleinen Raumschiffs &#10;&#10;Die Spieler fliegen mit ihren Schiffen durch das System, erfüllen eine Vielzahl von Missionen, erkunden neue Sektoren und kämpfen gegen andere Schiffe. Die Spieler navigieren durch gefährliche Umgebungen und entscheiden sich für den Abbau, die Bergung oder den Handel mit wertvoller Fracht.",
+    descriptionShortEn:
+      "Pilot your ship to stardom in a massive sci-fi sandbox.",
+    descriptionShortDe:
+      "Steuern Sie Ihr Schiff in einem riesigen Sci-Fi-Sandkasten zu Ruhm und Ehre.",
+    conflict: 1,
+  },
+  id233867: {
+    name: "Welcome To...",
+    descriptionLongEn:
+      "As an architect in Welcome To..., you want to build the best new town in the United States of the 1950s by adding resources to a pool, hiring employees, and more.&#10;&#10;Welcome To... plays like a roll-and-write dice game in which you mark results on a score-sheet...but without dice. Instead you flip cards from three piles to make three different action sets with both a house number and a corresponding action from which everyone chooses one.",
+    descriptionLongDe:
+      "Als Architekt in Welcome To... willst du die beste neue Stadt in den Vereinigten Staaten der 1950er Jahre bauen, indem du Ressourcen zu einem Pool hinzufügst, Angestellte einstellst und vieles mehr.&#10;&#10;Welcome To... spielt sich wie ein Würfelspiel, bei dem du die Ergebnisse auf einem Punktezettel markierst... aber ohne Würfel. Stattdessen werden Karten von drei Stapeln umgedreht, um drei verschiedene Aktionssets zu bilden, die sowohl eine Hausnummer als auch eine entsprechende Aktion enthalten, von denen jeder eine auswählt.",
+    descriptionShortEn:
+      "Design the most appealing 1950s neighborhood, with fences, parks, and swimming pools.",
+    descriptionShortDe:
+      "Entwerfen Sie die attraktivste Nachbarschaft der 1950er Jahre mit Zäunen, Parks und Swimmingpools.",
+    conflict: 1,
+  },
+  id9609: {
+    name: "War of the Ring",
+    descriptionLongEn:
+      "In War of the Ring, one player takes control of the Free Peoples (FP), the other player controls Shadow Armies (SA).&#10;&#10;Initially, the Free People Nations are reluctant to take arms against Sauron, so they must be attacked by Sauron or persuaded by Gandalf or other Companions, before they start to fight properly: this is represented by the Political Track, which shows if a Nation is ready to fight in the War of the Ring or not.&#10;&#10;The game can be won by a military victory, if Sauron conquers a certain number of Free People cities and strongholds or vice-versa.",
+    descriptionLongDe:
+      "In Krieg des Rings übernimmt ein Spieler die Kontrolle über die Freien Völker (FP), der andere Spieler kontrolliert die Schattenarmeen (SA). &#10;&#10;Anfangs zögern die Nationen der Freien Völker, die Waffen gegen Sauron zu ergreifen, so dass sie von Sauron angegriffen oder von Gandalf oder anderen Gefährten überredet werden müssen, bevor sie richtig zu kämpfen beginnen: Dies wird durch die politische Spur dargestellt, die zeigt, ob eine Nation bereit ist, im Krieg des Rings zu kämpfen oder nicht.&#10;&#10;Das Spiel kann durch einen militärischen Sieg gewonnen werden, wenn Sauron eine bestimmte Anzahl von Städten und Festungen der Freien Völker erobert oder umgekehrt.",
+    descriptionShortEn:
+      "Rings, Fellowship, diplomacy and war in the Third Age of Middle Earth.",
+    descriptionShortDe:
+      "Ringe, Gefährten, Diplomatie und Krieg im Dritten Zeitalter von Mittelerde.",
+    conflict: -1,
+  },
+  id10630: {
+    name: "Memoir '44",
+    descriptionLongEn:
+      "Memoir '44  is a historical boardgame where players face-off in stylized battles of some of the most famous historic battles of World War II including Omaha Beach, Pegasus Bridge, Operation Cobra and the Ardennes.&#10;&#10;Memoir '44 includes over 15 different battle scenarios and features a double-sided hex game board for both beach landings and countryside combat. Each scenario mimics the historical terrain, troop placements and objectives of each army.",
+    descriptionLongDe:
+      "Memoir '44 ist ein historisches Brettspiel, bei dem sich die Spieler in stilisierten Schlachten einiger der berühmtesten historischen Schlachten des Zweiten Weltkriegs gegenüberstehen, darunter Omaha Beach, Pegasus Bridge, Operation Cobra und die Ardennen.&#10;&#10;Memoir '44 enthält über 15 verschiedene Schlachtszenarien und verfügt über ein doppelseitiges Sechseck-Spielbrett für Strandlandungen und Landkämpfe. Jedes Szenario ahmt das historische Terrain, die Truppenaufstellungen und die Ziele der jeweiligen Armee nach.",
+    descriptionShortEn:
+      "Revisit the battles of D-Day and control the forces of the Allies and the Axis!",
+    descriptionShortDe:
+      "Erleben Sie die Schlachten des D-Day erneut und steuern Sie die Streitkräfte der Alliierten und der Achsenmächte!",
+    conflict: 1,
+  },
+  id287954: {
+    name: "Azul: Summer Pavilion",
+    descriptionLongEn:
+      "At the turn of the 16th Century, King Manuel I commissioned Portugal's greatest artisans to construct grandiose buildings. After completing the Palaces of Evora and Sintra, the king sought to build a summer pavilion to honor the most famous members of the royal family. This construction was intended for the most talented artisans &mdash; whose skills meet the splendor that the royal family deserves.",
+    descriptionLongDe:
+      "Zu Beginn des 16. Jahrhunderts beauftragte König Manuel I. die besten Handwerker Portugals mit dem Bau großartiger Gebäude. Nach der Fertigstellung der Paläste von Evora und Sintra wollte der König einen Sommerpavillon zu Ehren der berühmtesten Mitglieder der königlichen Familie errichten. Dieser Bau war für die talentiertesten Handwerker bestimmt, deren Fähigkeiten dem Glanz entsprachen, den die königliche Familie verdiente.",
+    descriptionShortEn:
+      "You're an artisan working on creating striking patterns within a king's palace.",
+    descriptionShortDe:
+      "Du bist ein Kunsthandwerker, der in einem Königspalast auffällige Muster anfertigt.",
+    conflict: 1,
+  },
+  id25021: {
+    name: "Sekigahara: The Unification of Japan",
+    descriptionLongEn:
+      "The battle of Sekigahara, fought in 1600 at a crossroads in Japan, unified that nation under the Tokugawa family for more than 250 years.&#10;&#10;Sekigahara allows you to re-contest that war as Ishida Mitsunari, defender of a child heir, or Tokugawa Ieyasu, Japan's most powerful daimyo (feudal lord).&#10;&#10;The campaign lasted only 7 weeks, during which each side improvised an army and a strategy with what forces their allies could provide.",
+    descriptionLongDe:
+      "Die Schlacht von Sekigahara, die im Jahr 1600 an einer Kreuzung in Japan stattfand, vereinigte die Nation unter der Tokugawa-Familie für mehr als 250 Jahre... &#10;&#10;Sekigahara ermöglicht es Ihnen, diesen Krieg als Ishida Mitsunari, Verteidiger eines Thronfolgers, oder als Tokugawa Ieyasu, Japans mächtigster Daimyo (Feudalherr), erneut zu bestreiten.&#10;&#10;Der Feldzug dauerte nur 7 Wochen, in denen jede Seite mit den Kräften, die ihre Verbündeten zur Verfügung stellen konnten, eine Armee und eine Strategie improvisierte.",
+    descriptionShortEn:
+      "Defend or depose the Toyotomi heir by commanding the loyalty of the feudal lords.",
+    descriptionShortDe:
+      "Verteidigen Sie den Toyotomi-Erben oder setzen Sie ihn ab, indem Sie sich die Loyalität der Feudalherren sichern.",
+    conflict: 1,
+  },
+  id155426: {
+    name: "Castles of Mad King Ludwig",
+    descriptionLongEn:
+      "In the tile-laying game Castles of Mad King Ludwig, players are tasked with building an amazing, extravagant castle for King Ludwig II of Bavaria...one room at a time. You see, the King loves castles, having built Neuschwanstein (the castle that inspired the Disney theme park castles) and others, but now he's commissioned you to build the biggest, best castle ever &mdash; subject, of course, to his ever-changing whims. Each player acts as a building contractor who is adding rooms to the castle he's building while also selling his services to other players.",
+    descriptionLongDe:
+      "In dem Legespiel Castles of Mad King Ludwig haben die Spieler die Aufgabe, ein erstaunliches, extravagantes Schloss für König Ludwig II. von Bayern zu bauen... ein Zimmer nach dem anderen. Der König liebt Schlösser, er hat unter anderem Neuschwanstein gebaut (das Schloss, das die Disney-Themenparks inspiriert hat), aber jetzt hat er dich beauftragt, das größte und beste Schloss aller Zeiten zu bauen &mdash; natürlich abhängig von seinen ständig wechselnden Launen. Jeder Spieler übernimmt die Rolle eines Bauunternehmers, der das von ihm gebaute Schloss um weitere Räume erweitert und gleichzeitig seine Dienste an andere Spieler verkauft.",
+    descriptionShortEn:
+      "Choose and play tiles to satisfy the king's whims and build the best fantasy castle.",
+    descriptionShortDe:
+      "Wähle und spiele Spielsteine, um die Launen des Königs zu befriedigen und das beste Fantasieschloss zu bauen.",
+    conflict: 1,
+  },
+  id282524: {
+    name: "Horrified",
+    descriptionLongEn:
+      "The stakes have been raised. Imagine living in a place so wretched that it's not plagued by one, two, or even three monsters &mdash; but seven of the most horrifying fiends!&#10;&#10;In this game, you'll come face to face with them all as you work together to rid the town of the maniacal or misunderstood creatures&hellip;before it's too late.",
+    descriptionLongDe:
+      "Der Einsatz wurde erhöht. Stell dir vor, du lebst an einem Ort, der so elend ist, dass er nicht nur von einem, zwei oder drei Monstern heimgesucht wird, sondern von sieben der schrecklichsten Ungeheuer&#10;&#10;In diesem Spiel triffst du auf sie alle, während du zusammenarbeitest, um die Stadt von den wahnsinnigen oder missverstandenen Kreaturen zu befreien&hellip;bevor es zu spät ist.",
+    descriptionShortEn:
+      "Classic movie monsters terrorize a town! Can your team stop them in time?",
+    descriptionShortDe:
+      "Klassische Filmmonster terrorisieren eine Stadt! Kann dein Team sie rechtzeitig aufhalten?",
+    conflict: 1,
+  },
+  id128882: {
+    name: "The Resistance: Avalon",
+    descriptionLongEn:
+      "The Resistance: Avalon pits the forces of Good and Evil in a battle to control the future of civilization. Arthur represents the future of Britain, a promise of prosperity and honor, yet hidden among his brave warriors are Mordred's unscrupulous minions. These forces of evil are few in number but have knowledge of each other and remain hidden from all but one of Arthur's servants.",
+    descriptionLongDe:
+      "Der Widerstand: Avalon lässt die Mächte des Guten und des Bösen in einem Kampf um die Zukunft der Zivilisation aufeinandertreffen. Artus repräsentiert die Zukunft Britanniens, ein Versprechen von Wohlstand und Ehre, doch unter seinen tapferen Kriegern verbergen sich Mordreds skrupellose Schergen. Diese Mächte des Bösen sind nur wenige, wissen aber voneinander und bleiben bis auf einen von Artus' Dienern allen verborgen.",
+    descriptionShortEn:
+      "Who can you trust? A game of social deduction set in King Arthur’s legendary realm.",
+    descriptionShortDe:
+      "Wem kann man trauen? Ein soziales Deduktionsspiel, das in König Artus' legendärem Reich spielt.",
+    conflict: -1,
+  },
+  id17133: {
+    name: "Railways of the World",
+    descriptionLongEn:
+      "Railways of the World (2009) is the new edition of the base game for Eagle Games' popular Railways of the World series, first published as Railroad Tycoon in 2005.  It reimplements the original game with several improvements.&#10;&#10;Revisit the early days of the Age of Steam as you begin with a locomotive (the venerable John Bull, the first locomotive to run in North America) and a vision (your Tycoon &quot;mission&quot; card). From there, build your budding railroad network into a vast empire.",
+    descriptionLongDe:
+      "Railways of the World (2009) ist die Neuauflage des Basisspiels der beliebten Railways of the World-Serie von Eagle Games, die 2005 erstmals als Railroad Tycoon veröffentlicht wurde.  Es ist eine Neuimplementierung des Originalspiels mit einigen Verbesserungen.&#10;&#10;Erleben Sie die frühen Tage des Dampfzeitalters neu, wenn Sie mit einer Lokomotive (der ehrwürdigen John Bull, der ersten Lokomotive, die in Nordamerika fuhr) und einer Vision (Ihrer Tycoon &quot;Mission&quot; Karte) beginnen. Von dort aus bauen Sie Ihr aufkeimendes Eisenbahnnetz zu einem riesigen Imperium aus.",
+    descriptionShortEn:
+      "Build rails, race to deliver scarce goods, and fulfill your Rail Baron's secret goal.",
+    descriptionShortDe:
+      "Bauen Sie Schienen, liefern Sie knappe Güter und erfüllen Sie das geheime Ziel Ihres Eisenbahnbarons.",
+    conflict: 0,
+  },
 };

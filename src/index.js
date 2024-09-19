@@ -1,9 +1,8 @@
 import { Configuration, OpenAIApi } from "openai";
 
 const globalVars = {
-  clusterSize: 50,
+  clusterSize: 20,
 };
-
 document.querySelector("#submit").addEventListener("click", () => {
   // New empty arrays/object, in case they have been populated from previous runs
   globalVars.arGameObjs = [];
@@ -54,12 +53,16 @@ document.querySelector("#submit").addEventListener("click", () => {
     );
     return;
   }
+  globalVars.includeInventoryLocation = document.querySelector(
+    "#inventory-location"
+  ).checked;
   getCollection();
 });
 
 async function getCollection() {
-  const apiResponse = await fetch(
-    `https://boardgamegeek.com/xmlapi2/collection\
+  if (!globalVars.includeInventoryLocation) {
+    const apiResponse = await fetch(
+      `https://boardgamegeek.com/xmlapi2/collection\
 ?username=${globalVars.objFormInputs.nameCollection}\
 ${
   globalVars.objFormInputs.minRating
@@ -71,26 +74,83 @@ ${
 &own=1\
 &version=1\
 &stats=1`
-  );
+    );
 
-  if (apiResponse.status === 202) {
-    console.log(
-      "Received status 202 while trying to get collection. Retrying in 5 seconds..."
+    if (apiResponse.status === 202) {
+      console.log(
+        "Received status 202 while trying to get collection. Retrying in 5 seconds..."
+      );
+      await new Promise((resolve) => setTimeout(resolve, 5000));
+      return getCollection(); // Recursive call
+    }
+    if (apiResponse.ok) {
+      const strCollection = await apiResponse.text();
+      const parser = new DOMParser();
+      const xmlCollection = parser.parseFromString(
+        strCollection,
+        "application/xml"
+      );
+      if (xmlCollection === "error") {
+        console.log("Error while parsing collection data to XML");
+        return;
+      } else extractGameDataFromCollection(xmlCollection);
+    }
+  } else {
+    document.querySelector("form").style.cssText = "display: none";
+    const containerTextarea = document.createElement("div");
+    containerTextarea.setAttribute(
+      "id",
+      "container-textarea-inventory-location"
     );
-    await new Promise((resolve) => setTimeout(resolve, 5000));
-    return getCollection(); // Recursive call
-  }
-  if (apiResponse.ok) {
-    const strCollection = await apiResponse.text();
-    const parser = new DOMParser();
-    const xmlCollection = parser.parseFromString(
-      strCollection,
-      "application/xml"
-    );
-    if (xmlCollection === "error") {
-      console.log("Error while parsing collection data to XML");
-      return;
-    } else extractGameDataFromCollection(xmlCollection);
+    function isSafari() {
+      return /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+    }
+    const linkForUser = `${
+      isSafari() ? "" : "view-source:"
+    }https://boardgamegeek.com/xmlapi2/collection?username=${
+      globalVars.objFormInputs.nameCollection
+    }${
+      globalVars.objFormInputs.minRating
+        ? `&minbggrating=${globalVars.objFormInputs.minRating}`
+        : ""
+    }&type=boardgame&excludesubtype=boardgameexpansion&own=1&version=1&stats=1&showprivate=1`;
+    containerTextarea.innerHTML = `<p>The inventory location of games in a collection is part of the private info. It can only be accessed by the owner of the collection,
+        who must be logged in. It can therefore not be retrieved through this automated script. However &ndash; as the logged-in user
+        this collection belongs to &ndash; you can access the BoardGameGeek API manually in your browser using the provided link "Click here" below.</p>
+        <p>If you get the message <code> Your request for this collection has been accepted and will be processed. Please try again later for access.</code>, just wait a few seconds and then reload (repeat if necessary).</p>
+        <p>If you get a result, copy the <strong>source code</strong> of the page (starting with <code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ...&gt;</code>) and paste it into this text area. Make sure that the source code includes the string <code>privateinfo</code> (if not, login to BoardGameGeek in the same browser and try again).</p>
+     <p><big>Copy the following link and open it in a new tab of your browser:</big><br><code>${linkForUser}</code></p>   
+    <textarea rows="20" style="width: 100%;">Delete this placeholder text and paste the source code (XML) of the page you get from the API</textarea><br>
+    <button id="submit-manual-xml-inventory-location">Submit</button>
+     `;
+    document.body.appendChild(containerTextarea);
+    document
+      .querySelector("#submit-manual-xml-inventory-location")
+      .addEventListener("click", () => {
+        const inputTextarea = document.querySelector("textarea").value;
+        window.xml = inputTextarea;
+        const parser = new DOMParser();
+        try {
+          const xmlCollection = parser.parseFromString(
+            inputTextarea.trim(),
+            "application/xml"
+          );
+          const parserError = xmlCollection.querySelector("parsererror");
+          if (parserError) {
+            throw new Error(parserError.textContent);
+          }
+          document.querySelector("form").style.cssText = "";
+          document
+            .querySelector("#container-textarea-inventory-location")
+            .remove();
+          extractGameDataFromCollection(xmlCollection);
+        } catch (e) {
+          console.error(
+            "Error while parsing collection data to XML. The text you entered is probably not valid XML. Please try again."
+          );
+          console.error(e);
+        }
+      });
   }
 }
 
@@ -99,6 +159,11 @@ function extractGameDataFromCollection(xmlCollection) {
     "item[subtype='boardgame']"
   );
   nodelistAllGamesInCollection.forEach((nodeGame) => {
+    const serializer = new XMLSerializer();
+    const xmlStr = serializer.serializeToString(nodeGame);
+
+    // Log the serialized XML string (which is the readable form of the XML document)
+    console.log(xmlStr);
     const objGame = {
       name: nodeGame.querySelector("name").textContent,
       id: +nodeGame.getAttribute("objectid"),
@@ -113,6 +178,11 @@ function extractGameDataFromCollection(xmlCollection) {
           nodeGame.querySelector("thumbnail")?.textContent) ||
         "No image",
     };
+    if (globalVars.includeInventoryLocation)
+      objGame.inventoryLocation = nodeGame
+        .querySelector("privateinfo")
+        ?.getAttribute("inventorylocation");
+
     // Filter out duplicates
     if (globalVars.arGameObjs.every((obj) => obj.id !== objGame.id))
       globalVars.arGameObjs.push(objGame);
@@ -207,9 +277,10 @@ async function getDetailedDataForGames(arIdClusters) {
 
       objGame.arRecommendedPlayerCount = [];
       for (let k = 0; k < globalVars.objFormInputs.maxPlayerCount; k++) {
-        objGame.arRecommendedPlayerCount.push(isRecommended(k, xmlGame));
+        const isRecommended = checkIfRecommended(k, xmlGame);
+        if (isRecommended) objGame.arRecommendedPlayerCount.push(isRecommended);
       }
-      function isRecommended(num, game) {
+      function checkIfRecommended(num, game) {
         const node = game.querySelector(`results[numplayers="${num}"]`);
         if (!node) return "";
         const intBest = +node
@@ -224,7 +295,7 @@ async function getDetailedDataForGames(arIdClusters) {
         // If at least two thirds of voters say, that the game is recommended for this player count, then the Boardgame-O-Matic recommends it as well
         let returnValue = "";
         if (intBest + intRecommended >= intNotRecommended * 2)
-          returnValue = ` &#8203;${num},`;
+          returnValue = num.toString();
 
         const arBestVotesForAllPlayerNumbers = Array.from(
           game.querySelectorAll("[value='Best']")
@@ -234,7 +305,7 @@ async function getDetailedDataForGames(arIdClusters) {
             (numVotes) => intBest >= numVotes
           )
         )
-          returnValue = returnValue.replace(",", " (ideal),");
+          returnValue += " (ideal)";
         return returnValue;
       }
 
@@ -486,7 +557,7 @@ Categories: ${Array.from(xmlGame.querySelectorAll('[type="boardgamecategory"'))
     .map((node) => node.getAttribute("value"))
     .join(", ")}
 
-Recommended player count: ${objGame.arRecommendedPlayerCount.join(" ")}
+Recommended player count: ${objGame.arRecommendedPlayerCount.join(", ")}
 
 Complexity (from 1 to 5):  ${xmlGame
     .querySelector("averageweight")
@@ -644,14 +715,21 @@ function createCsv() {
 <strong>${
       globalVars.objFormInputs.translate ? "Geeignet für" : "Suitable for"
     }</strong>\
-${game.arRecommendedPlayerCount.join("")}\
+${game.arRecommendedPlayerCount.join(", ")}\
 ${
   game.arLanguages
     ? `<br><strong>${
         globalVars.objFormInputs.translate ? "Sprachen" : "Languages"
       }</strong>: ${getFlags(game.arLanguages)}`
     : ""
-}";
+}<span class='filter-values' data-player-number='${game.arRecommendedPlayerCount
+      .map((item) => item.replace(" (ideal)", ""))
+      .join(" ")}'\
+${
+  game.inventoryLocation
+    ? ` data-inventory-location='${game.inventoryLocation}'`
+    : ""
+}></span>";
 "Tagline";"${game.descriptionShortDe || game.descriptionShortEn || ""}";
 "Thumbnail";"${game.thumbnail}";
 "${game.difficulty}";"";
