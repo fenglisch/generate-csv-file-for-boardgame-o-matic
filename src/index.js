@@ -159,11 +159,6 @@ function extractGameDataFromCollection(xmlCollection) {
     "item[subtype='boardgame']"
   );
   nodelistAllGamesInCollection.forEach((nodeGame) => {
-    const serializer = new XMLSerializer();
-    const xmlStr = serializer.serializeToString(nodeGame);
-
-    // Log the serialized XML string (which is the readable form of the XML document)
-    console.log(xmlStr);
     const objGame = {
       name: nodeGame.querySelector("name").textContent,
       id: +nodeGame.getAttribute("objectid"),
@@ -717,7 +712,7 @@ function createCsv() {
     }</strong>\
 ${game.arRecommendedPlayerCount.join(", ")}\
 ${
-  game.arLanguages
+  game.arLanguages.length > 0
     ? `<br><strong>${
         globalVars.objFormInputs.translate ? "Sprachen" : "Languages"
       }</strong>: ${getFlags(game.arLanguages)}`
@@ -750,23 +745,27 @@ ${
 "${game.drafting}";"";
 "#####";"Freizeile";
 `;
-    if (game.arLanguages) {
-      // Add "players" after final recommended number, that is before "Languages", and remove trailing comma
-      if (!globalVars.objFormInputs.translate)
-        newEntry = newEntry.replace(/,(<br><strong>Languages)/g, " players$1");
-      else
+    if (game.arLanguages.length > 0) {
+      // Add "players"/"Spieler:innen" after final recommended number, that is before "Languages"/"Sprachen"
+      if (!globalVars.objFormInputs.translate) {
+        newEntry = newEntry.replace(/(<br><strong>Languages)/g, " players$1");
+        console.log(1);
+      } else {
         newEntry = newEntry.replace(
-          /,(<br><strong>Sprachen)/g,
+          /(<br><strong>Sprachen)/g,
           " Spieler:innen$1"
         );
+        console.log(1);
+      }
     } else {
-      // "Languages" is not there, use next line starting with "Tagline" for locating the final recommended number
+      // "Languages"/"Sprachen" is not there, use span.filter-values for locating the final recommended number
       newEntry = newEntry.replace(
-        /,(";\n"Tagline)/,
+        /(<span class='filter-values')/,
         ` ${
-          !globalVars.objFormInputs.translate ? "players" : "Spieler:innen"
+          !globalVars.objFormInputs.translate ? " players" : " Spieler:innen"
         }$1`
       );
+      console.log(3);
     }
     csv += newEntry;
   });
