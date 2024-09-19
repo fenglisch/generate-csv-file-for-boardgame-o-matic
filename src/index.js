@@ -712,7 +712,7 @@ function createCsv() {
     }</strong>\
 ${game.arRecommendedPlayerCount.join(", ")}\
 ${
-  game.arLanguages.length > 0
+  game.arLanguages?.length > 0
     ? `<br><strong>${
         globalVars.objFormInputs.translate ? "Sprachen" : "Languages"
       }</strong>: ${getFlags(game.arLanguages)}`
@@ -745,17 +745,15 @@ ${
 "${game.drafting}";"";
 "#####";"Freizeile";
 `;
-    if (game.arLanguages.length > 0) {
+    if (game.arLanguages?.length > 0) {
       // Add "players"/"Spieler:innen" after final recommended number, that is before "Languages"/"Sprachen"
       if (!globalVars.objFormInputs.translate) {
         newEntry = newEntry.replace(/(<br><strong>Languages)/g, " players$1");
-        console.log(1);
       } else {
         newEntry = newEntry.replace(
           /(<br><strong>Sprachen)/g,
           " Spieler:innen$1"
         );
-        console.log(1);
       }
     } else {
       // "Languages"/"Sprachen" is not there, use span.filter-values for locating the final recommended number
@@ -765,7 +763,6 @@ ${
           !globalVars.objFormInputs.translate ? " players" : " Spieler:innen"
         }$1`
       );
-      console.log(3);
     }
     csv += newEntry;
   });
