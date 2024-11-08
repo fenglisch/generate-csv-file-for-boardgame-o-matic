@@ -8549,4 +8549,338 @@ const cache = {
       "Bauen Sie Schienen, liefern Sie knappe Güter und erfüllen Sie das geheime Ziel Ihres Eisenbahnbarons.",
     conflict: 0,
   },
+  id410201: {
+    name: "Schwingenschlag",
+    descriptionLongEn:
+      "You are an amateur dracologist in the world of Wyrmspan, a place where dragons of all shapes, sizes, and colors roam the skies. Excavate a hidden labyrinth you recently unearthed on your land and entice these beautiful creatures to roost in the sanctuary of your caves.&#10;&#10;During a game of Wyrmspan, you will build a sanctuary for dragons of all shapes and sizes.",
+    descriptionLongDe:
+      "Du bist ein Amateur-Drakologe in der Welt von Wyrmspan, einem Ort, an dem Drachen in allen Formen, Größen und Farben durch die Lüfte streifen. Graben Sie ein verborgenes Labyrinth aus, das Sie vor kurzem auf Ihrem Land entdeckt haben, und locken Sie diese wunderschönen Kreaturen in Ihre Höhlen. Während einer Partie Wyrmspan bauen Sie ein Heiligtum für Drachen aller Formen und Größen.",
+    descriptionShortEn:
+      "Build a cavernous sanctuary for dragons of all shapes and sizes!",
+    descriptionShortDe:
+      "Baue ein höhlenartiges Heiligtum für Drachen aller Formen und Größen!",
+    conflict: 1,
+  },
+  id396790: {
+    name: "Nukleum",
+    descriptionLongEn:
+      "When Elsa von Fr&uuml;hlingfeld presented her invention to King Frederik Augustus II of Saxony, people thought it was trickery. She used the recently isolated element Uranium to heat up a jar of water and used the resulting steam to power an engine that kept the Uranium active via a process she called &ldquo;atomization.&rdquo; Her device, the Nucleum, ushered in a new era of energy and prosperity over the next decades.",
+    descriptionLongDe:
+      "Als Elsa von Fr&uuml;hlingfeld ihre Erfindung dem sächsischen König Frederik August II. vorstellte, hielt man sie für einen Schwindel. Sie benutzte das kürzlich isolierte Element Uran, um einen Krug mit Wasser zu erhitzen, und trieb mit dem entstehenden Dampf eine Maschine an, die das Uran durch einen Prozess, den sie &quot;Atomisierung&quot; nannte, aktiv hielt.",
+    descriptionShortEn:
+      "Become the leader of the industrial revolution in an alternate timeline.",
+    descriptionShortDe:
+      "Werden Sie der Anführer der industriellen Revolution in einer alternativen Zeitlinie.",
+    conflict: 0,
+  },
+  id364011: {
+    name: "Great Western Trail: Argentinien",
+    descriptionLongEn:
+      "In Great Western Trail: Argentina, you own a vast estancia in Argentina at the end of the 19th century, and you will need to travel the plains of the Pampas with your cattle to deliver them to the main train station in Buenos Aires.&#10;&#10;Great Western Trail: Argentina features gameplay elements similar to Great Western Trail such as deck management, the rondel mechanism, and the ability to upgrade your player board, along with twists on these elements and new features.&#10;&#10;The player board features a new type of worker &mdash; farmers &mdash; and different paths await on the game board to confront you with more choices.",
+    descriptionLongDe:
+      "In Great Western Trail: Argentina besitzen Sie eine riesige Estancia im Argentinien des ausgehenden 19. Jahrhunderts und müssen mit Ihrem Vieh die Ebenen der Pampa durchqueren, um es zum Hauptbahnhof in Buenos Aires zu bringen.&#10;&#10;Great Western Trail: Argentina bietet ähnliche Spielelemente wie Great Western Trail, wie z.B. die Kartenverwaltung, den Rondell-Mechanismus und die Möglichkeit, das Spielbrett zu verbessern, aber auch Abwandlungen dieser Elemente und neue Funktionen.&#10;&#10;Auf dem Spielbrett gibt es eine neue Art von Arbeitern &mdash; Farmer &mdash; und auf dem Spielbrett warten verschiedene Pfade, die Sie vor weitere Entscheidungen stellen.",
+    descriptionShortEn:
+      "Travel the beautiful plains of the Pampas with your cattle.",
+    descriptionShortDe:
+      "Reisen Sie mit Ihrem Vieh durch die wunderschönen Ebenen der Pampa.",
+    conflict: 1,
+  },
+  id123260: {
+    name: "Suburbia",
+    descriptionLongEn:
+      "Plan, build, and develop a small town into a major metropolis. Use hex-shaped building tiles to add residential, commercial, civic, and industrial areas, as well as special points of interest that provide benefits and take advantage of the resources of nearby towns. Your goal is to have your borough thrive and end up with a greater population than any of your opponents.",
+    descriptionLongDe:
+      "Planen, bauen und entwickeln Sie eine kleine Stadt zu einer großen Metropole. Verwenden Sie sechseckige Gebäudeplättchen, um Wohn-, Gewerbe-, Stadt- und Industriegebiete sowie besondere Sehenswürdigkeiten hinzuzufügen, die Vorteile bieten und die Ressourcen der umliegenden Städte nutzen. Ihr Ziel ist es, dass Ihre Gemeinde floriert und am Ende mehr Einwohner hat als alle Ihre Gegner.",
+    descriptionShortEn:
+      "Expand your meager neighborhood into a sprawling suburb to attract the most citizens.",
+    descriptionShortDe:
+      "Erweitern Sie Ihre karge Nachbarschaft zu einem ausgedehnten Vorort, um die meisten Bürger anzuziehen.",
+    conflict: 0,
+  },
+  id293014: {
+    name: "Nidavellir",
+    descriptionLongEn:
+      "Nidavellir, the Dwarf Kingdom, is threatened by the dragon Fafnir. As a venerable Elvaland, you have been appointed by the King. Search through every tavern in the kingdom, hire the most skillful dwarves, recruit the most prestigious heroes, and build the best battalion you can to defeat your mortal enemy!",
+    descriptionLongDe:
+      "Nidavellir, das Königreich der Zwerge, wird von dem Drachen Fafnir bedroht. Als ehrwürdiger Elvaland wurdest du vom König ernannt. Durchsuchen Sie jede Taverne im Königreich, heuern Sie die fähigsten Zwerge an, rekrutieren Sie die angesehensten Helden und stellen Sie das beste Bataillon auf, das Sie haben, um Ihren Todfeind zu besiegen!",
+    descriptionShortEn:
+      "Assemble and prepare a formidable crew of dwarfs to fight the mighty Fafnir!",
+    descriptionShortDe:
+      "Stelle eine beeindruckende Mannschaft von Zwergen zusammen und bereite sie auf den Kampf gegen den mächtigen Fafnir vor!",
+    conflict: 1,
+  },
+  id245638: {
+    name: "Coimbra",
+    descriptionLongEn:
+      "In the 15th and 16th century, Portugal is thriving under its leading role during the Age of Discovery. Nestled in the heart of Portugal, the city of Coimbra serves as a&nbsp;cultural center of the country. As the head of one of Coimbra's oldest houses, you seek to earn prestige by deepening relationships with nearby monasteries or funding expeditions of the era.",
+    descriptionLongDe:
+      "Im 15. und 16. Jahrhundert blüht Portugal unter seiner führenden Rolle während des Zeitalters der Entdeckungen auf. Die im Herzen Portugals gelegene Stadt Coimbra ist das kulturelle Zentrum des Landes. Als Vorsteher eines der ältesten Häuser Coimbras versuchen Sie, sich Ansehen zu verschaffen, indem Sie die Beziehungen zu nahe gelegenen Klöstern vertiefen oder Expeditionen der Epoche finanzieren.",
+    descriptionShortEn:
+      "Spread your influence across monasteries of Portugal and beyond!",
+    descriptionShortDe:
+      "Verbreiten Sie Ihren Einfluss in den Klöstern von Portugal und darüber hinaus!",
+    conflict: 0,
+  },
+  id7854: {
+    name: "YINSH",
+    descriptionLongEn:
+      "In YINSH, the players each start with five rings on the board. Every time a ring is moved, it leaves a marker behind. Markers are white on one side and black on the other. When markers are jumped over by a ring they must be flipped, so their color is constantly changing.",
+    descriptionLongDe:
+      "Bei YINSH beginnt jeder Spieler mit fünf Ringen auf dem Spielbrett. Jedes Mal, wenn ein Ring bewegt wird, hinterlässt er einen Marker. Die Marker sind auf einer Seite weiß und auf der anderen Seite schwarz. Wenn ein Marker von einem Ring übersprungen wird, muss er umgedreht werden, so dass sich seine Farbe ständig ändert.",
+    descriptionShortEn:
+      "Move rings over pieces to flip them, creating rows of five in your color.",
+    descriptionShortDe:
+      "Bewege die Ringe über die Steine, um sie umzudrehen und Fünferreihen in deiner Farbe zu bilden.",
+    conflict: 1,
+  },
+  id391163: {
+    name: "Mischwald",
+    descriptionLongEn:
+      "In Forest Shuffle, players compete to gather the most valuable trees, then attract species to these trees, thus creating an ecologically balanced habitat for flora and fauna.&#10;&#10;To start, each player has six cards in hand, with cards depicting either a particular type of tree or two forest dwellers (animal, plant, mushroom, etc.), with these latter cards being divided in half, whether vertically or horizontally, with one dweller in each card half.&#10;&#10;On a turn, either draw two cards &mdash; whether face down from the deck or face up from the clearing &mdash; and add them to your hand, or play a card from your hand by paying the cost, then putting it into play.",
+    descriptionLongDe:
+      "Bei Forest Shuffle wetteifern die Spieler darum, die wertvollsten Bäume zu sammeln, um dann Arten auf diese Bäume zu locken und so einen ökologisch ausgewogenen Lebensraum für Flora und Fauna zu schaffen.&#10;&#10;Zu Beginn hat jeder Spieler sechs Karten auf der Hand, auf denen entweder eine bestimmte Baumart oder zwei Waldbewohner (Tiere, Pflanzen, Pilze usw.) abgebildet sind.Die letzteren Karten werden in zwei Hälften geteilt, entweder vertikal oder horizontal, mit einem Bewohner in jeder Kartenhälfte.&#10;&#10;In einem Zug zieht man entweder zwei Karten &mdash; entweder verdeckt vom Stapel oder offen von der Lichtung &mdash; und fügt sie der Hand hinzu, oder man spielt eine Karte aus der Hand, indem man die Kosten bezahlt und sie dann ins Spiel bringt.",
+    descriptionShortEn:
+      "Gather the most valuable trees and attract species to them.",
+    descriptionShortDe:
+      "Sammeln Sie die wertvollsten Bäume und locken Sie Arten zu ihnen.",
+    conflict: 1,
+  },
+  id302723: {
+    name: "Forgotten Waters",
+    descriptionLongEn:
+      "Forgotten Waters is a Crossroads Game set in a world of fantastical pirate adventure. In it, players take on the role of pirates sailing together on a ship, attempting to further their own personal stories as well as a common goal.&#10;&#10;The world of Forgotten Waters is silly and magical, with stories designed to encourage players to explore and laugh in delight as they interact with the world around them.",
+    descriptionLongDe:
+      "Forgotten Waters ist ein Crossroads Game, das in einer Welt voller fantastischer Piratenabenteuer spielt. Die Spieler schlüpfen in die Rolle von Piraten, die gemeinsam auf einem Schiff segeln und versuchen, ihre eigenen Geschichten und ein gemeinsames Ziel zu erreichen. Die Welt von Forgotten Waters ist albern und magisch, mit Geschichten, die die Spieler dazu ermutigen, die Welt um sie herum zu erforschen und zu lachen, während sie mit ihr interagieren.",
+    descriptionShortEn:
+      "Seek fortune and infamy in a fantastical world of piratical misadventure.",
+    descriptionShortDe:
+      "Suche nach Reichtum und Ruhm in einer fantastischen Welt voller piratischer Missgeschicke.",
+    conflict: 0,
+  },
+  id108745: {
+    name: "Seasons",
+    descriptionLongEn:
+      "The greatest sorcerers of the kingdom have gathered at the heart of the Argos forest, where the legendary tournament of the 12 seasons is taking place. At the end of the three year competition, the new archmage of the kingdom of Xidit will be chosen from among the competitors. Take your place, wizard!",
+    descriptionLongDe:
+      "Die größten Zauberer des Königreichs haben sich im Herzen des Waldes von Argos versammelt, wo das legendäre Turnier der 12 Jahreszeiten stattfindet. Am Ende des dreijährigen Wettbewerbs wird aus den Teilnehmern der neue Erzmagier des Königreichs Xidit gewählt. Nimm deinen Platz ein, Zauberer!",
+    descriptionShortEn:
+      "Mages compete across twelve seasons to collect crystals and become the new archmage.",
+    descriptionShortDe:
+      "Die Magier kämpfen in zwölf Jahreszeiten darum, Kristalle zu sammeln und der neue Erzmagier zu werden.",
+    conflict: 1,
+  },
+  id38453: {
+    name: "Space Alert",
+    descriptionLongEn:
+      "Space Alert is a cooperative team survival game. Players become crew members of a small spaceship scanning dangerous sectors of the galaxy. The missions last just 10 real-time minutes (hyperspace jump, sector scan, hyperspace jump back) and the only task the players have is to protect their ship.&#10;&#10;During play, the central computer will announce the presence of various threats on one of the supplied 10 minute soundtracks that also acts as a game timer.",
+    descriptionLongDe:
+      "Space Alert ist ein kooperatives Team-Survival-Spiel. Die Spieler werden zu Besatzungsmitgliedern eines kleinen Raumschiffs, das gefährliche Sektoren der Galaxie scannt. Die Missionen dauern nur 10 Minuten in Echtzeit (Hyperraum-Sprung, Sektor-Scan, Hyperraum-Sprung zurück), und die einzige Aufgabe der Spieler ist es, ihr Schiff zu schützen.&#10;&#10;Während des Spiels kündigt der Zentralcomputer das Vorhandensein verschiedener Bedrohungen auf einem der mitgelieferten 10-minütigen Soundtracks an, der auch als Spieltimer dient.",
+    descriptionShortEn:
+      "This ship runs itself! Wait, why are our shields down and where did you go? Help us!",
+    descriptionShortDe:
+      "Dieses Schiff läuft von selbst! Warte, warum sind unsere Schilde unten und wo bist du hin? Helft uns!",
+    conflict: 1,
+  },
+  id172: {
+    name: "For Sale",
+    descriptionLongEn:
+      "For Sale is a quick, fun game nominally about buying and selling real estate. During the game's two distinct phases, players first bid for several buildings then, after all buildings have been bought, sell the buildings for the greatest profit possible.&#10;&#10;The original Ravensburger/FX Schmid edition (1997/98) has slightly different rules than later English editions, and only 20 buildings instead of 30.",
+    descriptionLongDe:
+      "For Sale ist ein schnelles, lustiges Spiel, bei dem es nominell um den Kauf und Verkauf von Immobilien geht. In den zwei unterschiedlichen Phasen des Spiels bieten die Spieler zunächst auf mehrere Gebäude und verkaufen diese dann, nachdem alle Gebäude gekauft wurden, mit dem größtmöglichen Gewinn.&#10;&#10;Die Originalausgabe von Ravensburger/FX Schmid (1997/98) hat etwas andere Regeln als spätere englische Ausgaben und nur 20 statt 30 Gebäude.",
+    descriptionShortEn:
+      "What's your bid? Bid on promising property bundles, then sell properties for checks.",
+    descriptionShortDe:
+      "Wie hoch ist Ihr Gebot? Bieten Sie auf vielversprechende Immobilienbündel und verkaufen Sie dann Immobilien für Schecks.",
+    conflict: 1,
+  },
+  id345972: {
+    name: "Cat in the Box",
+    descriptionLongEn:
+      "Cat in the Box: Deluxe Edition is the quintessential quantum trick-taking card game for 2 - 5 cool cats, where your card&rsquo;s color isn&rsquo;t defined until you play it! Hypothesize how many tricks you will win, and record your bid. Place tokens on the community research board as you play your hand, and connect large groups of tokens to score even more points.",
+    descriptionLongDe:
+      "Cat in the Box: Deluxe Edition ist das Quintessenz-Kartenspiel für 2 - 5 coole Katzen, bei dem die Farbe der Karte erst beim Ausspielen festgelegt wird! Stellen Sie Hypothesen auf, wie viele Stiche Sie gewinnen werden, und notieren Sie Ihr Gebot. Platziere Spielsteine auf dem Gemeinschaftsforschungsbrett, während du dein Blatt ausspielst, und verbinde große Gruppen von Spielsteinen, um noch mehr Punkte zu erzielen.",
+    descriptionShortEn:
+      "Win tricks without knowing the colour of your cards until you play them.",
+    descriptionShortDe:
+      "Gewinne Stiche, ohne die Farbe deiner Karten zu kennen, bis du sie ausspielst.",
+    conflict: 1,
+  },
+  id129622: {
+    name: "Love Letter",
+    descriptionLongEn:
+      "All of the eligible young men (and many of the not-so-young) seek to woo the princess of Tempest. Unfortunately, she has locked herself in the palace, and you must rely on others to take your romantic letters to her. Will yours reach her first?&#10;&#10;Love Letter is a game of risk, deduction, and luck for 2&ndash;4 players.",
+    descriptionLongDe:
+      "Alle in Frage kommenden jungen Männer (und viele der nicht mehr ganz so jungen) versuchen, die Prinzessin von Tempest zu umwerben. Leider hat sie sich im Palast eingeschlossen, und du musst dich auf andere verlassen, um deine romantischen Briefe zu ihr zu bringen. Werden deine Briefe sie zuerst erreichen? &#10;&#10;Love Letter ist ein Spiel um Risiko, Schlussfolgerungen und Glück für 2&ndash;4 Spieler.",
+    descriptionShortEn:
+      "Can you get a letter to the princess or remove all your rivals? You win either way!",
+    descriptionShortDe:
+      "Kannst du einen Brief an die Prinzessin überbringen oder alle deine Rivalen ausschalten? Du gewinnst so oder so!",
+    conflict: 0,
+  },
+  id421006: {
+    name: "Der Herr der Ringe: Duell um Mittelerde",
+    descriptionLongEn:
+      "A dark rumour rises from Mordor. The Eye turns to Middle-earth. The hour has come. The Fellowship is reunited.",
+    descriptionLongDe:
+      "Ein dunkles Gerücht kommt aus Mordor. Das Auge wendet sich nach Mittelerde. Die Stunde ist gekommen. Die Gemeinschaft ist wiedervereint.",
+    descriptionShortEn:
+      "Play as the Fellowship or Sauron and attempt to determine the fate of Middle-earth.",
+    descriptionShortDe:
+      "Spielen Sie als die Gemeinschaft oder Sauron und versuchen Sie, das Schicksal von Mittelerde zu bestimmen.",
+    conflict: -1,
+  },
+  id209685: {
+    name: "Century: Die Gewürzstraße",
+    descriptionLongEn:
+      "Century: Spice Road is the first in a series of games that explores the history of each century with spice-trading as the theme for the first installment.  In Century: Spice Road, players are caravan leaders who travel the famed silk road to deliver spices to the far reaches of the continent for fame and glory. Each turn, players perform one of four actions:&#10;&#10;&#10;     Establish a trade route (by taking a market card)&#10;     Make a trade or harvest spices (by playing a card from hand)&#10;     Fulfill a demand (by meeting a victory point card's requirements and claiming it)&#10;     Rest (by taking back into your hand all of the cards you've played)&#10;&#10;&#10;The last round is triggered once a player has claimed their fifth victory point card, then whoever has the most victory points wins.&#10;&#10;",
+    descriptionLongDe:
+      "Jahrhundert: Spice Road ist das erste einer Reihe von Spielen, die die Geschichte eines jeden Jahrhunderts erforschen, wobei der Gewürzhandel das Thema der ersten Folge ist.  In Century: Spice Road sind die Spieler Karawanenführer, die die berühmte Seidenstraße bereisen, um Gewürze in die entlegensten Winkel des Kontinents zu liefern und Ruhm und Ehre zu erlangen. In jeder Runde führen die Spieler eine von vier Aktionen aus:&#10;&#10;&#10; Eine Handelsroute aufbauen (indem man eine Marktkarte nimmt)&#10; Einen Handel abschließen oder Gewürze ernten (indem man eine Karte aus der Hand spielt)&#10; Eine Nachfrage erfüllen (indem man die Anforderungen einer Siegpunktkarte erfüllt und sie beansprucht)&#10; Ausruhen (indem man alle gespielten Karten wieder auf die Hand nimmt)&#10;&#10;&#10;&#10;Die letzte Runde wird ausgelöst, sobald ein Spieler seine fünfte Siegpunktkarte beansprucht hat, dann gewinnt, wer die meisten Siegpunkte hat.&#10;&#10;",
+    descriptionShortEn: "Grow and trade spices and use them to gain estate.",
+    descriptionShortDe:
+      "Bauen Sie Gewürze an, handeln Sie mit ihnen und nutzen Sie sie zum Erwerb von Grundbesitz.",
+    conflict: 0,
+  },
+  id136888: {
+    name: "Brügge",
+    descriptionLongEn:
+      "Bruges in the 15th century &ndash; culture and commerce flourish and make the Belgian Hanseatic city into one of the wealthiest cities in Europe.&#10;&#10;In Bruges (a.k.a. Brugge or Br&uuml;gge depending on the country in which you live), players assume the role of merchants who must maintain their relationships with those in power in the city while competing against one another for influence, power, and status.",
+    descriptionLongDe:
+      "Brügge im 15. Jahrhundert &ndash; Kultur und Handel florieren und machen die belgische Hansestadt zu einer der reichsten Städte Europas.&#10;&#10;In Brügge (auch Brugge oder Br&uuml;gge genannt, je nachdem, in welchem Land Sie leben) übernehmen die Spieler die Rolle von Kaufleuten, die ihre Beziehungen zu den Mächtigen der Stadt pflegen müssen, während sie gleichzeitig um Einfluss, Macht und Status konkurrieren.",
+    descriptionShortEn:
+      "Vie for influence, manage threats, build, and employ the unique denizens of the city!",
+    descriptionShortDe:
+      "Kämpfe um Einfluss, bewältige Bedrohungen, baue und beschäftige die einzigartigen Bewohner der Stadt!",
+    conflict: 0,
+  },
+  id260180: {
+    name: "Project L",
+    descriptionLongEn:
+      "Build pieces, develop an engine, perfect your strategy, and win the game!&#10;&#10;Project L is a fast-paced, tile-matching brain burner with triple-layer 3D puzzles and lovely acrylic pieces. Challenge your friends to a game of simple design but intricate gameplay that makes a lasting impression!&#10;&#10;The core of the game lies in using your pieces to complete puzzles.",
+    descriptionLongDe:
+      "Bauen Sie Teile, entwickeln Sie eine Engine, perfektionieren Sie Ihre Strategie und gewinnen Sie das Spiel!&#10;&#10;Project L ist ein rasantes Denkspiel mit dreilagigen 3D-Puzzles und schönen Acrylteilen. Fordern Sie Ihre Freunde zu einem Spiel mit einfachem Design, aber kompliziertem Gameplay heraus, das einen bleibenden Eindruck hinterlässt!&#10;&#10;Der Kern des Spiels liegt in der Verwendung Ihrer Spielsteine, um Puzzles zu lösen.",
+    descriptionShortEn: "Fast-paced, tile-matching, engine building game.",
+    descriptionShortDe:
+      "Schnelles Spiel, bei dem es darum geht, Kacheln zu finden und Motoren zu bauen.",
+    conflict: 1,
+  },
+  id246192: {
+    name: "Gizmos",
+    descriptionLongEn:
+      "The smartest minds of our generation are gathering together at the Great Science Fair. Everyone's been working hard on their creations, but only one will be crowned champion. Contestants have to think on the fly to build their machines quickly and efficiently. Whose project will be the best?",
+    descriptionLongDe:
+      "Die klügsten Köpfe unserer Generation versammeln sich auf der großen Wissenschaftsmesse. Alle haben hart an ihren Kreationen gearbeitet, aber nur einer wird zum Champion gekrönt werden. Die Teilnehmer müssen spontan denken, um ihre Maschinen schnell und effizient zu bauen. Wessen Projekt wird das beste sein?",
+    descriptionShortEn:
+      "Gather energy marbles to build gizmos parts and trigger chain reactions and combos.",
+    descriptionShortDe:
+      "Sammle Energiemurmeln, um Gizmos-Teile zu bauen und Kettenreaktionen und Kombos auszulösen.",
+    conflict: 1,
+  },
+  id128271: {
+    name: "Ginkgopolis",
+    descriptionLongEn:
+      "2212: Ginkgo Biloba, the oldest and strongest tree in the world, has become the symbol of a new method for building cities in symbiosis with nature. Humans have exhausted the resources that the Earth offered them, and humanity must now develop cities that maintain a delicate balance between resource production and consumption. Habitable space is scarce, however, and mankind must now face the challenge of building ever upwards.",
+    descriptionLongDe:
+      "2212: Ginkgo Biloba, der älteste und stärkste Baum der Welt, ist zum Symbol für eine neue Methode geworden, Städte in Symbiose mit der Natur zu bauen. Die Menschen haben die Ressourcen, die ihnen die Erde bot, erschöpft und müssen nun Städte entwickeln, die ein empfindliches Gleichgewicht zwischen Ressourcenproduktion und -verbrauch aufrechterhalten. Der bewohnbare Raum ist jedoch knapp, und die Menschheit muss sich nun der Herausforderung stellen, immer höher zu bauen.",
+    descriptionShortEn:
+      "Build upwards as well as outwards to control the most buildings in a future eco-city.",
+    descriptionShortDe:
+      "Bauen Sie sowohl nach oben als auch nach außen, um die meisten Gebäude in einer zukünftigen Ökostadt zu kontrollieren.",
+    conflict: 0,
+  },
+  id370591: {
+    name: "Dorfromantik: Das Brettspiel",
+    descriptionLongEn:
+      "Rippling rivers, rustling forests, wheat fields swaying in the wind and here and there a cute little village - that's Dorfromantik! The video game from the small developer studio Toukana Interactive has been thrilling the gaming community since its Early Access in March 2021 and has already won all kinds of prestigious awards. Now Michael Palm and Lukas Zach are transforming the popular building strategy and puzzle game into a family game for young and old with Dorfromantik: The Board Game.",
+    descriptionLongDe:
+      "Plätschernde Flüsse, rauschende Wälder, sich im Wind wiegende Weizenfelder und hier und da ein niedliches kleines Dorf - das ist Dorfromantik! Das Videospiel des kleinen Entwicklerstudios Toukana Interactive begeistert seit seinem Early Access im März 2021 die Spielergemeinde und hat bereits allerlei renommierte Preise gewonnen. Nun machen Michael Palm und Lukas Zach mit Dorfromantik: Das Brettspiel aus dem beliebten Aufbaustrategie- und Puzzlespiel ein Familienspiel für Jung und Alt.",
+    descriptionShortEn:
+      "Experience the peaceful and relaxed atmosphere of the video game on your table.",
+    descriptionShortDe:
+      "Erleben Sie die friedliche und entspannte Atmosphäre des Videospiels auf Ihrem Tisch.",
+    conflict: 1,
+  },
+  id245934: {
+    name: "Carpe Diem",
+    descriptionLongEn:
+      "The players slip into the role of rich patricians in ancient Rome. Everyone is trying to build a lucrative city district to score as many prestige points as possible. The novel way to get to the individual buildings of a district combined with a large variety of score cards make for an unusual game with a large number of strategies.",
+    descriptionLongDe:
+      "Die Spieler schlüpfen in die Rolle von reichen Patriziern im alten Rom. Jeder versucht, ein lukratives Stadtviertel aufzubauen, um möglichst viele Prestigepunkte zu sammeln. Der neuartige Weg zu den einzelnen Gebäuden eines Stadtteils und eine Vielzahl von Wertungskarten sorgen für ein ungewöhnliches Spiel mit einer Vielzahl von Strategien.",
+    descriptionShortEn:
+      "Build villas and lands to produce gold, bread and goods in ancient Rome.",
+    descriptionShortDe:
+      "Baue Villen und Ländereien, um Gold, Brot und Waren im alten Rom zu produzieren.",
+    conflict: 0,
+  },
+  id379078: {
+    name: "Expeditions",
+    descriptionLongEn:
+      "The sequel to Scythe sends players on a new adventure into Siberia, where a massive meteorite crashed near the Tunguska River, awakening ancient corruption. An expedition led by Dr. Tarkovsky ventures into the taiga to learn about the meteorite and its impact on the land. Itching for adventure, heroes from the war privately fund their own expeditions to Siberia, hoping to find artifacts, overcome challenges, and ultimately achieve glory.",
+    descriptionLongDe:
+      "Die Fortsetzung von Scythe schickt die Spieler auf ein neues Abenteuer in Sibirien, wo ein gewaltiger Meteorit in der Nähe des Tunguska-Flusses einschlug und uralte Verderbnis wachrief. Eine Expedition unter der Leitung von Dr. Tarkovsky begibt sich in die Taiga, um mehr über den Meteoriten und seine Auswirkungen auf das Land zu erfahren. Die Helden des Krieges, die sich nach Abenteuern sehnen, finanzieren privat ihre eigenen Expeditionen nach Sibirien, in der Hoffnung, Artefakte zu finden, Herausforderungen zu meistern und schließlich Ruhm zu erlangen.",
+    descriptionShortEn:
+      "Venture to the dangerous north in this tile-exploration sequel to Scythe.",
+    descriptionShortDe:
+      "Wage dich in dieser Fortsetzung von Scythe in den gefährlichen Norden, um dort Kacheln zu erforschen.",
+    conflict: 0,
+  },
+  id194594: {
+    name: "Dice Forge",
+    descriptionLongEn:
+      "Heroes, stand ready! The gods are offering a seat in heaven to whichever hero defeats their rivals. Your courage and wits will be your most precious allies as you use divine dice to gather resources along the road to victory.&#10;&#10;Your divine dice are exceptional, with removable faces!",
+    descriptionLongDe:
+      "Helden, haltet euch bereit! Die Götter bieten demjenigen Helden, der seine Rivalen besiegt, einen Platz im Himmel an. Dein Mut und dein Verstand werden deine wertvollsten Verbündeten sein, wenn du göttliche Würfel benutzt, um Ressourcen auf dem Weg zum Sieg zu sammeln.&#10;&#10;Deine göttlichen Würfel sind außergewöhnlich, mit abnehmbaren Gesichtern!",
+    descriptionShortEn:
+      "Control luck itself! Choose to forge improved dice or complete quests for rewards.",
+    descriptionShortDe:
+      "Kontrolliere das Glück selbst! Entscheiden Sie sich, verbesserte Würfel zu schmieden oder Quests für Belohnungen zu erfüllen.",
+    conflict: 1,
+  },
+  id92415: {
+    name: "Skull & Roses Red",
+    descriptionLongEn:
+      "Edited description from Bruno Faidutti's write-up of the game in his Ideal Game Library:&#10;&#10;Skull &amp; Roses is the quintessence of bluffing, a game in which everything is played in the players' heads. Each player plays a face-down card, then each player in turn adds one more card &ndash; until someone feels safe enough to state that he can turn a number of cards face up and get only roses. Other players can then overbid him, saying they can turn even more cards face up.",
+    descriptionLongDe:
+      "Editierte Beschreibung aus Bruno Faiduttis Spielbeschreibung in seiner Ideal Game Library:&#10;&#10;Skull &amp; Roses ist die Quintessenz des Bluffens, ein Spiel, bei dem alles im Kopf der Spieler gespielt wird. Jeder Spieler spielt eine verdeckte Karte aus, dann fügt jeder Spieler der Reihe nach eine weitere Karte hinzu &ndash; bis sich jemand sicher genug fühlt, um zu behaupten, dass er eine Reihe von Karten aufdecken kann und nur Rosen erhält. Die anderen Spieler können ihn dann überbieten, indem sie sagen, dass sie noch mehr Karten aufdecken können.",
+    descriptionShortEn:
+      "Does the token hide a flower or skull? Bid, bluff and laugh with striking components.",
+    descriptionShortDe:
+      "Versteckt sich auf dem Spielstein eine Blume oder ein Totenkopf? Bieten, bluffen und lachen Sie mit auffälligen Komponenten.",
+    conflict: 0,
+  },
+  id342810: {
+    name: "Marrakesh: Essential Edition",
+    descriptionLongEn:
+      "Compete with other influential families in the city to achieve the most honorable titles through the skillful use of assistants and resources at your disposal. The player who succeeds in doing this best becomes the new &quot;Obermufti&quot; of Marrakesh.&#10;&#10;Marrakesh is played over three rounds, with each round consisting of four turns.",
+    descriptionLongDe:
+      "Konkurrieren Sie mit anderen einflussreichen Familien der Stadt, um durch den geschickten Einsatz der Ihnen zur Verfügung stehenden Assistenten und Ressourcen die ehrenvollsten Titel zu erlangen. Der Spieler, dem dies am besten gelingt, wird der neue &quot;Obermufti&quot; von Marrakesch.&#10;&#10;Marrakesch wird über drei Runden gespielt, wobei jede Runde aus vier Zügen besteht.",
+    descriptionShortEn:
+      "Influential families react to the whims of the cube tower to gain power in the city. ",
+    descriptionShortDe:
+      "Einflussreiche Familien reagieren auf die Launen des Würfelturms, um Macht in der Stadt zu erlangen.",
+    conflict: 1,
+  },
+  id357563: {
+    name: "Akropolis",
+    descriptionLongEn:
+      "The most talented architects in ancient Greece stand ready to achieve this goal. Build housing, temples, markets, gardens and barracks, so you can grow your city and ensure it triumphs over the others. Raise its prestige with harmonious planning that conforms to specific rules, and enhance it by building plazas.",
+    descriptionLongDe:
+      "Die talentiertesten Architekten des antiken Griechenlands stehen bereit, um dieses Ziel zu erreichen. Bauen Sie Häuser, Tempel, Märkte, Gärten und Kasernen, um Ihre Stadt wachsen zu lassen und ihr den Sieg über die anderen zu sichern. Steigern Sie ihr Prestige durch eine harmonische Planung, die bestimmten Regeln folgt, und werten Sie sie durch den Bau von Plätzen auf.",
+    descriptionShortEn:
+      "Build your Greek city on multiple levels to keep your districts perfectly placed.",
+    descriptionShortDe:
+      "Bauen Sie Ihre griechische Stadt auf mehreren Ebenen, damit Ihre Stadtteile perfekt platziert sind.",
+    conflict: 1,
+  },
+  id34219: {
+    name: "Biblios",
+    descriptionLongEn:
+      "THE GAME CONCEPT&#10;You are an abbot of a medieval monastery competing with other abbots to amass the greatest library of sacred books. To do so, you need to have both the workers and resources to run a well-functioning scriptorium. To acquire workers and resources, you use a limited supply of donated gold.",
+    descriptionLongDe:
+      "DAS SPIELKONZEPT&#10;Sie sind Abt eines mittelalterlichen Klosters und wetteifern mit anderen Äbten darum, die größte Bibliothek heiliger Bücher anzuhäufen. Um dies zu erreichen, müssen Sie sowohl über die Arbeiter als auch über die Ressourcen verfügen, um ein gut funktionierendes Skriptorium zu betreiben. Um Arbeiter und Ressourcen zu erwerben, verwenden Sie einen begrenzten Vorrat an gespendetem Gold.",
+    descriptionShortEn:
+      "Amass the greatest library of sacred texts, using your wits and meager gold supply.",
+    descriptionShortDe:
+      "Sammle die größte Bibliothek heiliger Texte, indem du deinen Verstand und deinen mageren Goldvorrat einsetzt.",
+    conflict: 1,
+  },
 };
