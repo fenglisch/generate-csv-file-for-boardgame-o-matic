@@ -1,6 +1,6 @@
-# CSV Generation Tool for the Boardgame-O-Matic (Brettspiel-O-Mat)
+# CSV Generation Tool for the [Boardgame-O-Matic](https://github.com/fenglisch/boardgame-o-matic) (Brettspiel-O-Mat)
 
-This tool takes any users' collection from BoardGameGeek.com (BGG) and looks up data about each game in the collection from different sources, mainly from the [BGG XML API2](https://boardgamegeek.com/wiki/page/BGG_XML_API2). The tool interpretates the data and eventually generates a CSV file with information about all the games. This CSV file can then be used as the "database" for your own Boardgame-O-Matic (German: Brettspiel-O-Mat, short: BOM).
+This tool takes any users' collection from BoardGameGeek.com (BGG) and looks up data about each game in the collection from different sources, mainly from the [BGG XML API2](https://boardgamegeek.com/wiki/page/BGG_XML_API2). The tool interpretates the data and eventually generates a CSV file with information about all the games. This CSV file can then be used as the "database" for your own [**Boardgame-O-Matic**](https://github.com/fenglisch/boardgame-o-matic) (German: Brettspiel-O-Mat, short: BOM).
 
 General note: This is work in progress. Lots of stuff that should probably not be hard coded currently still is. Also, the "caching" mechanic is very improvised, the file even includes duplicates (it should be replaced by a proper database, MongoDB looks fitting). Feel free to submit pull requests!
 
