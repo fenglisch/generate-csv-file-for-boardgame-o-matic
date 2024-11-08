@@ -344,89 +344,7 @@ async function getDetailedDataForGames(arIdClusters) {
       // Coop games are automatically regarded as low conflict between the players. ChatGPT would say otherwise
       if (objGame.isCoop === 1) objGame.conflict = 1;
 
-      objGame.deduction = xmlGame.querySelector(
-        "[value='Deduction'], [value='Pattern Recognition']"
-      )
-        ? 1
-        : -1;
-      objGame.economic = xmlGame.querySelector(
-        "[value='Economic'],[value='Industry / Manufacturing']"
-      )
-        ? 1
-        : xmlGame.querySelector("[value='Income']")
-        ? 0
-        : -1;
-      objGame.puzzle = xmlGame.querySelector(
-        "[value='Puzzle'], [value='Pattern Building']"
-      )
-        ? 1
-        : xmlGame.querySelector("[value='Tile Placement']")
-        ? 0
-        : -1;
-      objGame.speed = xmlGame.querySelector(
-        "[value='Real-Time'], [value='Real-time']"
-      )
-        ? 1
-        : xmlGame.querySelector("[value='Action / Dexterity']")
-        ? 0
-        : -1;
-      objGame.areaControl = xmlGame.querySelector(
-        "[value='Area Majority / Influence'], [value='Enclosure']"
-      )
-        ? 1
-        : xmlGame.querySelector("[value='Territory Building']")
-        ? 0
-        : -1;
-      objGame.interactive = xmlGame.querySelector(
-        "[value='Take That'], [value='Player Elimination'], [value='Fighting'], [value='Wargame']"
-      )
-        ? 1
-        : xmlGame.querySelector(
-            "[value='Cooperative Game'], [value='Semi-Cooperative Game'], [value='Team-Based Game']"
-          )
-        ? 0
-        : -1;
-      objGame.playerElimination = xmlGame.querySelector(
-        "[value='Player Elimination']"
-      )
-        ? 1
-        : -1;
-      objGame.pushYourLuck = xmlGame.querySelector("[value='Push Your Luck']")
-        ? 1
-        : -1;
-      objGame.auction = xmlGame.querySelector("[value*='Auction']") ? 1 : -1;
-      objGame.deckBuilding = xmlGame.querySelector(
-        "[value='Deck, Bag, and Pool Building']"
-      )
-        ? 1
-        : xmlGame.querySelector("[value='Deck Construction']")
-        ? 0
-        : -1;
-      objGame.creative = xmlGame.querySelector(
-        "[value='Drawing'], [value='Mechanism: Drawing'], [value='Acting'], [value='Word Games: Guess the Word'],  [value='Mechanism: Give a Clue / Get a Clue']"
-      )
-        ? 1
-        : -1;
-      objGame.workerPlacement = xmlGame.querySelector(
-        "[value*='Worker Placement']"
-      )
-        ? 1
-        : -1;
-      objGame.trickTaking = xmlGame.querySelector("[value='Trick-taking']")
-        ? 1
-        : -1;
-      objGame.drafting = xmlGame.querySelector(
-        "[value='Closed Drafting'], [value*='Dice Drafting']"
-      )
-        ? 1
-        : xmlGame.querySelector("[value='Open Drafting']")
-        ? 0
-        : -1;
-      objGame.rollAndWrite = xmlGame.querySelector(
-        "[value*='Roll-and-Write'], [value*='Flip-and-Write']"
-      )
-        ? 1
-        : -1;
+      setValuesForMechanismFilter(objGame, xmlGame);
 
       const cachedGameObj = cache[`id${objGame.id}`]; // The object "cache" comes from the file cache.js
 
@@ -693,11 +611,11 @@ function createCsv() {
     if (!arLanguages) return "";
     let result = "<span class='flags'>";
     arLanguages.forEach((language) => {
-      result += `<img \
-  src='https://flagicons.lipis.dev/flags/4x3/${dictionaryLanguageToCountryCode[language]}.svg' \
-  alt='${language}' \
-  title='${language}' \
-  />`;
+      result += `<img  \
+src='https://flagicons.lipis.dev/flags/4x3/${dictionaryLanguageToCountryCode[language]}.svg' \
+alt='${language}' \
+title='${language}' \
+/>`;
     });
     result += "<span>";
     return result;
@@ -709,17 +627,17 @@ function createCsv() {
 "Beschreibung";"${game.descriptionLongDe || game.descriptionLongEn}<br>\
 <strong>${
       globalVars.objFormInputs.translate ? "Geeignet für" : "Suitable for"
-    }</strong>\
+    }</strong> \
 ${game.arRecommendedPlayerCount.join(", ")}\
 ${
-  game.arLanguages.length > 0
+  game.arLanguages?.length > 0
     ? `<br><strong>${
         globalVars.objFormInputs.translate ? "Sprachen" : "Languages"
       }</strong>: ${getFlags(game.arLanguages)}`
     : ""
 }<span class='filter-values' data-player-number='${game.arRecommendedPlayerCount
       .map((item) => item.replace(" (ideal)", ""))
-      .join(" ")}'\
+      .join(" ")}' data-mechanisms='${game.arMechanisms.join(" ")}'\
 ${
   game.inventoryLocation
     ? ` data-inventory-location='${game.inventoryLocation}'`
@@ -732,30 +650,17 @@ ${
 "${game.languageDependence}";"";
 "${game.conflict}";"";
 "${game.isCoop}";"";
-"${game.economic}";"";
-"${game.areaControl}";"";
-"${game.creative}";"";
-"${game.puzzle}";"";
-"${game.deduction}";"";
-"${game.speed}";"";
-"${game.deckBuilding}";"";
-"${game.workerPlacement}";"";
-"${game.rollAndWrite}";"";
-"${game.pushYourLuck}";"";
-"${game.drafting}";"";
 "#####";"Freizeile";
 `;
-    if (game.arLanguages.length > 0) {
+    if (game.arLanguages?.length > 0) {
       // Add "players"/"Spieler:innen" after final recommended number, that is before "Languages"/"Sprachen"
       if (!globalVars.objFormInputs.translate) {
         newEntry = newEntry.replace(/(<br><strong>Languages)/g, " players$1");
-        console.log(1);
       } else {
         newEntry = newEntry.replace(
           /(<br><strong>Sprachen)/g,
           " Spieler:innen$1"
         );
-        console.log(1);
       }
     } else {
       // "Languages"/"Sprachen" is not there, use span.filter-values for locating the final recommended number
@@ -765,7 +670,6 @@ ${
           !globalVars.objFormInputs.translate ? " players" : " Spieler:innen"
         }$1`
       );
-      console.log(3);
     }
     csv += newEntry;
   });
@@ -814,4 +718,80 @@ ${
   } else {
     console.log("No new games to be added to cache");
   }
+}
+
+function setValuesForMechanismFilter(objGame, xmlGame) {
+  objGame.arMechanisms = [];
+
+  if (
+    xmlGame.querySelector("[value='Deduction'], [value='Pattern Recognition']")
+  )
+    objGame.arMechanisms.push("deduction");
+
+  if (
+    xmlGame.querySelector(
+      "[value='Pattern Building'], [value='Tile Placement'], [value='Grid Coverage']"
+    )
+  )
+    objGame.arMechanisms.push("tilePlacement");
+
+  if (
+    xmlGame.querySelector(
+      "[value='Real-Time'], [value='Real-time'], [value='Action / Dexterity'], [value='Flicking'], [value='Stacking and Balancing']"
+    )
+  )
+    objGame.arMechanisms.push("action");
+
+  if (xmlGame.querySelector("[value='Area Majority / Influence']"))
+    objGame.arMechanisms.push("areaControl");
+  // if (xmlGame.querySelector("[value='Player Elimination']")) objGame.arMechanisms.push("playerElimination");
+  if (xmlGame.querySelector("[value='Push Your Luck']"))
+    objGame.arMechanisms.push("pushYourLuck");
+
+  if (xmlGame.querySelector("[value*='Auction']"))
+    objGame.arMechanisms.push("auction");
+
+  if (
+    xmlGame.querySelector(
+      "[value='Deck, Bag, and Pool Building'], [value='Deck Construction']"
+    )
+  )
+    objGame.arMechanisms.push("deckBuilding");
+
+  if (xmlGame.querySelector("[value*='Worker Placement']"))
+    objGame.arMechanisms.push("workerPlacement");
+
+  if (
+    xmlGame.querySelector("[value='Trick-taking'], [value='Ladder Climbing'] ")
+  )
+    objGame.arMechanisms.push("trickTaking");
+
+  if (
+    xmlGame.querySelector(
+      "[value='Closed Drafting'], [value='Open Drafting'], [value*='Dice Drafting']"
+    )
+  )
+    objGame.arMechanisms.push("drafting");
+
+  if (
+    xmlGame.querySelector(
+      "[value*='Roll-and-Write'], [value*='Flip-and-Write']"
+    )
+  )
+    objGame.arMechanisms.push("rollAndWrite");
+
+  if (xmlGame.querySelector("[value='Party Game']"))
+    objGame.arMechanisms.push("party");
+
+  if (xmlGame.querySelector("[value='Drawing'], [value='Acting']"))
+    objGame.arMechanisms.push("drawing");
+
+  if (xmlGame.querySelector("[value='Trading'], [value='Negotiation']"))
+    objGame.arMechanisms.push("trading");
+
+  // objGame.creative = xmlGame.querySelector(
+  //   "[value='Drawing'], [value='Mechanism: Drawing'], [value='Acting'], [value='Word Games: Guess the Word'],  [value='Mechanism: Give a Clue / Get a Clue']"
+  // )
+  //   ? 1
+  //   : -1;
 }
