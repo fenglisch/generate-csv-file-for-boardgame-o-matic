@@ -269,9 +269,8 @@ async function getDetailedDataForGames(arIdClusters) {
       // else if (difficulty < 2.75) objGame.difficulty = 0;
       // else if (difficulty < 3.5) objGame.difficulty = -1;
       // else objGame.difficulty = -2;
-
       objGame.arRecommendedPlayerCount = [];
-      for (let k = 0; k < globalVars.objFormInputs.maxPlayerCount; k++) {
+      for (let k = 1; k <= globalVars.objFormInputs.maxPlayerCount; k++) {
         const isRecommended = checkIfRecommended(k, xmlGame);
         if (isRecommended) objGame.arRecommendedPlayerCount.push(isRecommended);
       }
@@ -281,6 +280,7 @@ async function getDetailedDataForGames(arIdClusters) {
         const intBest = +node
           .querySelector("result[value='Best']")
           .getAttribute("numvotes");
+
         const intRecommended = +node
           .querySelector("result[value='Recommended']")
           .getAttribute("numvotes");
@@ -447,7 +447,7 @@ async function getDetailedDataForGames(arIdClusters) {
 async function getConflictLevelFromChatGptForRecentGame(objGame, xmlGame) {
   let prompt = `For the board game I will describe to you, please rate on a scale from 1 to -1, how conflictual is the player interaction?
   1 means little conflict (like Taverns of Tiefenthal, Castles of Burgundy, Wingspan, Cascadia, Everdell, Quacks of Quedlinburg)
-0 means medium conflict (like 7 Wonders, Beyond the Sun, Brass Birmingham, Terraforming Mars, Dune Imperium)
+0 means medium conflict (like Beyond the Sun, Brass Birmingham, Terraforming Mars, Dune Imperium)
 -1 means high conflict (like Risk, Scythe, Root, Barrage, Blood Rage)
 
 Take a guess based on the information I provide. No decimal numbers, only 1, 0 or -1!
