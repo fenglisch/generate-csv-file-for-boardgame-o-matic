@@ -346,6 +346,8 @@ async function getDetailedDataForGames(arIdClusters) {
 
       setValuesForMechanismFilter(objGame, xmlGame);
 
+      setValuesForThemeFilter(objGame, xmlGame);
+
       const cachedGameObj = cache[`id${objGame.id}`]; // The object "cache" comes from the file cache.js
 
       // Import / overwrite values, except for the name of the game (it could be a localized title)
@@ -637,7 +639,8 @@ ${
     : ""
 }<span class='filter-values' data-player-number='${game.arRecommendedPlayerCount
       .map((item) => item.replace(" (ideal)", ""))
-      .join(" ")}' data-mechanisms='${game.arMechanisms.join(" ")}'\
+      .join(" ")}' data-mechanisms='${game.arMechanisms.join(" ")}' \
+data-themes='${game.arThemes.join(" ")}'\
 ${
   game.inventoryLocation
     ? ` data-inventory-location='${game.inventoryLocation}'`
@@ -794,4 +797,41 @@ function setValuesForMechanismFilter(objGame, xmlGame) {
   // )
   //   ? 1
   //   : -1;
+}
+
+function setValuesForThemeFilter(objGame, xmlGame) {
+  objGame.arThemes = [];
+
+  if (xmlGame.querySelector("[value='Adventure']"))
+    objGame.arThemes.push("adventure");
+  if (xmlGame.querySelector("[value='American West']"))
+    objGame.arThemes.push("wildWest");
+  if (xmlGame.querySelector("[value='Ancient']"))
+    objGame.arThemes.push("ancient");
+  if (xmlGame.querySelector("[value='Prehistoric']"))
+    objGame.arThemes.push("prehistoric");
+  if (xmlGame.querySelector("[value='Animals'], [value='Environmental']"))
+    objGame.arThemes.push("animals");
+  if (
+    xmlGame.querySelector(
+      "[value='City Building'], [value='Industry / Manufacturing']"
+    )
+  )
+    objGame.arThemes.push("cities");
+  if (xmlGame.querySelector("[value='Fantasy'], [value='Mythology']"))
+    objGame.arThemes.push("fantasy");
+  if (xmlGame.querySelector("[value='Farming']"))
+    objGame.arThemes.push("farming");
+  if (xmlGame.querySelector("[value='Horror'], [value='Zombies']"))
+    objGame.arThemes.push("horror");
+  if (xmlGame.querySelector("[value='Renaissance'], [value='Medieval']"))
+    objGame.arThemes.push("medieval");
+  if (xmlGame.querySelector("[value='Nautical'], [value='Pirates']"))
+    objGame.arThemes.push("nautical");
+  if (xmlGame.querySelector("[value='Racing']"))
+    objGame.arThemes.push("racing");
+  if (xmlGame.querySelector("[value='Science Fiction']"))
+    objGame.arThemes.push("scifi");
+  if (xmlGame.querySelector("[type='boardgamecategory'][value*='War']"))
+    objGame.arThemes.push("war");
 }
