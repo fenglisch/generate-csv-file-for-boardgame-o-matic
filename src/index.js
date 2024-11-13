@@ -625,7 +625,7 @@ title='${language}' \
   let csv = "";
   globalVars.arGameObjs.forEach((game) => {
     let newEntry = `"ID";"${game.id}";
-"Name";"${game.name}${game.year ? ` (${game.year})` : ""}";
+"Name";"${game.name}${game.year ? ` <small>(${game.year})</small>` : ""}";
 "Beschreibung";"${game.descriptionLongDe || game.descriptionLongEn}<br>\
 <strong>${
       globalVars.objFormInputs.translate ? "Geeignet für" : "Suitable for"
