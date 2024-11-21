@@ -290,18 +290,7 @@ async function getDetailedDataForGames(arIdClusters) {
         // If at least two thirds of voters say, that the game is recommended for this player count, then the Boardgame-O-Matic recommends it as well
         let returnValue = "";
         if (intBest + intRecommended >= intNotRecommended * 2)
-          returnValue = num.toString();
-
-        const arBestVotesForAllPlayerNumbers = Array.from(
-          game.querySelectorAll("[value='Best']")
-        ).map((node) => +node.getAttribute("numvotes"));
-        if (
-          arBestVotesForAllPlayerNumbers.every(
-            (numVotes) => intBest >= numVotes
-          )
-        )
-          returnValue += " (ideal)";
-        return returnValue;
+          return num.toString();
       }
 
       objGame.languageDependence = getLanguageDependence(xmlGame);
@@ -627,19 +616,15 @@ title='${language}' \
     let newEntry = `"ID";"${game.id}";
 "Name";"${game.name}${game.year ? ` <small>(${game.year})</small>` : ""}";
 "Beschreibung";"${game.descriptionLongDe || game.descriptionLongEn}<br>\
-<strong>${
-      globalVars.objFormInputs.translate ? "Geeignet für" : "Suitable for"
-    }</strong> \
-${game.arRecommendedPlayerCount.join(", ")}\
 ${
   game.arLanguages?.length > 0
     ? `<br><strong>${
         globalVars.objFormInputs.translate ? "Sprachen" : "Languages"
       }</strong>: ${getFlags(game.arLanguages)}`
     : ""
-}<span class='filter-values' data-player-number='${game.arRecommendedPlayerCount
-      .map((item) => item.replace(" (ideal)", ""))
-      .join(" ")}' data-mechanisms='${game.arMechanisms.join(" ")}' \
+}<span class='filter-values' data-player-number='${game.arRecommendedPlayerCount.join(
+      " "
+    )}' data-mechanisms='${game.arMechanisms.join(" ")}' \
 data-themes='${game.arThemes.join(" ")}'\
 ${
   game.inventoryLocation
@@ -655,25 +640,7 @@ ${
 "${game.isCoop}";"";
 "#####";"Freizeile";
 `;
-    if (game.arLanguages?.length > 0) {
-      // Add "players"/"Spieler:innen" after final recommended number, that is before "Languages"/"Sprachen"
-      if (!globalVars.objFormInputs.translate) {
-        newEntry = newEntry.replace(/(<br><strong>Languages)/g, " players$1");
-      } else {
-        newEntry = newEntry.replace(
-          /(<br><strong>Sprachen)/g,
-          " Spieler:innen$1"
-        );
-      }
-    } else {
-      // "Languages"/"Sprachen" is not there, use span.filter-values for locating the final recommended number
-      newEntry = newEntry.replace(
-        /(<span class='filter-values')/,
-        ` ${
-          !globalVars.objFormInputs.translate ? " players" : " Spieler:innen"
-        }$1`
-      );
-    }
+
     csv += newEntry;
   });
 
