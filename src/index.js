@@ -615,7 +615,7 @@ title='${language}' \
   globalVars.arGameObjs.forEach((game) => {
     let newEntry = `"ID";"${game.id}";
 "Name";"${game.name}${game.year ? ` <small>(${game.year})</small>` : ""}";
-"Beschreibung";"${game.descriptionLongDe || game.descriptionLongEn}<br>\
+"Beschreibung";"${game.descriptionLongDe || game.descriptionLongEn}\
 ${
   game.arLanguages?.length > 0
     ? `<br><strong>${
