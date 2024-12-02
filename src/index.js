@@ -296,30 +296,22 @@ async function getDetailedDataForGames(arIdClusters) {
       objGame.languageDependence = getLanguageDependence(xmlGame);
 
       function getLanguageDependence(game) {
-        const totalVotes = +game
-          .querySelector("[title='Language Dependence']")
-          .getAttribute("totalvotes");
-        if (totalVotes === 0) return 99;
-        const littleText =
-          +game
-            .querySelector("[value='No necessary in-game text']")
-            .getAttribute("numvotes") +
-          +game
-            .querySelector("[value^='Some necessary text']")
-            .getAttribute("numvotes");
-        const someText = +game
-          .querySelector("[value^='Moderate in-game text']")
-          .getAttribute("numvotes");
-        const muchText =
-          +game
-            .querySelector("[value^='Extensive use of text']")
-            .getAttribute("numvotes") +
-          +game
-            .querySelector("[value='Unplayable in another language']")
-            .getAttribute("numvotes");
-        if (littleText >= someText && littleText >= muchText) return 1;
-        else if (someText >= muchText) return 0;
-        else return -1;
+        const poll = game.querySelector("[title='Language Dependence']");
+        if (+poll.getAttribute("totalvotes") === 0) return 99;
+        const arResults = [];
+        Array.from(poll.querySelectorAll("result")).forEach((option, index) => {
+          arResults.push({
+            value: 2 - index,
+            votes: +option.getAttribute("numvotes"),
+          });
+        });
+        const topVotedResult = arResults.reduce((max, obj) => {
+          return obj.votes > max.votes ? obj : max;
+        }, arResults[0]);
+        console.log(game.querySelector("name").getAttribute("value"));
+        console.log(arResults);
+        console.log(topVotedResult);
+        return topVotedResult.value;
       }
 
       objGame.isCoop = xmlGame.querySelector("[value='Cooperative Game']")
