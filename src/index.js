@@ -242,6 +242,17 @@ async function getDetailedDataForGames(arIdClusters) {
       // Assign each interpretation result to the game object
       objGame.year =
         +xmlGame.querySelector("yearpublished")?.getAttribute("value") ?? "";
+
+      objGame.yearGrouped = getReleaseYearGroup(objGame.year);
+      function getReleaseYearGroup(year) {
+        if (!year) return 99;
+        const currentYear = new Date().getFullYear();
+        if (currentYear - year <= 2) return 2;
+        else if (currentYear - year <= 5) return 1;
+        else if (currentYear - year <= 10) return 0;
+        else if (currentYear - year <= 20) return -1;
+        else return -2;
+      }
       const playTime =
         +xmlGame.querySelector("maxplaytime").getAttribute("value") * 1.25 ??
         null; // Official max time is multiplied by 1.25 to get more realistic play time
@@ -630,6 +641,7 @@ ${
 "${game.languageDependence}";"";
 "${game.conflict}";"";
 "${game.isCoop}";"";
+"${game.yearGrouped}";"";
 "#####";"Freizeile";
 `;
 
