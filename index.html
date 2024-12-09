@@ -122,6 +122,43 @@
       </p>
       <button type="button" id="submit">Submit</button>
     </form>
+    <div id="container-textarea-inventory-location" style="display: none">
+      <p>
+        You just indicated that you want to include data about the inventory
+        location of the games. The inventory location of games in a collection
+        is part of the private info. It can only be accessed by the owner of the
+        collection, who must be logged in. It can therefore not be retrieved
+        through this automated script via the BGG API. However, you – as the
+        logged-in user this collection belongs to – can access the BoardGameGeek
+        API manually in your browser using the provided link "Click here" below.
+      </p>
+      <p>
+        If you get the message
+        <code>
+          Your request for this collection has been accepted and will be
+          processed. Please try again later for access.</code
+        >, just wait a few seconds and then reload (repeat if necessary).
+      </p>
+      <p>
+        If you get a result, copy the <strong>source code</strong> of the page
+        (starting with
+        <code>&lt;?xml version="1.0" encoding="utf-8" ...&gt;</code>) and paste
+        it into this text area. Make sure that the source code includes the
+        string <code>privateinfo</code> (if not, login to your BoardGameGeek
+        profile (as the user the collection belongs to) in the same browser in
+        which you open the link and try again).
+      </p>
+      <p>
+        <span style="font-size: 120%"
+          >Copy the following link and open it in a new tab of your
+          browser:</span
+        ><br /><code id="link-for-manual-api-access"></code>
+      </p>
+      <textarea rows="20" style="width: 100%">
+Delete this placeholder text and paste the source code (XML) of the page you get from the API</textarea
+      ><br />
+      <button id="submit-manual-xml-inventory-location">Submit</button>
+    </div>
     <script>
       document.querySelector("#translate").addEventListener("change", () => {
         document.querySelectorAll(".deeplApiKeyElement").forEach((node) => {
