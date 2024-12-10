@@ -31,7 +31,7 @@ appProxy.listen(PORT_PROXY, HOST_PROXY, () => {
 
 const PORT_CACHE_UPDATE = 2096;
 const appCacheUpdate = express();
-appCacheUpdate.use(express.json()); // Automatically parses JSON in the request body
+appCacheUpdate.use(express.json({ limit: "50mb" })); // Automatically parses JSON in the request body
 appCacheUpdate.use(cors());
 
 appCacheUpdate.post("/cache-update", (req, res) => {
@@ -42,6 +42,7 @@ appCacheUpdate.post("/cache-update", (req, res) => {
       `const cache = ${JSON.stringify(newCache)}`,
       "utf8"
     );
+    console.log("Successfully updated cache.js");
     res.send("Successfully updated cache.js");
   } catch (error) {
     console.error("Error updating cache.js:", error);
