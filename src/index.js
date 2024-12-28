@@ -9,8 +9,7 @@ document.querySelector("#submit").addEventListener("click", () => {
     const formInput = (function readUserInputFromForm() {
       const input = {
         isWantedTranslate: document.querySelector("#translate").checked,
-        isWantedConflictDataFromChatGPT:
-          document.querySelector("#chatgpt").checked,
+        isWantedChatGpt: document.querySelector("#chatgpt").checked,
         nameCollection: document.querySelector("#nameCollection").value,
         minRating: document.querySelector("#minRating").value,
         maxPlayerCount: +document.querySelector("#maxPlayerCount").value,
@@ -27,7 +26,7 @@ document.querySelector("#submit").addEventListener("click", () => {
           throw new Error();
         }
       }
-      if (input.isWantedConflictDataFromChatGPT) {
+      if (input.isWantedChatGpt) {
         const apiKey = document.querySelector("#chatGptApiKey").value;
         if (!apiKey) {
           console.warn(
@@ -521,7 +520,8 @@ async function processXmlCollection(xmlCollection, formInput) {
         game.descriptions = await (async function getDescriptions(
           game,
           xmlGame,
-          isWantedTranslate
+          isWantedTranslate,
+          isWantedChatGpt
         ) {
           async function translateDescription(englishDescription) {
             return (await translate(englishDescription, "de")).replace(
@@ -529,7 +529,9 @@ async function processXmlCollection(xmlCollection, formInput) {
               "&quot;"
             );
           }
+
           const descriptions = game.descriptions || {}; // Could already be imported from cache
+
           descriptions.short = await (async function getDescriptionsShort(
             descriptions,
             gameId,
@@ -551,7 +553,11 @@ async function processXmlCollection(xmlCollection, formInput) {
                   "&quot;"
                 ) ?? "";
             }
-            if (!descriptionsShort.de && isWantedTranslate) {
+            if (
+              !descriptionsShort.de &&
+              isWantedTranslate &&
+              !isWantedChatGpt
+            ) {
               descriptionsShort.de = await translateDescription(
                 descriptionsShort.en
               );
@@ -559,208 +565,196 @@ async function processXmlCollection(xmlCollection, formInput) {
 
             return descriptionsShort;
           })(descriptions, game.id, isWantedTranslate);
-          descriptions.long = await (async function getDescriptionsLong(
-            descriptions,
-            xmlGame,
-            isWantedTranslate
-          ) {
-            const descriptionsLong = descriptions.long || {}; // Could already be imported from cache
-            if (!descriptionsLong.en) {
-              const fullDescription = xmlGame
-                .querySelector("description")
-                .textContent.replace(/"/g, "&quot;");
-              // Source: https://stackoverflow.com/a/31093903, added "&" to take sentences followed by an HTML symbol into account
-              const regexOneSentence = /.*?[.!?](?=\s[A-Z]|&|$)/;
-              const regexThreeSentences = new RegExp(
-                `^(${regexOneSentence.source}${regexOneSentence.source}${regexOneSentence.source}).*`,
-                "m"
-              );
-              const firstThreeSentences = fullDescription.replace(
-                regexThreeSentences,
-                "$1"
-              );
 
-              if (firstThreeSentences.length >= 300) {
-                descriptionsLong.en = firstThreeSentences;
-              } else {
-                const regexFourSentences = new RegExp(
-                  `^(${regexOneSentence.source}${regexOneSentence.source}${regexOneSentence.source}${regexOneSentence.source}).*`,
+          if (!isWantedChatGpt) {
+            descriptions.bgg = await (async function getDescriptionsLongBgg(
+              descriptions,
+              xmlGame,
+              isWantedTranslate
+            ) {
+              const descriptionsBgg = descriptions.bgg || {}; // Could already be imported from cache
+
+              if (!descriptionsBgg.en) {
+                const fullDescription = xmlGame
+                  .querySelector("description")
+                  .textContent.replace(/"/g, "&quot;");
+                // Source: https://stackoverflow.com/a/31093903, added "&" to take sentences followed by an HTML symbol into account
+                const regexOneSentence = /.*?[.!?](?=\s[A-Z]|&|$)/;
+                const regexThreeSentences = new RegExp(
+                  `^(${regexOneSentence.source}${regexOneSentence.source}${regexOneSentence.source}).*`,
                   "m"
                 );
-                const firstFourSentences = fullDescription.replace(
-                  regexFourSentences,
+                const firstThreeSentences = fullDescription.replace(
+                  regexThreeSentences,
                   "$1"
                 );
-                descriptionsLong.en = firstFourSentences;
+
+                if (firstThreeSentences.length >= 300) {
+                  descriptionsBgg.en = firstThreeSentences;
+                } else {
+                  const regexFourSentences = new RegExp(
+                    `^(${regexOneSentence.source}${regexOneSentence.source}${regexOneSentence.source}${regexOneSentence.source}).*`,
+                    "m"
+                  );
+                  const firstFourSentences = fullDescription.replace(
+                    regexFourSentences,
+                    "$1"
+                  );
+                  descriptionsBgg.en = firstFourSentences;
+                }
               }
-            }
-            if (!descriptionsLong.de && isWantedTranslate) {
-              descriptionsLong.de = await translateDescription(
-                descriptionsLong.en
-              );
-            }
-            return descriptionsLong;
-          })(descriptions, xmlGame, isWantedTranslate);
+              if (!descriptionsBgg.de && isWantedTranslate) {
+                descriptionsBgg.de = await translateDescription(
+                  descriptionsBgg.en
+                );
+              }
+
+              return descriptionsBgg;
+            })(descriptions, xmlGame, isWantedTranslate);
+          }
+
           return descriptions;
-        })(game, xmlGame, formInput.isWantedTranslate);
+        })(
+          game,
+          xmlGame,
+          formInput.isWantedTranslate,
+          formInput.isWantedChatGpt
+        );
 
         if (
-          formInput.isWantedConflictDataFromChatGPT &&
-          game.year >= 2022 && // ChatGPT only knows games released before 2022
-          game.questionValues.conflict === undefined // Could already be imported or be set because game is cooperative (and therefore automatically low conflict)
+          formInput.isWantedChatGpt &&
+          (!game.descriptions.chatGpt?.en ||
+            !game.descriptions.chatGpt?.de ||
+            !game.descriptions.short.de ||
+            (!game.questionValues.conflict &&
+              game.questionValues.conflict !== 0))
         ) {
-          // This is done after importing from cache in order to reduce the usage of the ChatGPT API
-          // (asking ChatGPT can be avoided if the conflict group for a game is already known from a previous run)
-          game.questionValues.conflict =
-            await (async function getConflictLevelFromChatGptForRecentGame(
-              game,
-              xmlGame,
-              formInput
-            ) {
-              let prompt = `For the board game I will describe to you, please rate on a scale from 1 to -1, how conflictual is the player interaction?
-              1 means little conflict (like Taverns of Tiefenthal, Castles of Burgundy, Wingspan, Cascadia, Everdell, Quacks of Quedlinburg)
-            0 means medium conflict (like Beyond the Sun, Brass Birmingham, Terraforming Mars, Dune Imperium)
-            -1 means high conflict (like Risk, Scythe, Root, Barrage, Blood Rage)
-            
-            Take a guess based on the information I provide. No decimal numbers, only 1, 0 or -1!
-            
-            Name: ${game.name}
-            
-            Tagline: ${game.descriptions.short.en}
-            
-            Description: ${xmlGame.querySelector("description").textContent}
-            
-            Type: ${Array.from(xmlGame.querySelectorAll('[type="family"'))
+          const [
+            descriptionChatGptEnglish,
+            descriptionChatGptGerman,
+            conflictLevel,
+            descriptionShortGerman,
+          ] = await (async function getDescriptionsLongChatGpt(
+            formInput,
+            game,
+            xmlGame
+          ) {
+            let prompt = `For the board game "${
+              game.name
+            }": Write an English description/pitch, a German description/pitch, rate the conflict level, and translate the "Tagline" I provide into German.
+
+Rules for the descriptions/pitches:
+1) Don't overstate it using too many fancy adjectives. Make it rather descriptive, but appealing and rouse some interest. 
+2) The description shall have around 500 characters.
+3) Don't just repeat the "Tagline" or copy phrases from it. You may copy phrases from the "Full description", but not from the "Tagline".
+4) Try to cover both the theme and the basic mechanics and what makes this board game special.
+5) Instead of writing something like "the players will", write "you will" (directly adress the readers). 
+6) Use informal tone ("ihr") in German.
+7) Also in German, don't use the generic masculinum, but gendered language with a colon, if necessary (e. g. "Gegner:innen").
+8) The German description does not have to be a literal translation of the English description that you create. Use phrasing that makes sense in German.
+
+For the conflict level: Please rate on a scale from 1 to -1, how conflictual is the player interaction?
+1 means little conflict (like Taverns of Tiefenthal, Castles of Burgundy, Wingspan, Cascadia, Everdell, Quacks of Quedlinburg)
+0 means medium conflict (like Beyond the Sun, Brass Birmingham, Terraforming Mars, Dune Imperium)
+-1 means high conflict (like Risk, Scythe, Root, Barrage, Blood Rage)
+Take a guess based on the information I provide. No decimal numbers, only 1, 0 or -1!
+
+For the German translation of the "Tagline": Use informal tone and directly address the reader (singular).
+
+Your answer must follow the following structure: "English description|||German description|||Conflict level|||German translation of the "Tagline". So, for example: "In XYZ, you will...|||XYZ ist ein...|||-1|||Entwickle ein..."
+
+Information about the board game (from BoardGameGeek):
+
+Name: ${game.name}
+
+Playing time: Approx. ${
+              xmlGame.querySelector("maxplaytime").getAttribute("value") * 1.25
+            } min
+
+Release year: ${game.year}
+
+Tagline: ${game.descriptions.short.en}
+
+Full description: ${xmlGame.querySelector("description").textContent}
+
+Type: ${Array.from(xmlGame.querySelectorAll('[type="family"]'))
               .map((node) => node.getAttribute("name"))
               .join(", ")}
-            
-            Mechanics: ${Array.from(
-              xmlGame.querySelectorAll('[type="boardgamemechanic"')
-            )
+
+Mechanics: ${Array.from(xmlGame.querySelectorAll('[type="boardgamemechanic"]'))
               .map((node) => node.getAttribute("value"))
               .join(", ")}
-            
-            Categories: ${Array.from(
-              xmlGame.querySelectorAll('[type="boardgamecategory"')
-            )
+
+Categories: ${Array.from(xmlGame.querySelectorAll('[type="boardgamecategory"]'))
               .map((node) => node.getAttribute("value"))
               .join(", ")}
-            
-            Recommended player count: ${game.filterValues.playerNumbers.join(
-              ", "
-            )}
-            
-            Complexity (from 1 to 5):  ${xmlGame
+
+Recommended player count: ${game.filterValues.playerNumbers.join(", ")}
+
+Complexity (from 1 to 5):  ${xmlGame
               .querySelector("averageweight")
               .getAttribute("value")}
-                
-                You answer must end with the number you choose (1, 0 or -1), it must be the end of the last sentence!`;
-              // Instead of just asking for a single number as reply without a comment/explanation, we allow ChatGPT to write an explanation
-              // Tests have shown that this makes the number more accurate
-              // The challenge is now to extract the number from the reply (see below)
 
-              try {
-                const response =
-                  await formInput.openaiInstance.createChatCompletion({
-                    model: formInput.chatGptModel,
-                    messages: [
-                      {
-                        role: "system",
-                        content: "You are a helpful assistant.",
-                      },
-                      {
-                        role: "user",
-                        content: prompt,
-                      },
-                    ],
-                  });
-                const answer = response.data.choices[0].message.content;
-                console.log(answer);
-                // Get the number (1 / 0 / -1) from the text reply
-                const processedAnswer = answer
-                  .replace(/[.,()!?*]/g, "")
-                  .split(" ")
-                  .map((value) => +value)
-                  .filter((value) => !isNaN(value));
-                console.log(processedAnswer);
-                // We asked ChatGPT to put the number at the end of the last sentence, therefore we take the last number in the reply
-                return processedAnswer[processedAnswer.length - 1];
-              } catch (e) {
-                console.log("Error getting GPT completion: ", e);
-              }
-            })(game, xmlGame, formInput);
+REMEMBER: Your answer must follow the following structure: "English description|||German description|||Conflict level|||German translation of the "Tagline". So, for example: "In XYZ, you will...|||XYZ ist ein...|||-1|||Entwickle ein..."
+`;
+            try {
+              const response =
+                await formInput.openaiInstance.createChatCompletion({
+                  model: formInput.chatGptModel,
+                  messages: [
+                    {
+                      role: "system",
+                      content: "You are a helpful assistant.",
+                    },
+                    {
+                      role: "user",
+                      content: prompt,
+                    },
+                  ],
+                });
+              const answer = response.data.choices[0].message.content;
+              const arValues = answer.split("|||");
+              const descriptionChatGptEnglish = arValues[0].replace(
+                /"/g,
+                "&quot;"
+              );
+              const descriptionChatGptGerman = arValues[1].replace(
+                /"/g,
+                "&quot;"
+              );
+              const conflictLevel = +arValues[2];
+              console.log(
+                `Conflict level for ${game.name}: ${
+                  arValues[2]
+                } (as number: ${+arValues[2]})`
+              );
+              const descriptionShortGerman = arValues[3].replace(
+                /"/g,
+                "&quot;"
+              );
+              return [
+                descriptionChatGptEnglish,
+                descriptionChatGptGerman,
+                conflictLevel,
+                descriptionShortGerman,
+              ];
+            } catch (e) {
+              console.log("Error getting GPT completion: ", e);
+            }
+          })(formInput, game, xmlGame);
+          game.descriptions.chatGpt = game.descriptions.chatGpt || {};
+          game.descriptions.chatGpt.en =
+            game.descriptions.chatGpt.en || descriptionChatGptEnglish;
+          game.descriptions.chatGpt.de =
+            game.descriptions.chatGpt.de || descriptionChatGptGerman;
+          game.questionValues.conflict =
+            game.questionValues.conflict ?? conflictLevel;
+          game.descriptions.short.de =
+            game.descriptions.short.de || descriptionShortGerman;
         }
+        console.log(game);
         arGamesDetailedData.push(game);
       }
-    }
-    // Send all games older than 2022 in one big cluster to ChatGPT, asking the AI to rate the conflict level
-    // Done at bulk instead of separately for each game in order to save tokens
-    if (formInput.isWantedConflictDataFromChatGPT) {
-      arGamesDetailedData =
-        await (async function getConflictGroupFromChatGptForOlderGames(
-          arGamesDetailedData,
-          formInput
-        ) {
-          const arGamesToBeEvaluated = arGamesDetailedData.filter(
-            (game) =>
-              game.year < 2022 && game.questionValues.conflict === undefined
-          );
-          if (arGamesToBeEvaluated.length === 0) return arGamesDetailedData;
-          const arNamesOfGamesToBeEvaluated = arGamesToBeEvaluated.map((game) =>
-            game.name.replace(/^/, '"').replace(/$/, '"')
-          );
-          let prompt = `For the list of board games I provide, please rate each game on a scale from 1 to -1, how conflictual is the player interaction?
-        1 means little conflict (like Taverns of Tiefenthal, Castles of Burgundy, Wingspan, Cascadia, Everdell, Quacks of Quedlinburg)
-      0 means medium conflict (like 7 Wonders, Beyond the Sun, Brass Birmingham, Terraforming Mars, Dune Imperium)
-      -1 means high conflict (like Risk, Scythe, Root, Barrage, Blood Rage)
-      No decimal numbers, only 1, 0 or -1!
-      
-      ${arNamesOfGamesToBeEvaluated.join("\n")}
-      
-      Your reply must look exactly as follows:
-      
-      "Game A"§ 1
-      "Game B"§ -1
-      ...`;
-          // We use the symbol § as delimiter, because the likelihood that it appears in the name of a game is really low
-          console.log(prompt);
-          try {
-            const response =
-              await formInput.openaiInstance.createChatCompletion({
-                model: formInput.chatGptModel,
-                messages: [
-                  { role: "system", content: "You are a helpful assistant." },
-                  {
-                    role: "user",
-                    content: prompt,
-                  },
-                ],
-              });
-            const answer = response.data.choices[0].message.content;
-            console.log(answer);
-            let processedAnswer = answer
-              .split("\n")
-              .map((str) => str.split("§"))
-              .map((subar) => {
-                // Remove quotes from beginning and end of board game title
-                // Transform string reply ("1" / "0" / "-1") to number (1 / 0 / -1)
-                return [subar[0].substring(1, subar[0].length - 1), +subar[1]];
-              });
-            console.log(processedAnswer);
-
-            // Assign values to corresponding objects
-            processedAnswer.forEach((subar) => {
-              arGamesDetailedData.forEach((game) => {
-                if (subar[0] === game.name) {
-                  game.questionValues.conflict = subar[1];
-                }
-              });
-            });
-            return arGamesDetailedData;
-          } catch (e) {
-            console.log("Error getting GPT completion: ", e);
-          }
-        })(arGamesDetailedData, formInput);
     }
     return arGamesDetailedData;
   })(arGamesBasicDataAndVersionData, formInput);
@@ -820,11 +814,12 @@ title='${language}' \
       return result;
     }
     let csv = "";
+    const language = formInput.isWantedTranslate ? "de" : "en";
     arGamesDetailedData.forEach((game) => {
       let newEntry = `"ID";"${game.id}";
 "Name";"${game.name}${game.year ? ` <small>(${game.year})</small>` : ""}";
 "Beschreibung";"${
-        game.descriptions.long[`${formInput.isWantedTranslate ? "de" : "en"}`]
+        game.descriptions.chatGpt[language] || game.descriptions.bgg[language]
       } ${
         game.arLanguages?.length > 0
           ? `<br><strong>${
@@ -840,9 +835,7 @@ ${
     ? `data-inventory-location='${game.filterValues.inventoryLocation}'`
     : ""
 }></span>";
-"Tagline";"${
-        game.descriptions.short[`${formInput.isWantedTranslate ? "de" : "en"}`]
-      }";
+"Tagline";"${game.descriptions.short[language]}";
 "Thumbnail";"${game.thumbnail}";
 "${game.questionValues.difficulty}";"Difficulty (2 = easy)";
 "${game.questionValues.playTime}";"Play Time (2 = short)";
@@ -862,7 +855,7 @@ ${
     );
     downloadCsvLink.setAttribute(
       "download",
-      `${Date.now()}-${formInput.nameCollection}-spiele.csv`
+      `${Date.now()}-${formInput.nameCollection}-games.csv`
     );
     document.querySelector("body").appendChild(downloadCsvLink);
     downloadCsvLink.click();
@@ -873,7 +866,11 @@ ${
     const schemeOfValuesToAdd = {
       name: null,
       descriptions: {
-        long: {
+        bgg: {
+          en: null,
+          de: null,
+        },
+        chatGpt: {
           en: null,
           de: null,
         },
@@ -912,15 +909,30 @@ ${
       cache[`id${game.id}`] = cachedGame;
     });
 
-    const responseCacheUpdate = await (
-      await fetch("http://localhost:2096/cache-update", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(cache),
-      })
-    ).text();
-    console.log(responseCacheUpdate);
+    // const responseCacheUpdate = await (
+    //   await fetch("http://localhost:2096/cache-update", {
+    //     method: "POST",
+    //     headers: {
+    //       "Content-Type": "application/json",
+    //     },
+    //     body: JSON.stringify(cache),
+    //   })
+    // ).text();
+    // console.log(responseCacheUpdate);
+
+    const downloadCacheLink = document.createElement("a");
+    downloadCacheLink.setAttribute(
+      "href",
+      `data:text/plain;charset=utf-8,${encodeURIComponent(
+        `const cache = ${JSON.stringify(cache)}`
+      )}`
+    );
+    downloadCacheLink.setAttribute(
+      "download",
+      `${Date.now()}-${formInput.nameCollection}-cache.js`
+    );
+    document.querySelector("body").appendChild(downloadCacheLink);
+    downloadCacheLink.click();
+    document.querySelector("body").removeChild(downloadCacheLink);
   })(arGamesDetailedData);
 }
