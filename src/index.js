@@ -4,6 +4,149 @@ import { Configuration, OpenAIApi } from "openai";
 
 const CLUSTER_SIZE = 20;
 
+const arFilterOptionsMechanics = [
+  {
+    value: "action",
+    selector:
+      "[value='Real-Time'], [value='Real-time'], [value='Action / Dexterity'], [value='Flicking'], [value='Stacking and Balancing']",
+  },
+  {
+    value: "areaControl",
+    selector: "[value='Area Majority / Influence']",
+  },
+  {
+    value: "auction",
+    selector:
+      "[value='Auction / Bidding'], [value='Auction: Dutch Priority'], [value='Auction: English'], [value='Turn Order: Auction']",
+  },
+  {
+    value: "cards",
+    selector: "[value='Card Game']",
+  },
+  {
+    value: "deckBuilding",
+    selector:
+      "[value='Deck, Bag, and Pool Building'], [value='Deck Construction']",
+  },
+  {
+    value: "deduction",
+    selector: "[value='Deduction'], [value='Pattern Recognition']",
+  },
+  {
+    value: "drafting",
+    selector:
+      "[value='Closed Drafting'], [value='Open Drafting'], [value*='Dice Drafting']",
+  },
+  {
+    value: "dungeonCrawler",
+    selector: "[value='Category: Dungeon Crawler']",
+  },
+  {
+    value: "networks",
+    selector: "[value='Network and Route Building'], [value='Connections']",
+  },
+  {
+    value: "party",
+    selector: "[value='Party Game']",
+  },
+  {
+    value: "rollAndWrite",
+    selector:
+      "[value='Mechanism: Roll-and-Write'], [value='Mechanism: Flip-and-Write']",
+  },
+  {
+    value: "storytelling",
+    selector: "[value='Storytelling'], [value='Role Playing']",
+  },
+  {
+    value: "tilePlacement",
+    selector:
+      "[value='Pattern Building'], [value='Tile Placement'], [value='Grid Coverage']",
+  },
+  {
+    value: "trading",
+    selector: "[value='Trading'], [value='Negotiation']",
+  },
+  {
+    value: "words",
+    selector: "[value='Word Game']",
+  },
+  {
+    value: "workerPlacement",
+    selector: "[value*='Worker Placement']",
+  },
+];
+
+const arFilterOptionsThemes = [
+  {
+    value: "adventure",
+    selector: "[value='Adventure'], [value='Exploration']",
+  },
+  {
+    value: "oldHistory",
+    selector: "[value='Ancient'], [value='Medieval']",
+  },
+  {
+    value: "animals",
+    selector:
+      "[value='Animals'], [value='Environmental'], [value='Prehistoric'], [value='Farming'], [value='Theme: Nature'], [value='Theme: Trees and Forests']",
+  },
+  {
+    value: "arts",
+    selector:
+      "[value='Theme: Art'], [value='Theme: Fine Art and Art Museums'], [value='Theme: Painting / Paintings'], [value='Theme: Art style – Art Deco'], [value='Theme: Sewing / Knitting / Cloth-Making'], [value='Theme: Photography'], [value='Theme: Construction']",
+  },
+  {
+    value: "economy-infrastructure",
+    selector:
+      "[value='Economic'], [value='City Building'], [value='Industry / Manufacturing'], [value='Civilization']",
+  },
+  {
+    value: "fantasy",
+    selector:
+      "[value='Fantasy'], [value='Mythology'], [value='Theme: Superheroes']",
+  },
+  {
+    value: "horror",
+    selector: "[value='Horror'], [value='Zombies']",
+  },
+  {
+    value: "murder",
+    selector: "[value='Murder / Mystery'], [value='Theme: Mystery / Crime']",
+  },
+  {
+    value: "politics",
+    selector: "[value='Political'], [value='Spies / Secret Agents']",
+  },
+  {
+    value: "newHistory",
+    selector:
+      "[value='Renaissance'], [value='Age of Reason'], [value='Napoleonic'], [value='Post-Napoleonic'], [value='American West']",
+  },
+  {
+    value: "science",
+    selector:
+      "[value='Medical'], [value='Theme: Science'], [value='Theme: Alchemy'], [value='Theme: Mad Science / Mad Scientist']",
+  },
+  {
+    value: "scifi",
+    selector: "[value='Science Fiction'], [value='Space Exploration']",
+  },
+  {
+    value: "nautical",
+    selector: "[value='Nautical'], [value='Pirates']",
+  },
+  {
+    value: "trains",
+    selector: "[value='Racing'], [value='Trains'], [value='Aviation / Flight']",
+  },
+  {
+    value: "war",
+    selector:
+      "[type='boardgamecategory'][value*='War'], [value='Fighting'], [value='Pike and Shot']",
+  },
+];
+
 document.querySelector("#submit").addEventListener("click", () => {
   try {
     const formInput = (function readUserInputFromForm() {
@@ -358,132 +501,28 @@ async function processXmlCollection(xmlCollection, formInput) {
             xmlGame
           ) {
             const arMechanics = [];
+            arFilterOptionsMechanics.forEach((option) => {
+              if (xmlGame.querySelector(option.selector))
+                arMechanics.push(option.value);
+            });
 
             if (
-              xmlGame.querySelector(
-                "[value='Deduction'], [value='Pattern Recognition']"
-              )
-            )
-              arMechanics.push("deduction");
-
-            if (
-              xmlGame.querySelector(
-                "[value='Pattern Building'], [value='Tile Placement'], [value='Grid Coverage']"
-              )
-            )
-              arMechanics.push("tilePlacement");
-
-            if (
-              xmlGame.querySelector(
-                "[value='Real-Time'], [value='Real-time'], [value='Action / Dexterity'], [value='Flicking'], [value='Stacking and Balancing']"
-              )
-            )
-              arMechanics.push("action");
-
-            if (xmlGame.querySelector("[value='Area Majority / Influence']"))
+              (xmlGame.querySelector("[value='Fighting']") &&
+                xmlGame.querySelector("[value='Territory Building']")) ||
+              (xmlGame.querySelector("[value='Wargame']") &&
+                xmlGame.querySelector("[value='Territory Building']"))
+            ) {
               arMechanics.push("areaControl");
-            // if (xmlGame.querySelector("[value='Player Elimination']")) game.arMechanisms.push("playerElimination");
-            if (xmlGame.querySelector("[value='Push Your Luck']"))
-              arMechanics.push("pushYourLuck");
-
-            if (xmlGame.querySelector("[value*='Auction']"))
-              arMechanics.push("auction");
-
-            if (
-              xmlGame.querySelector(
-                "[value='Deck, Bag, and Pool Building'], [value='Deck Construction']"
-              )
-            )
-              arMechanics.push("deckBuilding");
-
-            if (xmlGame.querySelector("[value*='Worker Placement']"))
-              arMechanics.push("workerPlacement");
-
-            if (
-              xmlGame.querySelector(
-                "[value='Trick-taking'], [value='Ladder Climbing'] "
-              )
-            )
-              arMechanics.push("trickTaking");
-
-            if (
-              xmlGame.querySelector(
-                "[value='Closed Drafting'], [value='Open Drafting'], [value*='Dice Drafting']"
-              )
-            )
-              arMechanics.push("drafting");
-
-            if (
-              xmlGame.querySelector(
-                "[value*='Roll-and-Write'], [value*='Flip-and-Write']"
-              )
-            )
-              arMechanics.push("rollAndWrite");
-
-            if (xmlGame.querySelector("[value='Party Game']"))
-              arMechanics.push("party");
-
-            if (xmlGame.querySelector("[value='Drawing'], [value='Acting']"))
-              arMechanics.push("drawing");
-
-            if (
-              xmlGame.querySelector("[value='Trading'], [value='Negotiation']")
-            )
-              arMechanics.push("trading");
-
-            // game.creative = xmlGame.querySelector(
-            //   "[value='Drawing'], [value='Mechanism: Drawing'], [value='Acting'], [value='Word Games: Guess the Word'],  [value='Mechanism: Give a Clue / Get a Clue']"
-            // )
-            //   ? 1
-            //   : -1;
-
+            }
             return arMechanics;
           })(xmlGame);
 
           filterValues.themes = (function getValuesForFilterThemes(xmlGame) {
             const arThemes = [];
-
-            if (xmlGame.querySelector("[value='Adventure']"))
-              arThemes.push("adventure");
-            if (xmlGame.querySelector("[value='American West']"))
-              arThemes.push("wildWest");
-            if (xmlGame.querySelector("[value='Ancient']"))
-              arThemes.push("ancient");
-            if (xmlGame.querySelector("[value='Prehistoric']"))
-              arThemes.push("prehistoric");
-            if (
-              xmlGame.querySelector(
-                "[value='Animals'], [value='Environmental']"
-              )
-            )
-              arThemes.push("animals");
-            if (
-              xmlGame.querySelector(
-                "[value='City Building'], [value='Industry / Manufacturing']"
-              )
-            )
-              arThemes.push("cities");
-            if (xmlGame.querySelector("[value='Fantasy'], [value='Mythology']"))
-              arThemes.push("fantasy");
-            if (xmlGame.querySelector("[value='Farming']"))
-              arThemes.push("farming");
-            if (xmlGame.querySelector("[value='Horror'], [value='Zombies']"))
-              arThemes.push("horror");
-            if (
-              xmlGame.querySelector("[value='Renaissance'], [value='Medieval']")
-            )
-              arThemes.push("medieval");
-            if (xmlGame.querySelector("[value='Nautical'], [value='Pirates']"))
-              arThemes.push("nautical");
-            if (xmlGame.querySelector("[value='Racing']"))
-              arThemes.push("racing");
-            if (xmlGame.querySelector("[value='Science Fiction']"))
-              arThemes.push("scifi");
-            if (
-              xmlGame.querySelector("[type='boardgamecategory'][value*='War']")
-            )
-              arThemes.push("war");
-
+            arFilterOptionsThemes.forEach((option) => {
+              if (xmlGame.querySelector(option.selector))
+                arThemes.push(option.value);
+            });
             return arThemes;
           })(xmlGame);
 
@@ -714,24 +753,21 @@ REMEMBER: Your answer must follow the following structure: "English description|
                 });
               const answer = response.data.choices[0].message.content;
               const arValues = answer.split("|||");
-              const descriptionChatGptEnglish = arValues[0].replace(
-                /"/g,
-                "&quot;"
+              const [
+                descriptionChatGptEnglish,
+                descriptionChatGptGerman,
+                descriptionShortGerman,
+              ] = [arValues[0], arValues[1], arValues[3]].map((el) =>
+                el.replace(/"/g, "&quot;").replace(/\n/g, "")
               );
-              const descriptionChatGptGerman = arValues[1].replace(
-                /"/g,
-                "&quot;"
-              );
+
               const conflictLevel = +arValues[2];
               console.log(
                 `Conflict level for ${game.name}: ${
                   arValues[2]
                 } (as number: ${+arValues[2]})`
               );
-              const descriptionShortGerman = arValues[3].replace(
-                /"/g,
-                "&quot;"
-              );
+
               return [
                 descriptionChatGptEnglish,
                 descriptionChatGptGerman,
