@@ -875,9 +875,9 @@ ${
 "Thumbnail";"${game.thumbnail}";
 "${game.questionValues.difficulty}";"Difficulty (2 = easy)";
 "${game.questionValues.playTime}";"Play Time (2 = short)";
-"${game.questionValues.languageDependence}";"Language Dependence (2 = no text)";
-"${game.questionValues.conflict}";"Conflict (1 = low conflict)";
 "${game.questionValues.isCoop}";"Cooperative vs. competetive (1 = cooperative)";
+"${game.questionValues.conflict}";"Conflict (1 = low conflict)";
+"${game.questionValues.languageDependence}";"Language Dependence (2 = no text)";
 "${game.questionValues.yearGrouped}";"Release year (2 = new)";
 "#####";"Freizeile";
 `;

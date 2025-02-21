@@ -9675,4 +9675,32 @@ const cache = {
     },
     questionValues: { conflict: 1 },
   },
+  id336794: {
+    name: "Galaxy Trucker: Zweite Edition",
+    descriptions: {
+      chatGpt: {
+        en: "In Galaxy Trucker: Second Edition, you will frantically build your spaceship from scraps in real-time as you race your friends to scavenge the best ship components. Once built, pilot your ship through cosmic dangers, trading and battling to be the wealthiest at journey's end! Try to keep your crew and cargo safe while laughing at the galaxy's chaos – all in a quick, wild ride of about 37.5 minutes. This edition features streamlined gameplay and new art, perfect for a family fun night with a sci-fi twist.",
+        de: "In Galaxy Trucker: Zweite Edition baut ihr in Echtzeit aus einem Haufen Schrottteile euer eigenes Raumschiff. Schnappt euch die besten Komponenten, bevor es die anderen tun! Habt ihr das Schiff zusammengezimmert, steuert ihr es durch allerlei Gefahren des Weltraums. Ziel ist es, mit den wertvollsten Gütern und einem möglichst intakten Raumschiff am Ziel anzukommen. Das Spiel ist schnell, chaotisch und voller Humor, ideal für einen spielerischen Abend mit der Familie oder Freunden.",
+      },
+      short: {
+        en: "Have fun watching fellow players' ships explode as you fly on to victory.",
+        de: "Viel Spaß dabei, zuzuschauen, wie die Schiffe der anderen explodieren, während du zum Sieg fliegst.",
+      },
+    },
+    questionValues: { conflict: 0 },
+  },
+  id9364: {
+    name: "Doppelkopf",
+    descriptions: {
+      chatGpt: {
+        en: "In Doppelkopf, you will dive into a traditional and somewhat complex trick-taking card game. Developed in 1895 and extremely popular in Germany, you take turns collecting cards, aiming to earn points through strategic play and tactical partnerships. Each game round presents the challenge of figuring out who your secret partner is as per the cards played. Fraught with surprise shifts in gameplay, Doppelkopf demands clever tactics and adaptability.",
+        de: "Doppelkopf ist ein traditionelles und komplexes Stichspiel mit einer geschichtsreichen Herkunft aus dem Jahr 1895. In Deutschland äußerst beliebt, sammelst du bei diesem Spiel Stiche und Punktekarten, während du in jeder Runde versuchst, heimlich deine:n Partner:in zu identifizieren - alles basierend auf den gespielten Karten. Mit variablen Partnerschaften und regional unterschiedlichen Regeln fordert dieses Spiel deine Flexibilität und taktisches Geschick heraus.",
+      },
+      short: {
+        en: "Take tricks and deduce your secret partner from cardplay.",
+        de: "Sammle Stiche und ermittele deinen geheimen Partner aus dem Spielverlauf.",
+      },
+    },
+    questionValues: { conflict: 0 },
+  },
 };
